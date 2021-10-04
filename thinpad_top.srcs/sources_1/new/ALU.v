@@ -8,7 +8,9 @@ module ALU(
 reg[1:0] ALU_state;
 reg signed[15:0] ALU_A;
 reg signed[15:0] ALU_B;
+reg [14:0] tmp;
 reg ALU_exc;
+reg ALU_num_exc;
 
 initial begin
     ALU_state <= 2'b0;
@@ -20,55 +22,79 @@ always@(*) begin
             case (dip_sw[3:0])
                 4'd1: begin // ADD
                     {ALU_exc, leds} <= ALU_A + ALU_B;
+                    {ALU_num_exc, tmp} <= ALU_A[14:0] + ALU_B[14:0];
                 end
                 4'd2: begin // SUB
                     {ALU_exc, leds} <= ALU_A - ALU_B;
+                    {ALU_num_exc, tmp} <= ALU_A[14:0] - ALU_B[14:0];
                 end
                 4'd3: begin // AND
                     leds <= ALU_A & ALU_B;
                     ALU_exc <= 0;
+                    ALU_num_exc <= 0;
+                    tmp <= 0;
                 end
                 4'd4: begin // OR
                     leds <= ALU_A | ALU_B;
                     ALU_exc <= 0;
+                    ALU_num_exc <= 0;
+                    tmp <= 0;
                 end
                 4'd5: begin // XOR
                     leds <= ALU_A ^ ALU_B;
                     ALU_exc <= 0;
+                    ALU_num_exc <= 0;
+                    tmp <= 0;
                 end
                 4'd6: begin // NOT
                     leds <= ~ALU_A;
                     ALU_exc <= 0;
+                    ALU_num_exc <= 0;
+                    tmp <= 0;
                 end
                 4'd7: begin // SLL
                     leds <= ALU_A << ALU_B;
                     ALU_exc <= 0;
+                    ALU_num_exc <= 0;
+                    tmp <= 0;
                 end
                 4'd8: begin // SRL
                     leds <= ALU_A >> ALU_B;
                     ALU_exc <= 0;
+                    ALU_num_exc <= 0;
+                    tmp <= 0;
                 end
                 4'd8: begin // SRA
                     leds <= ALU_A >>> ALU_B;
                     ALU_exc <= 0;
+                    ALU_num_exc <= 0;
+                    tmp <= 0;
                 end
                 4'd10: begin // ROL
                     leds <= ALU_A << ALU_B | ALU_A >> (16 - ALU_B);
                     ALU_exc <= 0;
+                    ALU_num_exc <= 0;
+                    tmp <= 0;
                 end
                 default: begin
                     leds <= 0;
                     ALU_exc <= 0;
+                    ALU_num_exc <= 0;
+                    tmp <= 0;
                 end
             endcase
         2'b11: begin
-            leds[0] <= ALU_exc;
+            leds[0] <= ALU_exc ^ ALU_num_exc;
             leds[15:1] <= 0;
             ALU_exc <= ALU_exc;
+            ALU_num_exc <= ALU_num_exc;
+            tmp <= 0;
         end
         default: begin
             leds <= 0;
             ALU_exc <= 0;
+            ALU_num_exc <= 0;
+            tmp <= 0;
         end
     endcase
 end
