@@ -26,11 +26,11 @@ always@(posedge clock_btn or posedge reset_btn) begin
         case (ALU_state)
             2'b00: begin
                 ALU_A <= dip_sw[15:0];
-                leds <= dip_sw[15:0];
+                // leds <= dip_sw[15:0];
             end
             2'b01: begin
                 ALU_B <= dip_sw[15:0];
-                leds <= dip_sw[15:0];
+                // leds <= dip_sw[15:0];
             end
             2'b10: begin
                 case (dip_sw[3:0])
