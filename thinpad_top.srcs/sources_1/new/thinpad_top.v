@@ -138,19 +138,26 @@ assign uart_wrn = 1'b1;
 
 // 7段数码管译码器演示，将number用16进制显示在数码管上面
 wire[7:0] number;
-SEG7_LUT segL(.oSEG1(dpy0), .iDIG(number[3:0])); //dpy0是低位数码管
-SEG7_LUT segH(.oSEG1(dpy1), .iDIG(number[7:4])); //dpy1是高位数码管
+// SEG7_LUT segL(.oSEG1(dpy0), .iDIG(number[3:0])); //dpy0是低位数码管
+// SEG7_LUT segH(.oSEG1(dpy1), .iDIG(number[7:4])); //dpy1是高位数码管
 
 reg[15:0] led_bits;
 assign leds = led_bits;
 
+ALU alu(
+    .clock_btn(clock_btn),
+    .reset_btn(reset_btn),
+    .dip_sw(dip_sw),
+    .leds(leds)
+);
+
 always@(posedge clock_btn or posedge reset_btn) begin
-    if(reset_btn)begin //复位按下，设置LED为初始值
-        led_bits <= 16'h1;
-    end
-    else begin //每次按下时钟按钮，LED循环左移
-        led_bits <= {led_bits[14:0],led_bits[15]};
-    end
+    // if(reset_btn)begin //复位按下，设置LED为初始值
+    //     led_bits <= 16'h1;
+    // end
+    // else begin //每次按下时钟按钮，LED循环左移
+    //     led_bits <= {led_bits[14:0],led_bits[15]};
+    // end
 end
 
 //直连串口接收发送演示，从直连串口收到的数据再发送出去
