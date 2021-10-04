@@ -41,19 +41,19 @@ always@(*) begin
                     ALU_exc <= 0;
                 end
                 4'd7: begin // SLL
-                    leds <= ALU_A <<< ALU_B;
+                    leds <= ALU_A << ALU_B;
                     ALU_exc <= 0;
                 end
                 4'd8: begin // SRL
-                    leds <= ALU_A >>> ALU_B;
-                    ALU_exc <= 0;
-                end
-                4'd8: begin // SRA
                     leds <= ALU_A >> ALU_B;
                     ALU_exc <= 0;
                 end
+                4'd8: begin // SRA
+                    leds <= ALU_A >>> ALU_B;
+                    ALU_exc <= 0;
+                end
                 4'd10: begin // ROL
-                    leds <= ALU_A <<< ALU_B | ALU_A >>> (16 - ALU_B);
+                    leds <= ALU_A << ALU_B | ALU_A >> (16 - ALU_B);
                     ALU_exc <= 0;
                 end
                 default: begin
