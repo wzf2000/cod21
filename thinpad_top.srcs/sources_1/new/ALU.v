@@ -20,11 +20,11 @@ always@(*)
     case (dip_sw[3:0])
         4'd1: begin // ADD
             res <= ALU_A + ALU_B;
-            ALU_exc <= (!leds[15] & ALU_A[15] & ALU_B[15]) | (leds[15] & !ALU_A[15] & !ALU_B[15]);
+            ALU_exc <= (!res[15] & ALU_A[15] & ALU_B[15]) | (res[15] & !ALU_A[15] & !ALU_B[15]);
         end
         4'd2: begin // SUB
             res <= ALU_A - ALU_B;
-            ALU_exc <= (!leds[15] & ALU_A[15] & !ALU_B[15]) | (leds[15] & !ALU_A[15] & ALU_B[15]);
+            ALU_exc <= (!res[15] & ALU_A[15] & !ALU_B[15]) | (res[15] & !ALU_A[15] & ALU_B[15]);
         end
         4'd3: begin // AND
             res <= ALU_A & ALU_B;
@@ -50,7 +50,7 @@ always@(*)
             res <= ALU_A >> ALU_B;
             ALU_exc <= 0;
         end
-        4'd8: begin // SRA
+        4'd9: begin // SRA
             res <= ($signed(ALU_A)) >>> ALU_B;
             ALU_exc <= 0;
         end

@@ -1180,3 +1180,23 @@ closeFrame(PAResourceOtoP.PAViews_COMPILATION, "Log"); // aA (aL, cr)
 // Elapsed time: 23 seconds
 selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Running Design Initialization... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Tue Oct 05 10:13:47 CST 2021 ; 00:00:01 ; Vivado Implementation Defaults (Vivado Implementation 2016) ; Vivado Implementation Default Reports ; xc7a100tfgg676-2L ; Default settings for Implementation.", 1, "Running Design Initialization...", 2, false); // az (O, cr)
 // TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 34 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Running route_design... ;  ;  ;  ;  ;  ;  ;  ; 278 ; 167 ; 0.0 ; 0 ; 0 ; Tue Oct 05 10:13:47 CST 2021 ; 00:00:25 ; Vivado Implementation Defaults (Vivado Implementation 2016) ; Vivado Implementation Default Reports ; xc7a100tfgg676-2L ; Default settings for Implementation.", 1, "impl_1", 0, false); // az (O, cr)
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Running route_design... ;  ;  ;  ;  ;  ;  ;  ; 278 ; 167 ; 0.0 ; 0 ; 0 ; Tue Oct 05 10:13:47 CST 2021 ; 00:00:25 ; Vivado Implementation Defaults (Vivado Implementation 2016) ; Vivado Implementation Default Reports ; xc7a100tfgg676-2L ; Default settings for Implementation.", 1); // az (O, cr)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Running route_design... ;  ;  ;  ;  ;  ;  ;  ; 278 ; 167 ; 0.0 ; 0 ; 0 ; Tue Oct 05 10:13:47 CST 2021 ; 00:00:25 ; Vivado Implementation Defaults (Vivado Implementation 2016) ; Vivado Implementation Default Reports ; xc7a100tfgg676-2L ; Default settings for Implementation.", 1, "impl_1", 0, false, false, false, false, false, true); // az (O, cr) - Double Click
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Running route_design... ;  ;  ;  ;  ;  ;  ;  ; 278 ; 167 ; 0.0 ; 0 ; 0 ; Tue Oct 05 10:13:47 CST 2021 ; 00:00:25 ; Vivado Implementation Defaults (Vivado Implementation 2016) ; Vivado Implementation Default Reports ; xc7a100tfgg676-2L ; Default settings for Implementation.", 1, "Running route_design...", 2, false); // az (O, cr)
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Status", 2); // az (O, cr)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Running route_design... ;  ;  ;  ;  ;  ;  ;  ; 278 ; 167 ; 0.0 ; 0 ; 0 ; Tue Oct 05 10:13:47 CST 2021 ; 00:00:25 ; Vivado Implementation Defaults (Vivado Implementation 2016) ; Vivado Implementation Default Reports ; xc7a100tfgg676-2L ; Default settings for Implementation.", 1, "Running route_design...", 2, false); // az (O, cr)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bB (cr):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 2,199 MB. GUI used memory: 85 MB. Current time: 10/5/21, 10:14:50 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,199 MB. GUI used memory: 85 MB. Current time: 10/5/21, 10:14:50 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1152 ms.
