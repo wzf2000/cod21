@@ -75,12 +75,10 @@ always@(posedge clock_btn or posedge reset_btn) begin
             2'b00: begin
                 ALU_A <= dip_sw[15:0];
                 number <= 1;
-                // leds <= dip_sw[15:0];
             end
             2'b01: begin
                 ALU_B <= dip_sw[15:0];
                 number <= 2;
-                // leds <= dip_sw[15:0];
             end
             2'b10: begin
                 number <= 3;

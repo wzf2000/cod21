@@ -1200,3 +1200,27 @@ selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
 // Engine heap size: 2,199 MB. GUI used memory: 85 MB. Current time: 10/5/21, 10:14:50 AM CST
 // HMemoryUtils.trashcanNow. Engine heap size: 2,199 MB. GUI used memory: 85 MB. Current time: 10/5/21, 10:14:50 AM CST
 // WARNING: HEventQueue.dispatchEvent() is taking  1152 ms.
+// Tcl Message: refresh_design 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,199 MB. GUI used memory: 83 MB. Current time: 10/5/21, 10:14:51 AM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  1938 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2225.254 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2225.254 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2225.254 ; gain = 0.000 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [Engine Memory]: 2,295 MB (+3478kb) [15:27:00]
+dismissDialog("Reloading"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,346 MB. GUI used memory: 114 MB. Current time: 10/5/21, 10:16:16 AM CST
