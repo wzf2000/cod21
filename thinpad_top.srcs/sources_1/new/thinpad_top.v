@@ -148,7 +148,8 @@ ALU alu(
     .clock_btn(clock_btn),
     .reset_btn(reset_btn),
     .dip_sw(dip_sw),
-    .leds(leds)
+    .leds(leds),
+    .number(number)
 );
 
 always@(posedge clock_btn or posedge reset_btn) begin
@@ -166,7 +167,7 @@ reg  [7:0] ext_uart_buffer, ext_uart_tx;
 wire ext_uart_ready, ext_uart_clear, ext_uart_busy;
 reg ext_uart_start, ext_uart_avai;
     
-assign number = ext_uart_buffer;
+// assign number = ext_uart_buffer;
 
 async_receiver #(.ClkFrequency(50000000),.Baud(9600)) //接收模块，9600无检验位
     ext_uart_r(
