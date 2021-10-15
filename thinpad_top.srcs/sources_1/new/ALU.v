@@ -3,7 +3,7 @@ module ALU(
     input wire[15:0] ALU_B,
     input wire[3:0] op,
     output reg[15:0] res,
-    output reg[15:0] ALU_exc
+    output reg ALU_exc
 );
 
 always@(*)

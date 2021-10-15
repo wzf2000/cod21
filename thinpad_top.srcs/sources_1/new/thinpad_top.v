@@ -175,12 +175,12 @@ always@(posedge clock_btn or posedge reset_btn) begin
             end
             2'b10: begin
                 A <= A;
-                A <= B;
+                B <= B;
                 led_bits <= res;
             end
             2'b11: begin
                 A <= A;
-                A <= B;
+                B <= B;
                 led_bits <= {15'b0, exc};
             end
         endcase
