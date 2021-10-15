@@ -156,9 +156,27 @@ initial begin
     ALU_state <= 2'b0;
 end
 
+always@(*)
+    case (ALU_state)
+        2'b00: begin
+            led_bits <= dip_sw[15:0];
+        end
+        2'b01: begin
+            led_bits <= dip_sw[15:0];
+        end
+        2'b10: begin
+            led_bits <= res;
+        end
+        2'b11: begin
+            led_bits <= {15'b0, exc};
+        end
+    endcase
+
 always@(posedge clock_btn or posedge reset_btn) begin
     if (reset_btn) begin
         ALU_state <= 2'b0;
+        A <= A;
+        B <= B;
     end
     else begin
         ALU_state <= ALU_state + 1;
@@ -166,22 +184,18 @@ always@(posedge clock_btn or posedge reset_btn) begin
             2'b00: begin
                 A <= dip_sw[15:0];
                 B <= B;
-                led_bits <= dip_sw[15:0];
             end
             2'b01: begin
                 A <= A;
                 B <= dip_sw[15:0];
-                led_bits <= dip_sw[15:0];
             end
             2'b10: begin
                 A <= A;
                 B <= B;
-                led_bits <= res;
             end
             2'b11: begin
                 A <= A;
                 B <= B;
-                led_bits <= {15'b0, exc};
             end
         endcase
     end
