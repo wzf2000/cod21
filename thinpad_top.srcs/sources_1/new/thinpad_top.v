@@ -138,28 +138,71 @@ assign uart_wrn = 1'b1;
 
 // 7段数码管译码器演示，将number用16进制显示在数码管上面
 wire[7:0] number;
-// SEG7_LUT segL(.oSEG1(dpy0), .iDIG(number[3:0])); //dpy0是低位数码管
-// SEG7_LUT segH(.oSEG1(dpy1), .iDIG(number[7:4])); //dpy1是高位数码管
+SEG7_LUT segL(.oSEG1(dpy0), .iDIG(number[3:0])); //dpy0是低位数码管
+SEG7_LUT segH(.oSEG1(dpy1), .iDIG(number[7:4])); //dpy1是高位数码管
+
+reg[1:0] ALU_state;
+
+assign number = {6'b0, ALU_state};
 
 reg[15:0] led_bits;
 assign leds = led_bits;
+reg[15:0] A;
+reg[15:0] B;
+wire[15:0] res;
+wire exc;
 
-ALU alu(
-    .clock_btn(clock_btn),
-    .reset_btn(reset_btn),
-    .dip_sw(dip_sw),
-    .leds(leds),
-    .number(number)
-);
+initial begin
+    ALU_state <= 2'b0;
+end
 
 always@(posedge clock_btn or posedge reset_btn) begin
+    if (reset_btn) begin
+        ALU_state <= 2'b0;
+    end
+    else begin
+        ALU_state <= ALU_state + 1;
+        case (ALU_state)
+            2'b00: begin
+                A <= dip_sw[15:0];
+                B <= B;
+                led_bits <= dip_sw[15:0];
+            end
+            2'b01: begin
+                A <= A;
+                B <= dip_sw[15:0];
+                led_bits <= dip_sw[15:0];
+            end
+            2'b10: begin
+                A <= A;
+                A <= B;
+                led_bits <= res;
+            end
+            2'b11: begin
+                A <= A;
+                A <= B;
+                led_bits <= {15'b0, exc};
+            end
+        endcase
+    end
+end
+
+ALU alu(
+    .ALU_A(A),
+    .ALU_B(B),
+    .op(dip_sw[3:0]),
+    .res(res),
+    .ALU_exc(exc)
+);
+
+// always@(posedge clock_btn or posedge reset_btn) begin
     // if(reset_btn)begin //复位按下，设置LED为初始值
     //     led_bits <= 16'h1;
     // end
     // else begin //每次按下时钟按钮，LED循环左移
     //     led_bits <= {led_bits[14:0],led_bits[15]};
     // end
-end
+// end
 
 //直连串口接收发送演示，从直连串口收到的数据再发送出去
 wire [7:0] ext_uart_rx;
