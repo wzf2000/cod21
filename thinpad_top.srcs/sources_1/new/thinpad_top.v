@@ -251,7 +251,7 @@ always@(posedge clock_btn or posedge reset_btn) begin
             3'd0: begin // init sram addr
                 sram_init_addr <= dip_sw;
                 sram_init_data <= sram_init_data;
-                sram_now_addr <= dip_sw;
+                sram_now_addr <= sram_now_addr;
                 sram_now_data <= sram_now_data;
                 sram_state <= 3'd1;
                 sram_count <= 4'b0;
@@ -262,8 +262,8 @@ always@(posedge clock_btn or posedge reset_btn) begin
             3'd1: begin // init sram data
                 sram_init_addr <= sram_init_addr;
                 sram_init_data <= dip_sw;
-                sram_now_addr <= sram_now_addr;
-                sram_now_data <= dip_sw;
+                sram_now_addr <= 32'b0;
+                sram_now_data <= 32'b0;
                 sram_state <= 3'd2;
                 sram_count <= 4'b0;
                 sram_finish <= 1'b0;
@@ -274,24 +274,20 @@ always@(posedge clock_btn or posedge reset_btn) begin
                 sram_init_addr <= sram_init_addr;
                 sram_init_data <= sram_init_data;
                 sram_finish <= !sram_finish;
+                sram_now_addr <= sram_init_addr + sram_count;
+                sram_now_data <= sram_init_data + sram_count;
                 base_op <= 1'b1;
                 ext_op <= 1'b0;
                 if (!sram_finish) begin
-                    sram_now_addr <= sram_now_addr;
-                    sram_now_data <= sram_now_data;
                     sram_count <= sram_count;
                     sram_state <= sram_state;
                 end
                 else begin
                     if (sram_count == 4'd9) begin
-                        sram_now_addr <= sram_init_addr - 1;
-                        sram_now_data <= sram_init_data + 5;
                         sram_count <= 4'b0;
                         sram_state <= 3'd3;
                     end
                     else begin
-                        sram_now_addr <= sram_now_addr + 1;
-                        sram_now_data <= sram_now_data + 1;
                         sram_count <= sram_count + 1;
                         sram_state <= sram_state;
                     end
@@ -300,23 +296,21 @@ always@(posedge clock_btn or posedge reset_btn) begin
             3'd3: begin // read base ram
                 sram_init_addr <= sram_init_addr;
                 sram_init_data <= sram_init_data;
-                sram_now_data <= sram_now_data;
                 sram_finish <= !sram_finish;
+                sram_now_data <= sram_now_data;
+                sram_now_addr <= sram_init_addr + sram_count;
                 base_op <= 1'b0;
                 ext_op <= 1'b0;
                 if (!sram_finish) begin
-                    sram_now_addr <= sram_now_addr + 1;
                     sram_count <= sram_count;
                     sram_state <= sram_state;
                 end
                 else begin
                     if (sram_count == 4'd9) begin
-                        sram_now_addr <= sram_init_addr;
                         sram_count <= 4'b0;
                         sram_state <= 3'd4;
                     end
                     else begin
-                        sram_now_addr <= sram_now_addr;
                         sram_count <= sram_count + 1;
                         sram_state <= sram_state;
                     end
@@ -326,53 +320,58 @@ always@(posedge clock_btn or posedge reset_btn) begin
                 sram_init_addr <= sram_init_addr;
                 sram_init_data <= sram_init_data;
                 sram_finish <= !sram_finish;
+                sram_now_addr <= sram_init_addr + sram_count;
+                sram_now_data <= sram_init_data + sram_count + 5;
                 base_op <= 1'b0;
                 ext_op <= 1'b1;
                 if (!sram_finish) begin
-                    sram_now_addr <= sram_now_addr;
-                    sram_now_data <= sram_now_data;
                     sram_count <= sram_count;
                     sram_state <= sram_state;
                 end
                 else begin
                     if (sram_count == 4'd9) begin
-                        sram_now_addr <= sram_init_addr - 1;
-                        sram_now_data <= sram_init_data;
                         sram_count <= 4'b0;
                         sram_state <= 3'd5;
                     end
                     else begin
-                        sram_now_addr <= sram_now_addr + 1;
-                        sram_now_data <= sram_now_data + 1;
                         sram_count <= sram_count + 1;
                         sram_state <= sram_state;
                     end
                 end
             end
-            3'd5: begin // read ext ram
+            3'd6: begin // read ext ram
                 sram_init_addr <= sram_init_addr;
                 sram_init_data <= sram_init_data;
-                sram_now_data <= sram_now_data;
                 sram_finish <= !sram_finish;
+                sram_now_data <= sram_now_data;
+                sram_now_addr <= sram_init_addr + sram_count;
                 base_op <= 1'b0;
                 ext_op <= 1'b0;
                 if (!sram_finish) begin
-                    sram_now_addr <= sram_now_addr + 1;
                     sram_count <= sram_count;
                     sram_state <= sram_state;
                 end
                 else begin
                     if (sram_count == 4'd9) begin
-                        sram_now_addr <= sram_init_addr;
                         sram_count <= 4'b0;
                         sram_state <= 3'd0;
                     end
                     else begin
-                        sram_now_addr <= sram_now_addr;
                         sram_count <= sram_count + 1;
                         sram_state <= sram_state;
                     end
                 end
+            end
+            3'd6: begin
+                sram_init_addr <= sram_init_addr;
+                sram_init_data <= sram_init_data;
+                sram_finish <= sram_finish;
+                sram_now_data <= sram_now_data;
+                sram_now_addr <= sram_now_addr;
+                base_op <= base_op;
+                ext_op <= ext_op;
+                sram_count <= sram_count;
+                sram_state <= sram_state;
             end
             default: begin
                 sram_state <= 3'b0;
