@@ -14,7 +14,7 @@ module sram_controller(
 
 reg data_z;
 reg r_or_w;
-reg data;
+reg[31:0] data;
 
 assign ram_be = 4'b0000;
 assign ram_ce = 1'b0;
