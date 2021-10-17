@@ -113,18 +113,6 @@ always@(posedge clk_10M or posedge reset_of_clk10M) begin
     end
 end
 
-// 不使用内存、串口时，禁用其使能信号
-assign base_ram_ce_n = 1'b1;
-assign base_ram_oe_n = 1'b1;
-assign base_ram_we_n = 1'b1;
-
-assign ext_ram_ce_n = 1'b1;
-assign ext_ram_oe_n = 1'b1;
-assign ext_ram_we_n = 1'b1;
-
-assign uart_rdn = 1'b1;
-assign uart_wrn = 1'b1;
-
 // 数码管连接关系示意图，dpy1同理
 // p=dpy0[0] // ---a---
 // c=dpy0[1] // |     |
@@ -391,6 +379,17 @@ always@(posedge clock_btn or posedge reset_btn) begin
                         sram_state <= sram_state;
                     end
                 end
+            end
+            default: begin
+                sram_state <= 3'b0;
+                sram_count <= 4'b0;
+                sram_finish <= 1'b0;
+                sram_init_addr <= 32'b0;
+                sram_init_data <= 32'b0;
+                sram_now_addr <= 32'b0;
+                sram_now_data <= 32'b0;
+                base_op <= 1'b0;
+                ext_op <= 1'b0;
             end
         endcase
     end

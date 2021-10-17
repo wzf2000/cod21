@@ -54,7 +54,7 @@ assign rxd = 1'b1; //idle state
 
 initial begin 
     //在这里可以自定义测试输入序列，例如：
-    dip_sw = 32'h2;
+    dip_sw = 32'h0;
     touch_btn = 0;
     #100
     reset_btn = 1;
