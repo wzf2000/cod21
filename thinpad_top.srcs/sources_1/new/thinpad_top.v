@@ -339,7 +339,7 @@ always@(posedge clock_btn or posedge reset_btn) begin
                     end
                 end
             end
-            3'd6: begin // read ext ram
+            3'd5: begin // read ext ram
                 sram_init_addr <= sram_init_addr;
                 sram_init_data <= sram_init_data;
                 sram_finish <= !sram_finish;
@@ -354,7 +354,7 @@ always@(posedge clock_btn or posedge reset_btn) begin
                 else begin
                     if (sram_count == 4'd9) begin
                         sram_count <= 4'b0;
-                        sram_state <= 3'd0;
+                        sram_state <= 3'd6;
                     end
                     else begin
                         sram_count <= sram_count + 1;

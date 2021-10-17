@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Sun Oct 17 18:35:28 2021
+// Date        : Sun Oct 17 18:41:27 2021
 // Host        : LAPTOP-BQA5S6MS running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               D:/rv/cod21-wzf19/thinpad_top.sim/sim_1/impl/timing/xsim/tb_time_impl.v
@@ -37,7 +37,7 @@ module IOBUF_UNIQ_BASE_
         .T(T));
 endmodule
 
-module IOBUF_HD311
+module IOBUF_HD342
    (IO,
     O,
     I,
@@ -61,7 +61,7 @@ module IOBUF_HD311
         .T(T));
 endmodule
 
-module IOBUF_HD312
+module IOBUF_HD343
    (IO,
     O,
     I,
@@ -85,7 +85,7 @@ module IOBUF_HD312
         .T(T));
 endmodule
 
-module IOBUF_HD313
+module IOBUF_HD344
    (IO,
     O,
     I,
@@ -109,7 +109,7 @@ module IOBUF_HD313
         .T(T));
 endmodule
 
-module IOBUF_HD314
+module IOBUF_HD345
    (IO,
     O,
     I,
@@ -133,7 +133,7 @@ module IOBUF_HD314
         .T(T));
 endmodule
 
-module IOBUF_HD315
+module IOBUF_HD346
    (IO,
     O,
     I,
@@ -157,7 +157,7 @@ module IOBUF_HD315
         .T(T));
 endmodule
 
-module IOBUF_HD316
+module IOBUF_HD347
    (IO,
     O,
     I,
@@ -181,7 +181,7 @@ module IOBUF_HD316
         .T(T));
 endmodule
 
-module IOBUF_HD317
+module IOBUF_HD348
    (IO,
     O,
     I,
@@ -205,7 +205,7 @@ module IOBUF_HD317
         .T(T));
 endmodule
 
-module IOBUF_HD318
+module IOBUF_HD349
    (IO,
     O,
     I,
@@ -229,7 +229,7 @@ module IOBUF_HD318
         .T(T));
 endmodule
 
-module IOBUF_HD319
+module IOBUF_HD350
    (IO,
     O,
     I,
@@ -253,7 +253,7 @@ module IOBUF_HD319
         .T(T));
 endmodule
 
-module IOBUF_HD320
+module IOBUF_HD351
    (IO,
     O,
     I,
@@ -277,7 +277,7 @@ module IOBUF_HD320
         .T(T));
 endmodule
 
-module IOBUF_HD321
+module IOBUF_HD352
    (IO,
     O,
     I,
@@ -301,7 +301,7 @@ module IOBUF_HD321
         .T(T));
 endmodule
 
-module IOBUF_HD322
+module IOBUF_HD353
    (IO,
     O,
     I,
@@ -325,7 +325,7 @@ module IOBUF_HD322
         .T(T));
 endmodule
 
-module IOBUF_HD323
+module IOBUF_HD354
    (IO,
     O,
     I,
@@ -349,7 +349,7 @@ module IOBUF_HD323
         .T(T));
 endmodule
 
-module IOBUF_HD324
+module IOBUF_HD355
    (IO,
     O,
     I,
@@ -373,7 +373,7 @@ module IOBUF_HD324
         .T(T));
 endmodule
 
-module IOBUF_HD325
+module IOBUF_HD356
    (IO,
     O,
     I,
@@ -397,7 +397,7 @@ module IOBUF_HD325
         .T(T));
 endmodule
 
-module IOBUF_HD326
+module IOBUF_HD357
    (IO,
     O,
     I,
@@ -421,7 +421,7 @@ module IOBUF_HD326
         .T(T));
 endmodule
 
-module IOBUF_HD327
+module IOBUF_HD358
    (IO,
     O,
     I,
@@ -445,7 +445,7 @@ module IOBUF_HD327
         .T(T));
 endmodule
 
-module IOBUF_HD328
+module IOBUF_HD359
    (IO,
     O,
     I,
@@ -469,7 +469,7 @@ module IOBUF_HD328
         .T(T));
 endmodule
 
-module IOBUF_HD329
+module IOBUF_HD360
    (IO,
     O,
     I,
@@ -493,7 +493,7 @@ module IOBUF_HD329
         .T(T));
 endmodule
 
-module IOBUF_HD330
+module IOBUF_HD361
    (IO,
     O,
     I,
@@ -517,7 +517,7 @@ module IOBUF_HD330
         .T(T));
 endmodule
 
-module IOBUF_HD331
+module IOBUF_HD362
    (IO,
     O,
     I,
@@ -541,7 +541,7 @@ module IOBUF_HD331
         .T(T));
 endmodule
 
-module IOBUF_HD332
+module IOBUF_HD363
    (IO,
     O,
     I,
@@ -565,7 +565,7 @@ module IOBUF_HD332
         .T(T));
 endmodule
 
-module IOBUF_HD333
+module IOBUF_HD364
    (IO,
     O,
     I,
@@ -589,7 +589,7 @@ module IOBUF_HD333
         .T(T));
 endmodule
 
-module IOBUF_HD334
+module IOBUF_HD365
    (IO,
     O,
     I,
@@ -613,7 +613,7 @@ module IOBUF_HD334
         .T(T));
 endmodule
 
-module IOBUF_HD335
+module IOBUF_HD366
    (IO,
     O,
     I,
@@ -637,7 +637,7 @@ module IOBUF_HD335
         .T(T));
 endmodule
 
-module IOBUF_HD336
+module IOBUF_HD367
    (IO,
     O,
     I,
@@ -661,7 +661,7 @@ module IOBUF_HD336
         .T(T));
 endmodule
 
-module IOBUF_HD337
+module IOBUF_HD368
    (IO,
     O,
     I,
@@ -685,7 +685,7 @@ module IOBUF_HD337
         .T(T));
 endmodule
 
-module IOBUF_HD338
+module IOBUF_HD369
    (IO,
     O,
     I,
@@ -709,7 +709,7 @@ module IOBUF_HD338
         .T(T));
 endmodule
 
-module IOBUF_HD339
+module IOBUF_HD370
    (IO,
     O,
     I,
@@ -733,7 +733,7 @@ module IOBUF_HD339
         .T(T));
 endmodule
 
-module IOBUF_HD340
+module IOBUF_HD371
    (IO,
     O,
     I,
@@ -757,7 +757,7 @@ module IOBUF_HD340
         .T(T));
 endmodule
 
-module IOBUF_HD341
+module IOBUF_HD372
    (IO,
     O,
     I,
@@ -2604,148 +2604,148 @@ module sram_controller
         .Q(\base_ram_data_TRI[0] ),
         .R(1'b0));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[0]_i_1 
        (.I0(\read_data_reg_n_0_[0] ),
         .I1(Q[0]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[0]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[10]_i_1 
        (.I0(\read_data_reg_n_0_[10] ),
         .I1(Q[10]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[10]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[11]_i_1 
        (.I0(\read_data_reg_n_0_[11] ),
         .I1(Q[11]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[11]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[12]_i_1 
        (.I0(\read_data_reg_n_0_[12] ),
         .I1(Q[12]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[12]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[13]_i_1 
        (.I0(\read_data_reg_n_0_[13] ),
         .I1(Q[13]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[13]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[14]_i_1 
        (.I0(\read_data_reg_n_0_[14] ),
         .I1(Q[14]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[14]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[15]_i_1 
        (.I0(\read_data_reg_n_0_[15] ),
         .I1(Q[15]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[15]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[1]_i_1 
        (.I0(\read_data_reg_n_0_[1] ),
         .I1(Q[1]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[1]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[2]_i_1 
        (.I0(\read_data_reg_n_0_[2] ),
         .I1(Q[2]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[2]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[3]_i_1 
        (.I0(\read_data_reg_n_0_[3] ),
         .I1(Q[3]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[3]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[4]_i_1 
        (.I0(\read_data_reg_n_0_[4] ),
         .I1(Q[4]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[4]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[5]_i_1 
        (.I0(\read_data_reg_n_0_[5] ),
         .I1(Q[5]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[5]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[6]_i_1 
        (.I0(\read_data_reg_n_0_[6] ),
         .I1(Q[6]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[6]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[7]_i_1 
        (.I0(\read_data_reg_n_0_[7] ),
         .I1(Q[7]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[7]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[8]_i_1 
        (.I0(\read_data_reg_n_0_[8] ),
         .I1(Q[8]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[8]));
   LUT5 #(
-    .INIT(32'h0A00C0AC)) 
+    .INIT(32'hEAC000AC)) 
     \led_bits_reg[9]_i_1 
        (.I0(\read_data_reg_n_0_[9] ),
         .I1(Q[9]),
         .I2(\led_bits_reg[15] [2]),
-        .I3(\led_bits_reg[15] [0]),
-        .I4(\led_bits_reg[15] [1]),
+        .I3(\led_bits_reg[15] [1]),
+        .I4(\led_bits_reg[15] [0]),
         .O(D[9]));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT3 #(
@@ -3799,7 +3799,7 @@ module sram_controller_0
         .R(1'b0));
 endmodule
 
-(* ECO_CHECKSUM = "c6dd513f" *) 
+(* ECO_CHECKSUM = "646b341b" *) 
 (* NotValidForBitStream *)
 module thinpad_top
    (clk_50M,
@@ -3919,6 +3919,7 @@ module thinpad_top
   output video_clk;
   output video_de;
 
+  wire \FSM_sequential_sram_state[2]_i_2_n_0 ;
   wire [7:0]RxD_data;
   wire base_op;
   wire base_op_reg_n_0;
@@ -3956,7 +3957,6 @@ module thinpad_top
   wire clock_btn;
   wire clock_btn_IBUF;
   wire clock_btn_IBUF_BUFG;
-  wire [0:0]data1;
   wire [31:0]dip_sw;
   wire [31:0]dip_sw_IBUF;
   wire dm9k_cmd;
@@ -4013,6 +4013,7 @@ module thinpad_top
   wire sl811_wr_n;
   wire [3:0]sram_count;
   wire \sram_count[3]_i_1_n_0 ;
+  wire \sram_count[3]_i_3_n_0 ;
   wire \sram_count_reg_n_0_[0] ;
   wire \sram_count_reg_n_0_[1] ;
   wire \sram_count_reg_n_0_[2] ;
@@ -4020,10 +4021,13 @@ module thinpad_top
   wire sram_finish;
   wire sram_finish_reg_n_0;
   wire [19:0]sram_init_addr;
+  wire [19:0]sram_init_addr0_in;
   wire \sram_init_addr[19]_i_1_n_0 ;
   wire [31:0]sram_init_data;
+  wire [31:20]sram_init_data0_in;
   wire \sram_init_data[31]_i_1_n_0 ;
-  wire [19:0]sram_now_addr;
+  wire sram_now_addr;
+  wire [19:0]sram_now_addr0_in;
   wire \sram_now_addr[3]_i_3_n_0 ;
   wire \sram_now_addr[3]_i_4_n_0 ;
   wire \sram_now_addr[3]_i_5_n_0 ;
@@ -4126,7 +4130,7 @@ module thinpad_top
   wire video_vsync_OBUF;
   wire [2:0]\NLW_sram_now_addr_reg[11]_i_2_CO_UNCONNECTED ;
   wire [2:0]\NLW_sram_now_addr_reg[15]_i_2_CO_UNCONNECTED ;
-  wire [3:0]\NLW_sram_now_addr_reg[19]_i_2_CO_UNCONNECTED ;
+  wire [3:0]\NLW_sram_now_addr_reg[19]_i_3_CO_UNCONNECTED ;
   wire [2:0]\NLW_sram_now_addr_reg[3]_i_2_CO_UNCONNECTED ;
   wire [2:0]\NLW_sram_now_addr_reg[7]_i_2_CO_UNCONNECTED ;
   wire [2:0]\NLW_sram_now_data_reg[11]_i_2_CO_UNCONNECTED ;
@@ -4152,41 +4156,41 @@ initial begin
 end
   (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT4 #(
-    .INIT(16'hA857)) 
+    .INIT(16'h2107)) 
     \FSM_sequential_sram_state[0]_i_1 
-       (.I0(data1),
+       (.I0(\FSM_sequential_sram_state[2]_i_2_n_0 ),
         .I1(sram_state[2]),
-        .I2(sram_state[1]),
-        .I3(sram_state[0]),
+        .I2(sram_state[0]),
+        .I3(sram_state[1]),
         .O(sram_state__0[0]));
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  LUT4 #(
+    .INIT(16'h00DA)) 
+    \FSM_sequential_sram_state[1]_i_1 
+       (.I0(sram_state[0]),
+        .I1(\FSM_sequential_sram_state[2]_i_2_n_0 ),
+        .I2(sram_state[1]),
+        .I3(sram_state[2]),
+        .O(sram_state__0[1]));
   (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT4 #(
-    .INIT(16'h2330)) 
-    \FSM_sequential_sram_state[1]_i_1 
-       (.I0(data1),
-        .I1(sram_state[2]),
-        .I2(sram_state[1]),
-        .I3(sram_state[0]),
-        .O(sram_state__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
-  LUT4 #(
-    .INIT(16'h98CC)) 
+    .INIT(16'h0340)) 
     \FSM_sequential_sram_state[2]_i_1 
-       (.I0(data1),
-        .I1(sram_state[2]),
-        .I2(sram_state[1]),
-        .I3(sram_state[0]),
+       (.I0(\FSM_sequential_sram_state[2]_i_2_n_0 ),
+        .I1(sram_state[1]),
+        .I2(sram_state[0]),
+        .I3(sram_state[2]),
         .O(sram_state__0[2]));
   LUT5 #(
-    .INIT(32'hFBFFFFFF)) 
+    .INIT(32'hFFFFDFFF)) 
     \FSM_sequential_sram_state[2]_i_2 
-       (.I0(\sram_count_reg_n_0_[1] ),
-        .I1(\sram_count_reg_n_0_[0] ),
-        .I2(\sram_count_reg_n_0_[2] ),
-        .I3(\sram_count_reg_n_0_[3] ),
-        .I4(sram_finish_reg_n_0),
-        .O(data1));
-  (* FSM_ENCODED_STATES = "iSTATE:001,iSTATE0:010,iSTATE1:011,iSTATE2:100,iSTATE3:101,iSTATE4:000" *) 
+       (.I0(sram_finish_reg_n_0),
+        .I1(\sram_count_reg_n_0_[2] ),
+        .I2(\sram_count_reg_n_0_[3] ),
+        .I3(\sram_count_reg_n_0_[0] ),
+        .I4(\sram_count_reg_n_0_[1] ),
+        .O(\FSM_sequential_sram_state[2]_i_2_n_0 ));
+  (* FSM_ENCODED_STATES = "iSTATE:001,iSTATE0:010,iSTATE1:011,iSTATE2:100,iSTATE3:101,iSTATE4:110,iSTATE5:000" *) 
   FDCE #(
     .INIT(1'b0)) 
     \FSM_sequential_sram_state_reg[0] 
@@ -4195,7 +4199,7 @@ end
         .CLR(reset_btn_IBUF),
         .D(sram_state__0[0]),
         .Q(sram_state[0]));
-  (* FSM_ENCODED_STATES = "iSTATE:001,iSTATE0:010,iSTATE1:011,iSTATE2:100,iSTATE3:101,iSTATE4:000" *) 
+  (* FSM_ENCODED_STATES = "iSTATE:001,iSTATE0:010,iSTATE1:011,iSTATE2:100,iSTATE3:101,iSTATE4:110,iSTATE5:000" *) 
   FDCE #(
     .INIT(1'b0)) 
     \FSM_sequential_sram_state_reg[1] 
@@ -4204,7 +4208,7 @@ end
         .CLR(reset_btn_IBUF),
         .D(sram_state__0[1]),
         .Q(sram_state[1]));
-  (* FSM_ENCODED_STATES = "iSTATE:001,iSTATE0:010,iSTATE1:011,iSTATE2:100,iSTATE3:101,iSTATE4:000" *) 
+  (* FSM_ENCODED_STATES = "iSTATE:001,iSTATE0:010,iSTATE1:011,iSTATE2:100,iSTATE3:101,iSTATE4:110,iSTATE5:000" *) 
   FDCE #(
     .INIT(1'b0)) 
     \FSM_sequential_sram_state_reg[2] 
@@ -4213,13 +4217,13 @@ end
         .CLR(reset_btn_IBUF),
         .D(sram_state__0[2]),
         .Q(sram_state[2]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
-    .INIT(8'h04)) 
+    .INIT(8'h10)) 
     base_op_i_1
        (.I0(sram_state[2]),
-        .I1(sram_state[1]),
-        .I2(sram_state[0]),
+        .I1(sram_state[0]),
+        .I2(sram_state[1]),
         .O(base_op));
   FDCE #(
     .INIT(1'b0)) 
@@ -4325,91 +4329,91 @@ end
         .O(base_ram_data_IBUF[0]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD311 \base_ram_data_IOBUF[10]_inst 
+  IOBUF_HD342 \base_ram_data_IOBUF[10]_inst 
        (.I(base_ram_data_OBUF[10]),
         .IO(base_ram_data[10]),
         .O(base_ram_data_IBUF[10]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD312 \base_ram_data_IOBUF[11]_inst 
+  IOBUF_HD343 \base_ram_data_IOBUF[11]_inst 
        (.I(base_ram_data_OBUF[11]),
         .IO(base_ram_data[11]),
         .O(base_ram_data_IBUF[11]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD313 \base_ram_data_IOBUF[12]_inst 
+  IOBUF_HD344 \base_ram_data_IOBUF[12]_inst 
        (.I(base_ram_data_OBUF[12]),
         .IO(base_ram_data[12]),
         .O(base_ram_data_IBUF[12]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD314 \base_ram_data_IOBUF[13]_inst 
+  IOBUF_HD345 \base_ram_data_IOBUF[13]_inst 
        (.I(base_ram_data_OBUF[13]),
         .IO(base_ram_data[13]),
         .O(base_ram_data_IBUF[13]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD315 \base_ram_data_IOBUF[14]_inst 
+  IOBUF_HD346 \base_ram_data_IOBUF[14]_inst 
        (.I(base_ram_data_OBUF[14]),
         .IO(base_ram_data[14]),
         .O(base_ram_data_IBUF[14]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD316 \base_ram_data_IOBUF[15]_inst 
+  IOBUF_HD347 \base_ram_data_IOBUF[15]_inst 
        (.I(base_ram_data_OBUF[15]),
         .IO(base_ram_data[15]),
         .O(base_ram_data_IBUF[15]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD317 \base_ram_data_IOBUF[1]_inst 
+  IOBUF_HD348 \base_ram_data_IOBUF[1]_inst 
        (.I(base_ram_data_OBUF[1]),
         .IO(base_ram_data[1]),
         .O(base_ram_data_IBUF[1]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD318 \base_ram_data_IOBUF[2]_inst 
+  IOBUF_HD349 \base_ram_data_IOBUF[2]_inst 
        (.I(base_ram_data_OBUF[2]),
         .IO(base_ram_data[2]),
         .O(base_ram_data_IBUF[2]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD319 \base_ram_data_IOBUF[3]_inst 
+  IOBUF_HD350 \base_ram_data_IOBUF[3]_inst 
        (.I(base_ram_data_OBUF[3]),
         .IO(base_ram_data[3]),
         .O(base_ram_data_IBUF[3]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD320 \base_ram_data_IOBUF[4]_inst 
+  IOBUF_HD351 \base_ram_data_IOBUF[4]_inst 
        (.I(base_ram_data_OBUF[4]),
         .IO(base_ram_data[4]),
         .O(base_ram_data_IBUF[4]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD321 \base_ram_data_IOBUF[5]_inst 
+  IOBUF_HD352 \base_ram_data_IOBUF[5]_inst 
        (.I(base_ram_data_OBUF[5]),
         .IO(base_ram_data[5]),
         .O(base_ram_data_IBUF[5]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD322 \base_ram_data_IOBUF[6]_inst 
+  IOBUF_HD353 \base_ram_data_IOBUF[6]_inst 
        (.I(base_ram_data_OBUF[6]),
         .IO(base_ram_data[6]),
         .O(base_ram_data_IBUF[6]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD323 \base_ram_data_IOBUF[7]_inst 
+  IOBUF_HD354 \base_ram_data_IOBUF[7]_inst 
        (.I(base_ram_data_OBUF[7]),
         .IO(base_ram_data[7]),
         .O(base_ram_data_IBUF[7]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD324 \base_ram_data_IOBUF[8]_inst 
+  IOBUF_HD355 \base_ram_data_IOBUF[8]_inst 
        (.I(base_ram_data_OBUF[8]),
         .IO(base_ram_data[8]),
         .O(base_ram_data_IBUF[8]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD325 \base_ram_data_IOBUF[9]_inst 
+  IOBUF_HD356 \base_ram_data_IOBUF[9]_inst 
        (.I(base_ram_data_OBUF[9]),
         .IO(base_ram_data[9]),
         .O(base_ram_data_IBUF[9]),
@@ -4664,12 +4668,12 @@ end
   OBUF \dpy1_OBUF[7]_inst 
        (.I(1'b0),
         .O(dpy1[7]));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
-    .INIT(8'h04)) 
+    .INIT(8'h02)) 
     ext_op_i_1
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
+       (.I0(sram_state[2]),
+        .I1(sram_state[1]),
         .I2(sram_state[0]),
         .O(ext_op));
   FDCE #(
@@ -4768,97 +4772,97 @@ end
         .\ram_addr_reg[19]_0 ({\sram_now_addr_reg_n_0_[19] ,\sram_now_addr_reg_n_0_[18] ,\sram_now_addr_reg_n_0_[17] ,\sram_now_addr_reg_n_0_[16] ,\sram_now_addr_reg_n_0_[15] ,\sram_now_addr_reg_n_0_[14] ,\sram_now_addr_reg_n_0_[13] ,\sram_now_addr_reg_n_0_[12] ,\sram_now_addr_reg_n_0_[11] ,\sram_now_addr_reg_n_0_[10] ,\sram_now_addr_reg_n_0_[9] ,\sram_now_addr_reg_n_0_[8] ,\sram_now_addr_reg_n_0_[7] ,\sram_now_addr_reg_n_0_[6] ,\sram_now_addr_reg_n_0_[5] ,\sram_now_addr_reg_n_0_[4] ,\sram_now_addr_reg_n_0_[3] ,\sram_now_addr_reg_n_0_[2] ,\sram_now_addr_reg_n_0_[1] ,\sram_now_addr_reg_n_0_[0] }),
         .\read_data_reg[15]_0 (read_data));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD326 \ext_ram_data_IOBUF[0]_inst 
+  IOBUF_HD357 \ext_ram_data_IOBUF[0]_inst 
        (.I(ext_ram_data_OBUF[0]),
         .IO(ext_ram_data[0]),
         .O(ext_ram_data_IBUF[0]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD327 \ext_ram_data_IOBUF[10]_inst 
+  IOBUF_HD358 \ext_ram_data_IOBUF[10]_inst 
        (.I(ext_ram_data_OBUF[10]),
         .IO(ext_ram_data[10]),
         .O(ext_ram_data_IBUF[10]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD328 \ext_ram_data_IOBUF[11]_inst 
+  IOBUF_HD359 \ext_ram_data_IOBUF[11]_inst 
        (.I(ext_ram_data_OBUF[11]),
         .IO(ext_ram_data[11]),
         .O(ext_ram_data_IBUF[11]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD329 \ext_ram_data_IOBUF[12]_inst 
+  IOBUF_HD360 \ext_ram_data_IOBUF[12]_inst 
        (.I(ext_ram_data_OBUF[12]),
         .IO(ext_ram_data[12]),
         .O(ext_ram_data_IBUF[12]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD330 \ext_ram_data_IOBUF[13]_inst 
+  IOBUF_HD361 \ext_ram_data_IOBUF[13]_inst 
        (.I(ext_ram_data_OBUF[13]),
         .IO(ext_ram_data[13]),
         .O(ext_ram_data_IBUF[13]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD331 \ext_ram_data_IOBUF[14]_inst 
+  IOBUF_HD362 \ext_ram_data_IOBUF[14]_inst 
        (.I(ext_ram_data_OBUF[14]),
         .IO(ext_ram_data[14]),
         .O(ext_ram_data_IBUF[14]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD332 \ext_ram_data_IOBUF[15]_inst 
+  IOBUF_HD363 \ext_ram_data_IOBUF[15]_inst 
        (.I(ext_ram_data_OBUF[15]),
         .IO(ext_ram_data[15]),
         .O(ext_ram_data_IBUF[15]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD333 \ext_ram_data_IOBUF[1]_inst 
+  IOBUF_HD364 \ext_ram_data_IOBUF[1]_inst 
        (.I(ext_ram_data_OBUF[1]),
         .IO(ext_ram_data[1]),
         .O(ext_ram_data_IBUF[1]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD334 \ext_ram_data_IOBUF[2]_inst 
+  IOBUF_HD365 \ext_ram_data_IOBUF[2]_inst 
        (.I(ext_ram_data_OBUF[2]),
         .IO(ext_ram_data[2]),
         .O(ext_ram_data_IBUF[2]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD335 \ext_ram_data_IOBUF[3]_inst 
+  IOBUF_HD366 \ext_ram_data_IOBUF[3]_inst 
        (.I(ext_ram_data_OBUF[3]),
         .IO(ext_ram_data[3]),
         .O(ext_ram_data_IBUF[3]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD336 \ext_ram_data_IOBUF[4]_inst 
+  IOBUF_HD367 \ext_ram_data_IOBUF[4]_inst 
        (.I(ext_ram_data_OBUF[4]),
         .IO(ext_ram_data[4]),
         .O(ext_ram_data_IBUF[4]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD337 \ext_ram_data_IOBUF[5]_inst 
+  IOBUF_HD368 \ext_ram_data_IOBUF[5]_inst 
        (.I(ext_ram_data_OBUF[5]),
         .IO(ext_ram_data[5]),
         .O(ext_ram_data_IBUF[5]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD338 \ext_ram_data_IOBUF[6]_inst 
+  IOBUF_HD369 \ext_ram_data_IOBUF[6]_inst 
        (.I(ext_ram_data_OBUF[6]),
         .IO(ext_ram_data[6]),
         .O(ext_ram_data_IBUF[6]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD339 \ext_ram_data_IOBUF[7]_inst 
+  IOBUF_HD370 \ext_ram_data_IOBUF[7]_inst 
        (.I(ext_ram_data_OBUF[7]),
         .IO(ext_ram_data[7]),
         .O(ext_ram_data_IBUF[7]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD340 \ext_ram_data_IOBUF[8]_inst 
+  IOBUF_HD371 \ext_ram_data_IOBUF[8]_inst 
        (.I(ext_ram_data_OBUF[8]),
         .IO(ext_ram_data[8]),
         .O(ext_ram_data_IBUF[8]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD341 \ext_ram_data_IOBUF[9]_inst 
+  IOBUF_HD372 \ext_ram_data_IOBUF[9]_inst 
        (.I(ext_ram_data_OBUF[9]),
         .IO(ext_ram_data[9]),
         .O(ext_ram_data_IBUF[9]),
@@ -5273,8 +5277,8 @@ end
   LUT2 #(
     .INIT(4'h7)) 
     \led_bits_reg[15]_i_2 
-       (.I0(sram_state[2]),
-        .I1(sram_state[1]),
+       (.I0(sram_state[1]),
+        .I1(sram_state[2]),
         .O(led_bits));
   (* XILINX_LEGACY_PRIM = "LD" *) 
   LDCE #(
@@ -5435,51 +5439,59 @@ end
        (.I(1'b0),
         .O(sl811_wr_n),
         .T(1'b1));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
-  LUT3 #(
-    .INIT(8'h06)) 
+  LUT4 #(
+    .INIT(16'h0026)) 
     \sram_count[0]_i_1 
-       (.I0(sram_state[2]),
-        .I1(sram_state[1]),
-        .I2(\sram_count_reg_n_0_[0] ),
+       (.I0(sram_state[1]),
+        .I1(sram_state[2]),
+        .I2(sram_state[0]),
+        .I3(\sram_count_reg_n_0_[0] ),
         .O(sram_count[0]));
-  LUT6 #(
-    .INIT(64'h0000626662660000)) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  LUT5 #(
+    .INIT(32'h00555100)) 
     \sram_count[1]_i_1 
-       (.I0(\sram_count_reg_n_0_[1] ),
-        .I1(\sram_count_reg_n_0_[0] ),
+       (.I0(\sram_count[3]_i_3_n_0 ),
+        .I1(\sram_count_reg_n_0_[3] ),
+        .I2(\sram_count_reg_n_0_[2] ),
+        .I3(\sram_count_reg_n_0_[0] ),
+        .I4(\sram_count_reg_n_0_[1] ),
+        .O(sram_count[1]));
+  LUT6 #(
+    .INIT(64'h0034343434000000)) 
+    \sram_count[2]_i_1 
+       (.I0(sram_state[0]),
+        .I1(sram_state[2]),
+        .I2(sram_state[1]),
+        .I3(\sram_count_reg_n_0_[1] ),
+        .I4(\sram_count_reg_n_0_[0] ),
+        .I5(\sram_count_reg_n_0_[2] ),
+        .O(sram_count[2]));
+  LUT4 #(
+    .INIT(16'hFFD9)) 
+    \sram_count[3]_i_1 
+       (.I0(sram_state[1]),
+        .I1(sram_state[2]),
+        .I2(sram_state[0]),
+        .I3(sram_finish_reg_n_0),
+        .O(\sram_count[3]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  LUT5 #(
+    .INIT(32'h00007D80)) 
+    \sram_count[3]_i_2 
+       (.I0(\sram_count_reg_n_0_[0] ),
+        .I1(\sram_count_reg_n_0_[1] ),
         .I2(\sram_count_reg_n_0_[2] ),
         .I3(\sram_count_reg_n_0_[3] ),
-        .I4(sram_state[1]),
-        .I5(sram_state[2]),
-        .O(sram_count[1]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
-  LUT5 #(
-    .INIT(32'h00787800)) 
-    \sram_count[2]_i_1 
-       (.I0(\sram_count_reg_n_0_[1] ),
-        .I1(\sram_count_reg_n_0_[0] ),
-        .I2(\sram_count_reg_n_0_[2] ),
-        .I3(sram_state[1]),
-        .I4(sram_state[2]),
-        .O(sram_count[2]));
-  LUT3 #(
-    .INIT(8'h2B)) 
-    \sram_count[3]_i_1 
-       (.I0(sram_finish_reg_n_0),
-        .I1(sram_state[1]),
-        .I2(sram_state[2]),
-        .O(\sram_count[3]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h000068CC68CC0000)) 
-    \sram_count[3]_i_2 
-       (.I0(\sram_count_reg_n_0_[2] ),
-        .I1(\sram_count_reg_n_0_[3] ),
-        .I2(\sram_count_reg_n_0_[1] ),
-        .I3(\sram_count_reg_n_0_[0] ),
-        .I4(sram_state[1]),
-        .I5(sram_state[2]),
+        .I4(\sram_count[3]_i_3_n_0 ),
         .O(sram_count[3]));
+  LUT3 #(
+    .INIT(8'hCB)) 
+    \sram_count[3]_i_3 
+       (.I0(sram_state[0]),
+        .I1(sram_state[2]),
+        .I2(sram_state[1]),
+        .O(\sram_count[3]_i_3_n_0 ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_count_reg[0] 
@@ -5512,13 +5524,14 @@ end
         .CLR(reset_btn_IBUF),
         .D(sram_count[3]),
         .Q(\sram_count_reg_n_0_[3] ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
-  LUT3 #(
-    .INIT(8'h06)) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  LUT4 #(
+    .INIT(16'h0510)) 
     sram_finish_i_1
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(sram_finish_reg_n_0),
+       (.I0(sram_finish_reg_n_0),
+        .I1(sram_state[0]),
+        .I2(sram_state[2]),
+        .I3(sram_state[1]),
         .O(sram_finish));
   FDCE #(
     .INIT(1'b0)) 
@@ -5528,20 +5541,140 @@ end
         .CLR(reset_btn_IBUF),
         .D(sram_finish),
         .Q(sram_finish_reg_n_0));
-  LUT3 #(
-    .INIT(8'h01)) 
-    \sram_init_addr[19]_i_1 
-       (.I0(sram_state[1]),
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[0]_i_1 
+       (.I0(dip_sw_IBUF[0]),
         .I1(sram_state[2]),
-        .I2(sram_state[0]),
+        .O(sram_init_addr0_in[0]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[10]_i_1 
+       (.I0(dip_sw_IBUF[10]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[10]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[11]_i_1 
+       (.I0(dip_sw_IBUF[11]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[11]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[12]_i_1 
+       (.I0(dip_sw_IBUF[12]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[12]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[13]_i_1 
+       (.I0(dip_sw_IBUF[13]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[13]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[14]_i_1 
+       (.I0(dip_sw_IBUF[14]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[14]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[15]_i_1 
+       (.I0(dip_sw_IBUF[15]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[15]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[16]_i_1 
+       (.I0(dip_sw_IBUF[16]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[16]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[17]_i_1 
+       (.I0(dip_sw_IBUF[17]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[17]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[18]_i_1 
+       (.I0(dip_sw_IBUF[18]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[18]));
+  LUT3 #(
+    .INIT(8'hA9)) 
+    \sram_init_addr[19]_i_1 
+       (.I0(sram_state[2]),
+        .I1(sram_state[0]),
+        .I2(sram_state[1]),
         .O(\sram_init_addr[19]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[19]_i_2 
+       (.I0(dip_sw_IBUF[19]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[19]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[1]_i_1 
+       (.I0(dip_sw_IBUF[1]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[1]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[2]_i_1 
+       (.I0(dip_sw_IBUF[2]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[2]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[3]_i_1 
+       (.I0(dip_sw_IBUF[3]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[3]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[4]_i_1 
+       (.I0(dip_sw_IBUF[4]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[4]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[5]_i_1 
+       (.I0(dip_sw_IBUF[5]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[5]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[6]_i_1 
+       (.I0(dip_sw_IBUF[6]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[6]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[7]_i_1 
+       (.I0(dip_sw_IBUF[7]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[7]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[8]_i_1 
+       (.I0(dip_sw_IBUF[8]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[8]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_addr[9]_i_1 
+       (.I0(dip_sw_IBUF[9]),
+        .I1(sram_state[2]),
+        .O(sram_init_addr0_in[9]));
   FDCE #(
     .INIT(1'b0)) 
     \sram_init_addr_reg[0] 
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[0]),
+        .D(sram_init_addr0_in[0]),
         .Q(sram_init_addr[0]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5549,7 +5682,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[10]),
+        .D(sram_init_addr0_in[10]),
         .Q(sram_init_addr[10]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5557,7 +5690,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[11]),
+        .D(sram_init_addr0_in[11]),
         .Q(sram_init_addr[11]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5565,7 +5698,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[12]),
+        .D(sram_init_addr0_in[12]),
         .Q(sram_init_addr[12]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5573,7 +5706,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[13]),
+        .D(sram_init_addr0_in[13]),
         .Q(sram_init_addr[13]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5581,7 +5714,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[14]),
+        .D(sram_init_addr0_in[14]),
         .Q(sram_init_addr[14]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5589,7 +5722,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[15]),
+        .D(sram_init_addr0_in[15]),
         .Q(sram_init_addr[15]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5597,7 +5730,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[16]),
+        .D(sram_init_addr0_in[16]),
         .Q(sram_init_addr[16]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5605,7 +5738,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[17]),
+        .D(sram_init_addr0_in[17]),
         .Q(sram_init_addr[17]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5613,7 +5746,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[18]),
+        .D(sram_init_addr0_in[18]),
         .Q(sram_init_addr[18]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5621,7 +5754,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[19]),
+        .D(sram_init_addr0_in[19]),
         .Q(sram_init_addr[19]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5629,7 +5762,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[1]),
+        .D(sram_init_addr0_in[1]),
         .Q(sram_init_addr[1]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5637,7 +5770,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[2]),
+        .D(sram_init_addr0_in[2]),
         .Q(sram_init_addr[2]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5645,7 +5778,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[3]),
+        .D(sram_init_addr0_in[3]),
         .Q(sram_init_addr[3]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5653,7 +5786,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[4]),
+        .D(sram_init_addr0_in[4]),
         .Q(sram_init_addr[4]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5661,7 +5794,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[5]),
+        .D(sram_init_addr0_in[5]),
         .Q(sram_init_addr[5]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5669,7 +5802,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[6]),
+        .D(sram_init_addr0_in[6]),
         .Q(sram_init_addr[6]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5677,7 +5810,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[7]),
+        .D(sram_init_addr0_in[7]),
         .Q(sram_init_addr[7]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5685,7 +5818,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[8]),
+        .D(sram_init_addr0_in[8]),
         .Q(sram_init_addr[8]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5693,22 +5826,106 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_addr[19]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[9]),
+        .D(sram_init_addr0_in[9]),
         .Q(sram_init_addr[9]));
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[20]_i_1 
+       (.I0(dip_sw_IBUF[20]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[20]));
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[21]_i_1 
+       (.I0(dip_sw_IBUF[21]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[21]));
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[22]_i_1 
+       (.I0(dip_sw_IBUF[22]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[22]));
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[23]_i_1 
+       (.I0(dip_sw_IBUF[23]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[23]));
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[24]_i_1 
+       (.I0(dip_sw_IBUF[24]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[24]));
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[25]_i_1 
+       (.I0(dip_sw_IBUF[25]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[25]));
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[26]_i_1 
+       (.I0(dip_sw_IBUF[26]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[26]));
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[27]_i_1 
+       (.I0(dip_sw_IBUF[27]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[27]));
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[28]_i_1 
+       (.I0(dip_sw_IBUF[28]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[28]));
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[29]_i_1 
+       (.I0(dip_sw_IBUF[29]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[29]));
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[30]_i_1 
+       (.I0(dip_sw_IBUF[30]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[30]));
   LUT3 #(
-    .INIT(8'h02)) 
+    .INIT(8'hB8)) 
     \sram_init_data[31]_i_1 
-       (.I0(sram_state[0]),
+       (.I0(sram_state[2]),
         .I1(sram_state[1]),
-        .I2(sram_state[2]),
+        .I2(sram_state[0]),
         .O(\sram_init_data[31]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \sram_init_data[31]_i_2 
+       (.I0(dip_sw_IBUF[31]),
+        .I1(sram_state[2]),
+        .O(sram_init_data0_in[31]));
   FDCE #(
     .INIT(1'b0)) 
     \sram_init_data_reg[0] 
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[0]),
+        .D(sram_init_addr0_in[0]),
         .Q(sram_init_data[0]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5716,7 +5933,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[10]),
+        .D(sram_init_addr0_in[10]),
         .Q(sram_init_data[10]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5724,7 +5941,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[11]),
+        .D(sram_init_addr0_in[11]),
         .Q(sram_init_data[11]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5732,7 +5949,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[12]),
+        .D(sram_init_addr0_in[12]),
         .Q(sram_init_data[12]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5740,7 +5957,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[13]),
+        .D(sram_init_addr0_in[13]),
         .Q(sram_init_data[13]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5748,7 +5965,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[14]),
+        .D(sram_init_addr0_in[14]),
         .Q(sram_init_data[14]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5756,7 +5973,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[15]),
+        .D(sram_init_addr0_in[15]),
         .Q(sram_init_data[15]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5764,7 +5981,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[16]),
+        .D(sram_init_addr0_in[16]),
         .Q(sram_init_data[16]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5772,7 +5989,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[17]),
+        .D(sram_init_addr0_in[17]),
         .Q(sram_init_data[17]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5780,7 +5997,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[18]),
+        .D(sram_init_addr0_in[18]),
         .Q(sram_init_data[18]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5788,7 +6005,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[19]),
+        .D(sram_init_addr0_in[19]),
         .Q(sram_init_data[19]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5796,7 +6013,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[1]),
+        .D(sram_init_addr0_in[1]),
         .Q(sram_init_data[1]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5804,7 +6021,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[20]),
+        .D(sram_init_data0_in[20]),
         .Q(sram_init_data[20]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5812,7 +6029,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[21]),
+        .D(sram_init_data0_in[21]),
         .Q(sram_init_data[21]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5820,7 +6037,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[22]),
+        .D(sram_init_data0_in[22]),
         .Q(sram_init_data[22]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5828,7 +6045,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[23]),
+        .D(sram_init_data0_in[23]),
         .Q(sram_init_data[23]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5836,7 +6053,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[24]),
+        .D(sram_init_data0_in[24]),
         .Q(sram_init_data[24]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5844,7 +6061,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[25]),
+        .D(sram_init_data0_in[25]),
         .Q(sram_init_data[25]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5852,7 +6069,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[26]),
+        .D(sram_init_data0_in[26]),
         .Q(sram_init_data[26]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5860,7 +6077,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[27]),
+        .D(sram_init_data0_in[27]),
         .Q(sram_init_data[27]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5868,7 +6085,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[28]),
+        .D(sram_init_data0_in[28]),
         .Q(sram_init_data[28]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5876,7 +6093,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[29]),
+        .D(sram_init_data0_in[29]),
         .Q(sram_init_data[29]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5884,7 +6101,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[2]),
+        .D(sram_init_addr0_in[2]),
         .Q(sram_init_data[2]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5892,7 +6109,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[30]),
+        .D(sram_init_data0_in[30]),
         .Q(sram_init_data[30]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5900,7 +6117,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[31]),
+        .D(sram_init_data0_in[31]),
         .Q(sram_init_data[31]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5908,7 +6125,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[3]),
+        .D(sram_init_addr0_in[3]),
         .Q(sram_init_data[3]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5916,7 +6133,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[4]),
+        .D(sram_init_addr0_in[4]),
         .Q(sram_init_data[4]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5924,7 +6141,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[5]),
+        .D(sram_init_addr0_in[5]),
         .Q(sram_init_data[5]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5932,7 +6149,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[6]),
+        .D(sram_init_addr0_in[6]),
         .Q(sram_init_data[6]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5940,7 +6157,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[7]),
+        .D(sram_init_addr0_in[7]),
         .Q(sram_init_data[7]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5948,7 +6165,7 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[8]),
+        .D(sram_init_addr0_in[8]),
         .Q(sram_init_data[8]));
   FDCE #(
     .INIT(1'b0)) 
@@ -5956,120 +6173,141 @@ end
        (.C(clock_btn_IBUF_BUFG),
         .CE(\sram_init_data[31]_i_1_n_0 ),
         .CLR(reset_btn_IBUF),
-        .D(dip_sw_IBUF[9]),
+        .D(sram_init_addr0_in[9]),
         .Q(sram_init_data[9]));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[0]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[0]),
-        .O(sram_now_addr[0]));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[0]),
+        .O(sram_now_addr0_in[0]));
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[10]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[10]),
-        .O(sram_now_addr[10]));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[10]),
+        .O(sram_now_addr0_in[10]));
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[11]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[11]),
-        .O(sram_now_addr[11]));
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[11]),
+        .O(sram_now_addr0_in[11]));
   (* SOFT_HLUTNM = "soft_lutpair28" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[12]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[12]),
-        .O(sram_now_addr[12]));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[12]),
+        .O(sram_now_addr0_in[12]));
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[13]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[13]),
-        .O(sram_now_addr[13]));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[13]),
+        .O(sram_now_addr0_in[13]));
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[14]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[14]),
-        .O(sram_now_addr[14]));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[14]),
+        .O(sram_now_addr0_in[14]));
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[15]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[15]),
-        .O(sram_now_addr[15]));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[15]),
+        .O(sram_now_addr0_in[15]));
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[16]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[16]),
-        .O(sram_now_addr[16]));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[16]),
+        .O(sram_now_addr0_in[16]));
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[17]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[17]),
-        .O(sram_now_addr[17]));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[17]),
+        .O(sram_now_addr0_in[17]));
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[18]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[18]),
-        .O(sram_now_addr[18]));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[18]),
+        .O(sram_now_addr0_in[18]));
   LUT3 #(
-    .INIT(8'h60)) 
+    .INIT(8'hFE)) 
     \sram_now_addr[19]_i_1 
        (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[19]),
-        .O(sram_now_addr[19]));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+        .I1(sram_state[0]),
+        .I2(sram_state[2]),
+        .O(sram_now_addr));
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
+    \sram_now_addr[19]_i_2 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[19]),
+        .O(sram_now_addr0_in[19]));
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[1]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[1]),
-        .O(sram_now_addr[1]));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[1]),
+        .O(sram_now_addr0_in[1]));
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[2]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[2]),
-        .O(sram_now_addr[2]));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[2]),
+        .O(sram_now_addr0_in[2]));
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[3]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[3]),
-        .O(sram_now_addr[3]));
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[3]),
+        .O(sram_now_addr0_in[3]));
   LUT2 #(
     .INIT(4'h6)) 
     \sram_now_addr[3]_i_3 
@@ -6094,77 +6332,83 @@ end
        (.I0(sram_init_addr[0]),
         .I1(\sram_count_reg_n_0_[0] ),
         .O(\sram_now_addr[3]_i_6_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
-    \sram_now_addr[4]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[4]),
-        .O(sram_now_addr[4]));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
-    \sram_now_addr[5]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[5]),
-        .O(sram_now_addr[5]));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
-    \sram_now_addr[6]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[6]),
-        .O(sram_now_addr[6]));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
-    \sram_now_addr[7]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[7]),
-        .O(sram_now_addr[7]));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
-    \sram_now_addr[8]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[8]),
-        .O(sram_now_addr[8]));
   (* SOFT_HLUTNM = "soft_lutpair25" *) 
-  LUT3 #(
-    .INIT(8'h60)) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
+    \sram_now_addr[4]_i_1 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[4]),
+        .O(sram_now_addr0_in[4]));
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
+    \sram_now_addr[5]_i_1 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[5]),
+        .O(sram_now_addr0_in[5]));
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
+    \sram_now_addr[6]_i_1 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[6]),
+        .O(sram_now_addr0_in[6]));
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
+    \sram_now_addr[7]_i_1 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[7]),
+        .O(sram_now_addr0_in[7]));
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
+    \sram_now_addr[8]_i_1 
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[8]),
+        .O(sram_now_addr0_in[8]));
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  LUT4 #(
+    .INIT(16'h1D00)) 
     \sram_now_addr[9]_i_1 
-       (.I0(sram_state[1]),
-        .I1(sram_state[2]),
-        .I2(in8[9]),
-        .O(sram_now_addr[9]));
+       (.I0(sram_state[0]),
+        .I1(sram_state[1]),
+        .I2(sram_state[2]),
+        .I3(in8[9]),
+        .O(sram_now_addr0_in[9]));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[0] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[0]),
+        .D(sram_now_addr0_in[0]),
         .Q(\sram_now_addr_reg_n_0_[0] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[10] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[10]),
+        .D(sram_now_addr0_in[10]),
         .Q(\sram_now_addr_reg_n_0_[10] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[11] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[11]),
+        .D(sram_now_addr0_in[11]),
         .Q(\sram_now_addr_reg_n_0_[11] ));
   (* OPT_MODIFIED = "SWEEP" *) 
   CARRY4 \sram_now_addr_reg[11]_i_2 
@@ -6178,33 +6422,33 @@ end
     .INIT(1'b0)) 
     \sram_now_addr_reg[12] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[12]),
+        .D(sram_now_addr0_in[12]),
         .Q(\sram_now_addr_reg_n_0_[12] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[13] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[13]),
+        .D(sram_now_addr0_in[13]),
         .Q(\sram_now_addr_reg_n_0_[13] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[14] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[14]),
+        .D(sram_now_addr0_in[14]),
         .Q(\sram_now_addr_reg_n_0_[14] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[15] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[15]),
+        .D(sram_now_addr0_in[15]),
         .Q(\sram_now_addr_reg_n_0_[15] ));
   (* OPT_MODIFIED = "SWEEP" *) 
   CARRY4 \sram_now_addr_reg[15]_i_2 
@@ -6218,38 +6462,38 @@ end
     .INIT(1'b0)) 
     \sram_now_addr_reg[16] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[16]),
+        .D(sram_now_addr0_in[16]),
         .Q(\sram_now_addr_reg_n_0_[16] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[17] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[17]),
+        .D(sram_now_addr0_in[17]),
         .Q(\sram_now_addr_reg_n_0_[17] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[18] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[18]),
+        .D(sram_now_addr0_in[18]),
         .Q(\sram_now_addr_reg_n_0_[18] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[19] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[19]),
+        .D(sram_now_addr0_in[19]),
         .Q(\sram_now_addr_reg_n_0_[19] ));
   (* OPT_MODIFIED = "SWEEP" *) 
-  CARRY4 \sram_now_addr_reg[19]_i_2 
+  CARRY4 \sram_now_addr_reg[19]_i_3 
        (.CI(\sram_now_addr_reg[15]_i_2_n_0 ),
-        .CO(\NLW_sram_now_addr_reg[19]_i_2_CO_UNCONNECTED [3:0]),
+        .CO(\NLW_sram_now_addr_reg[19]_i_3_CO_UNCONNECTED [3:0]),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(in8[19:16]),
@@ -6258,25 +6502,25 @@ end
     .INIT(1'b0)) 
     \sram_now_addr_reg[1] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[1]),
+        .D(sram_now_addr0_in[1]),
         .Q(\sram_now_addr_reg_n_0_[1] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[2] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[2]),
+        .D(sram_now_addr0_in[2]),
         .Q(\sram_now_addr_reg_n_0_[2] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[3] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[3]),
+        .D(sram_now_addr0_in[3]),
         .Q(\sram_now_addr_reg_n_0_[3] ));
   (* OPT_MODIFIED = "SWEEP" *) 
   CARRY4 \sram_now_addr_reg[3]_i_2 
@@ -6290,33 +6534,33 @@ end
     .INIT(1'b0)) 
     \sram_now_addr_reg[4] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[4]),
+        .D(sram_now_addr0_in[4]),
         .Q(\sram_now_addr_reg_n_0_[4] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[5] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[5]),
+        .D(sram_now_addr0_in[5]),
         .Q(\sram_now_addr_reg_n_0_[5] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[6] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[6]),
+        .D(sram_now_addr0_in[6]),
         .Q(\sram_now_addr_reg_n_0_[6] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[7] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[7]),
+        .D(sram_now_addr0_in[7]),
         .Q(\sram_now_addr_reg_n_0_[7] ));
   (* OPT_MODIFIED = "SWEEP" *) 
   CARRY4 \sram_now_addr_reg[7]_i_2 
@@ -6330,233 +6574,257 @@ end
     .INIT(1'b0)) 
     \sram_now_addr_reg[8] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[8]),
+        .D(sram_now_addr0_in[8]),
         .Q(\sram_now_addr_reg_n_0_[8] ));
   FDCE #(
     .INIT(1'b0)) 
     \sram_now_addr_reg[9] 
        (.C(clock_btn_IBUF_BUFG),
-        .CE(1'b1),
+        .CE(sram_now_addr),
         .CLR(reset_btn_IBUF),
-        .D(sram_now_addr[9]),
+        .D(sram_now_addr0_in[9]),
         .Q(\sram_now_addr_reg_n_0_[9] ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT3 #(
-    .INIT(8'h24)) 
+  LUT4 #(
+    .INIT(16'h0047)) 
     \sram_now_data[0]_i_1 
-       (.I0(in6[0]),
-        .I1(sram_state[2]),
+       (.I0(sram_state[2]),
+        .I1(in6[0]),
         .I2(sram_state[1]),
+        .I3(sram_state[0]),
         .O(sram_now_data0_in[0]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[10]_i_1 
-       (.I0(in7[10]),
-        .I1(in6[10]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[10]),
+        .I2(in6[10]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[10]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[11]_i_1 
-       (.I0(in7[11]),
-        .I1(in6[11]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[11]),
+        .I2(in6[11]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[11]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[12]_i_1 
-       (.I0(in7[12]),
-        .I1(in6[12]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[12]),
+        .I2(in6[12]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[12]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[13]_i_1 
-       (.I0(in7[13]),
-        .I1(in6[13]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[13]),
+        .I2(in6[13]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[13]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[14]_i_1 
-       (.I0(in7[14]),
-        .I1(in6[14]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[14]),
+        .I2(in6[14]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[14]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[15]_i_1 
-       (.I0(in7[15]),
-        .I1(in6[15]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[15]),
+        .I2(in6[15]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[15]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[16]_i_1 
-       (.I0(in7[16]),
-        .I1(in6[16]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[16]),
+        .I2(in6[16]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[16]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[17]_i_1 
-       (.I0(in7[17]),
-        .I1(in6[17]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[17]),
+        .I2(in6[17]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[17]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[18]_i_1 
-       (.I0(in7[18]),
-        .I1(in6[18]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[18]),
+        .I2(in6[18]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[18]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[19]_i_1 
-       (.I0(in7[19]),
-        .I1(in6[19]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[19]),
+        .I2(in6[19]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[19]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[1]_i_1 
-       (.I0(in7[1]),
-        .I1(in6[1]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[1]),
+        .I2(in6[1]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[1]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[20]_i_1 
-       (.I0(in7[20]),
-        .I1(in6[20]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[20]),
+        .I2(in6[20]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[20]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[21]_i_1 
-       (.I0(in7[21]),
-        .I1(in6[21]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[21]),
+        .I2(in6[21]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[21]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[22]_i_1 
-       (.I0(in7[22]),
-        .I1(in6[22]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[22]),
+        .I2(in6[22]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[22]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[23]_i_1 
-       (.I0(in7[23]),
-        .I1(in6[23]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[23]),
+        .I2(in6[23]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[23]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[24]_i_1 
-       (.I0(in7[24]),
-        .I1(in6[24]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[24]),
+        .I2(in6[24]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[24]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[25]_i_1 
-       (.I0(in7[25]),
-        .I1(in6[25]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[25]),
+        .I2(in6[25]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[25]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[26]_i_1 
-       (.I0(in7[26]),
-        .I1(in6[26]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[26]),
+        .I2(in6[26]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[26]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[27]_i_1 
-       (.I0(in7[27]),
-        .I1(in6[27]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[27]),
+        .I2(in6[27]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[27]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[28]_i_1 
-       (.I0(in7[28]),
-        .I1(in6[28]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[28]),
+        .I2(in6[28]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[28]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[29]_i_1 
-       (.I0(in7[29]),
-        .I1(in6[29]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[29]),
+        .I2(in6[29]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[29]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[2]_i_1 
-       (.I0(in7[2]),
-        .I1(in6[2]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[2]),
+        .I2(in6[2]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[2]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[30]_i_1 
-       (.I0(in7[30]),
-        .I1(in6[30]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[30]),
+        .I2(in6[30]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[30]));
   LUT3 #(
-    .INIT(8'h17)) 
+    .INIT(8'hF6)) 
     \sram_now_data[31]_i_1 
-       (.I0(sram_state[0]),
-        .I1(sram_state[1]),
+       (.I0(sram_state[1]),
+        .I1(sram_state[0]),
         .I2(sram_state[2]),
         .O(sram_now_data));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[31]_i_2 
-       (.I0(in7[31]),
-        .I1(in6[31]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[31]),
+        .I2(in6[31]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[31]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[3]_i_1 
-       (.I0(in7[3]),
-        .I1(in6[3]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[3]),
+        .I2(in6[3]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[3]));
   LUT2 #(
     .INIT(4'h6)) 
@@ -6582,58 +6850,64 @@ end
        (.I0(sram_init_data[0]),
         .I1(\sram_count_reg_n_0_[0] ),
         .O(\sram_now_data[3]_i_6_n_0 ));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[4]_i_1 
-       (.I0(in7[4]),
-        .I1(in6[4]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[4]),
+        .I2(in6[4]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[4]));
   LUT1 #(
     .INIT(2'h1)) 
     \sram_now_data[4]_i_3 
        (.I0(in6[2]),
         .O(\sram_now_data[4]_i_3_n_0 ));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[5]_i_1 
-       (.I0(in7[5]),
-        .I1(in6[5]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[5]),
+        .I2(in6[5]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[5]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[6]_i_1 
-       (.I0(in7[6]),
-        .I1(in6[6]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[6]),
+        .I2(in6[6]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[6]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[7]_i_1 
-       (.I0(in7[7]),
-        .I1(in6[7]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[7]),
+        .I2(in6[7]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[7]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[8]_i_1 
-       (.I0(in7[8]),
-        .I1(in6[8]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[8]),
+        .I2(in6[8]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[8]));
-  LUT4 #(
-    .INIT(16'h0AC0)) 
+  LUT5 #(
+    .INIT(32'h004400F4)) 
     \sram_now_data[9]_i_1 
-       (.I0(in7[9]),
-        .I1(in6[9]),
-        .I2(sram_state[1]),
-        .I3(sram_state[2]),
+       (.I0(sram_state[1]),
+        .I1(in7[9]),
+        .I2(in6[9]),
+        .I3(sram_state[0]),
+        .I4(sram_state[2]),
         .O(sram_now_data0_in[9]));
   FDCE #(
     .INIT(1'b0)) 
