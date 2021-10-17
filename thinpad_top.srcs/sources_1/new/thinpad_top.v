@@ -276,13 +276,15 @@ always@(posedge clock_btn or posedge reset_btn) begin
                 sram_finish <= !sram_finish;
                 sram_now_addr <= sram_init_addr + sram_count;
                 sram_now_data <= sram_init_data + sram_count;
-                base_op <= 1'b1;
-                ext_op <= 1'b0;
                 if (!sram_finish) begin
+                    base_op <= base_op;
+                    ext_op <= ext_op;
                     sram_count <= sram_count;
                     sram_state <= sram_state;
                 end
                 else begin
+                    base_op <= 1'b1;
+                    ext_op <= 1'b0;
                     if (sram_count == 4'd9) begin
                         sram_count <= 4'b0;
                         sram_state <= 3'd3;
@@ -299,13 +301,15 @@ always@(posedge clock_btn or posedge reset_btn) begin
                 sram_finish <= !sram_finish;
                 sram_now_data <= sram_now_data;
                 sram_now_addr <= sram_init_addr + sram_count;
-                base_op <= 1'b0;
-                ext_op <= 1'b0;
                 if (!sram_finish) begin
+                    base_op <= base_op;
+                    ext_op <= ext_op;
                     sram_count <= sram_count;
                     sram_state <= sram_state;
                 end
                 else begin
+                    base_op <= 1'b0;
+                    ext_op <= 1'b0;
                     if (sram_count == 4'd9) begin
                         sram_count <= 4'b0;
                         sram_state <= 3'd4;
@@ -322,13 +326,15 @@ always@(posedge clock_btn or posedge reset_btn) begin
                 sram_finish <= !sram_finish;
                 sram_now_addr <= sram_init_addr + sram_count;
                 sram_now_data <= sram_init_data + sram_count + 5;
-                base_op <= 1'b0;
-                ext_op <= 1'b1;
                 if (!sram_finish) begin
+                    base_op <= base_op;
+                    ext_op <= ext_op;
                     sram_count <= sram_count;
                     sram_state <= sram_state;
                 end
                 else begin
+                    base_op <= 1'b0;
+                    ext_op <= 1'b1;
                     if (sram_count == 4'd9) begin
                         sram_count <= 4'b0;
                         sram_state <= 3'd5;
@@ -345,13 +351,15 @@ always@(posedge clock_btn or posedge reset_btn) begin
                 sram_finish <= !sram_finish;
                 sram_now_data <= sram_now_data;
                 sram_now_addr <= sram_init_addr + sram_count;
-                base_op <= 1'b0;
-                ext_op <= 1'b0;
                 if (!sram_finish) begin
+                    base_op <= base_op;
+                    ext_op <= ext_op;
                     sram_count <= sram_count;
                     sram_state <= sram_state;
                 end
                 else begin
+                    base_op <= 1'b0;
+                    ext_op <= 1'b0;
                     if (sram_count == 4'd9) begin
                         sram_count <= 4'b0;
                         sram_state <= 3'd6;

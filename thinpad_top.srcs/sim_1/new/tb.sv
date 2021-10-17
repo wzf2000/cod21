@@ -54,7 +54,7 @@ assign rxd = 1'b1; //idle state
 
 initial begin 
     //在这里可以自定义测试输入序列，例如：
-    dip_sw = 32'h0;
+    dip_sw = 32'h05;
     touch_btn = 0;
     #100
     reset_btn = 1;
@@ -77,6 +77,7 @@ initial begin
         clock_btn = 0; //松开手工时钟按钮
     end
     // 模拟PC通过串口发送字符
+    dip_sw = {base1.mem_array0[5], base1.mem_array1[5], base2.mem_array0[5], base2.mem_array1[5]};
     cpld.pc_send_byte(8'h32);
     #10000;
     cpld.pc_send_byte(8'h33);
