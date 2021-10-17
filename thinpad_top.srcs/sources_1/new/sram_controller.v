@@ -1,6 +1,6 @@
 module sram_controller(
     input wire clk,
-    input wire op, // 0: read 1: write
+    input wire[1:0] op, // 0: read, 1: write 2, 3: none
     input wire[31:0] addr,
     input wire[31:0] write_data,
     output reg[31:0] read_data,
@@ -13,7 +13,7 @@ module sram_controller(
 );
 
 reg data_z;
-reg r_or_w;
+reg[1:0] r_or_w;
 reg[31:0] data;
 
 assign ram_be = 4'b0000;
@@ -28,14 +28,19 @@ always@(posedge clk) begin
             r_or_w <= r_or_w;
             sram_state <= 2'd1;
             read_data <= read_data;
-            if (r_or_w) begin
+            if (r_or_w == 2'b01) begin
                 data_z <= 1'b0;
                 ram_oe <= 1'b1;
                 ram_we <= 1'b0;
             end
-            else begin
+            else if (r_or_w == 2'b00) begin
                 data_z <= 1'b1;
                 ram_oe <= 1'b0;
+                ram_we <= 1'b1;
+            end
+            else begin
+                data_z <= 1'b1;
+                ram_oe <= 1'b1;
                 ram_we <= 1'b1;
             end
             data <= data;
@@ -54,11 +59,14 @@ always@(posedge clk) begin
         2'd2: begin
             r_or_w <= r_or_w;
             sram_state <= 2'd3;
-            if (r_or_w) begin
+            if (r_or_w == 2'b01) begin
                 read_data <= read_data;
             end
-            else begin
+            else if (r_or_w == 2'b00) begin
                 read_data <= ram_data;
+            end
+            else begin
+                read_data <= read_data;
             end
             data_z <= data_z;
             ram_oe <= 1'b1;
