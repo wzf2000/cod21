@@ -5,7 +5,7 @@ module sram_controller(
     input wire[31:0] write_data,
     output reg[31:0] read_data,
     inout wire[31:0] ram_data,
-    output wire[19:0] ram_addr,
+    output reg[19:0] ram_addr,
     output wire ram_ce,
     output reg ram_oe,
     output reg ram_we,
@@ -14,11 +14,11 @@ module sram_controller(
 
 reg data_z;
 reg r_or_w;
+reg data;
 
-assign ram_addr = addr[19:0];
 assign ram_be = 4'b0000;
 assign ram_ce = 1'b0;
-assign ram_data = data_z ? 32'bz : write_data;
+assign ram_data = data_z ? 32'bz : data;
 
 reg[1:0] sram_state;
 
@@ -36,6 +36,8 @@ always@(posedge clk) begin
             end
             ram_oe <= 1'b1;
             ram_we <= 1'b1;
+            data <= data;
+            ram_addr <= ram_addr;
         end
         2'd1: begin
             r_or_w <= r_or_w;
@@ -50,6 +52,8 @@ always@(posedge clk) begin
                 ram_oe <= 1'b0;
                 ram_we <= 1'b1;
             end
+            data <= data;
+            ram_addr <= ram_addr;
         end
         2'd2: begin
             r_or_w <= r_or_w;
@@ -63,6 +67,8 @@ always@(posedge clk) begin
             data_z <= data_z;
             ram_oe <= ram_oe;
             ram_we <= ram_we;
+            data <= data;
+            ram_addr <= ram_addr;
         end
         2'd3: begin
             r_or_w <= r_or_w;
@@ -71,6 +77,8 @@ always@(posedge clk) begin
             data_z <= data_z;
             ram_oe <= 1'b1;
             ram_we <= ram_we;
+            data <= write_data;
+            ram_addr <= addr[19:0];
         end
     endcase
 end
