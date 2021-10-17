@@ -156,50 +156,50 @@ initial begin
     ALU_state <= 2'b0;
 end
 
-always@(*)
-    case (ALU_state)
-        2'b00: begin
-            led_bits <= dip_sw[15:0];
-        end
-        2'b01: begin
-            led_bits <= dip_sw[15:0];
-        end
-        2'b10: begin
-            led_bits <= res;
-        end
-        2'b11: begin
-            led_bits <= {15'b0, exc};
-        end
-    endcase
+// always@(*)
+//     case (ALU_state)
+//         2'b00: begin
+//             led_bits <= dip_sw[15:0];
+//         end
+//         2'b01: begin
+//             led_bits <= dip_sw[15:0];
+//         end
+//         2'b10: begin
+//             led_bits <= res;
+//         end
+//         2'b11: begin
+//             led_bits <= {15'b0, exc};
+//         end
+//     endcase
 
-always@(posedge clock_btn or posedge reset_btn) begin
-    if (reset_btn) begin
-        ALU_state <= 2'b0;
-        A <= A;
-        B <= B;
-    end
-    else begin
-        ALU_state <= ALU_state + 1;
-        case (ALU_state)
-            2'b00: begin
-                A <= dip_sw[15:0];
-                B <= B;
-            end
-            2'b01: begin
-                A <= A;
-                B <= dip_sw[15:0];
-            end
-            2'b10: begin
-                A <= A;
-                B <= B;
-            end
-            2'b11: begin
-                A <= A;
-                B <= B;
-            end
-        endcase
-    end
-end
+// always@(posedge clock_btn or posedge reset_btn) begin
+//     if (reset_btn) begin
+//         ALU_state <= 2'b0;
+//         A <= A;
+//         B <= B;
+//     end
+//     else begin
+//         ALU_state <= ALU_state + 1;
+//         case (ALU_state)
+//             2'b00: begin
+//                 A <= dip_sw[15:0];
+//                 B <= B;
+//             end
+//             2'b01: begin
+//                 A <= A;
+//                 B <= dip_sw[15:0];
+//             end
+//             2'b10: begin
+//                 A <= A;
+//                 B <= B;
+//             end
+//             2'b11: begin
+//                 A <= A;
+//                 B <= B;
+//             end
+//         endcase
+//     end
+// end
 
 ALU alu(
     .ALU_A(A),
@@ -207,6 +207,215 @@ ALU alu(
     .op(dip_sw[3:0]),
     .res(res),
     .ALU_exc(exc)
+);
+
+wire[31:0] base_ram_read_data;
+wire[31:0] ext_ram_read_data;
+
+assign uart_rdn = 1'b1;
+assign uart_wrn = 1'b1;
+
+reg[2:0] sram_state;
+reg[3:0] sram_count;
+reg sram_finish;
+
+reg[31:0] sram_init_addr;
+reg[31:0] sram_init_data;
+reg[19:0] sram_now_addr;
+reg[31:0] sram_now_data;
+reg base_op;
+reg ext_op;
+
+initial begin
+    sram_state <= 3'b0;
+    sram_count <= 4'b0;
+    sram_finish <= 1'b0;
+end
+
+always@(*) begin
+    case (sram_state)
+        3'd0, 3'd1, 3'd2, 3'd4: begin
+            led_bits <= 16'b0;
+        end
+        3'd3: begin
+            led_bits <= base_ram_read_data;
+        end
+        3'd5: begin
+            led_bits <= ext_ram_read_data;
+        end
+    endcase
+end
+
+always@(posedge clock_btn or posedge reset_btn) begin
+    if (reset_btn) begin
+        sram_state <= 3'b0;
+        sram_count <= 4'b0;
+        sram_finish <= 1'b0;
+    end
+    else begin
+        case (sram_state)
+            3'd0: begin // init sram addr
+                sram_init_addr <= dip_sw;
+                sram_init_data <= sram_init_data;
+                sram_now_addr <= dip_sw;
+                sram_now_addr <= sram_now_addr;
+                sram_state <= 3'd1;
+                sram_count <= 4'b0;
+                sram_finish <= 1'b0;
+                base_op <= 1'b0;
+                ext_op <= 1'b0;
+            end
+            3'd1: begin // init sram data
+                sram_init_addr <= sram_init_addr;
+                sram_init_data <= dip_sw;
+                sram_now_addr <= sram_now_addr;
+                sram_now_data <= dip_sw;
+                sram_state <= 3'd2;
+                sram_count <= 4'b0;
+                sram_finish <= 1'b0;
+                base_op <= 1'b1;
+                ext_op <= 1'b0;
+            end
+            3'd2: begin // write base ram
+                sram_init_addr <= sram_init_addr;
+                sram_init_data <= sram_init_data;
+                sram_finish <= !sram_finish;
+                ext_op <= 1'b0;
+                if (!sram_finish) begin
+                    sram_now_addr <= sram_now_addr;
+                    sram_now_data <= sram_now_data;
+                    sram_count <= sram_count;
+                    sram_state <= sram_state;
+                    base_op <= 1'b1;
+                end
+                else begin
+                    if (sram_count == 4'd9) begin
+                        sram_now_addr <= sram_init_addr;
+                        sram_now_data <= sram_init_data + 5;
+                        sram_count <= 4'b0;
+                        sram_state <= 3'd3;
+                        base_op <= 1'b0;
+                    end
+                    else begin
+                        sram_now_addr <= sram_now_addr + 1;
+                        sram_now_data <= sram_now_data + 1;
+                        sram_count <= sram_count + 1;
+                        sram_state <= sram_state;
+                        base_op <= 1'b1;
+                    end
+                end
+            end
+            3'd3: begin // read base ram
+                sram_init_addr <= sram_init_addr;
+                sram_init_data <= sram_init_data;
+                sram_now_data <= sram_now_data;
+                sram_finish <= !sram_finish;
+                base_op <= 1'b0;
+                if (!sram_finish) begin
+                    sram_now_addr <= sram_now_addr;
+                    sram_count <= sram_count;
+                    sram_state <= sram_state;
+                    ext_op <= 1'b0;
+                end
+                else begin
+                    if (sram_count == 4'd9) begin
+                        sram_now_addr <= sram_init_addr;
+                        sram_count <= 4'b0;
+                        sram_state <= 3'd4;
+                        ext_op <= 1'b1;
+                    end
+                    else begin
+                        sram_now_addr <= sram_now_addr + 1;
+                        sram_count <= sram_count + 1;
+                        sram_state <= sram_state;
+                        ext_op <= 1'b0;
+                    end
+                end
+            end
+            3'd4: begin // write ext ram
+                sram_init_addr <= sram_init_addr;
+                sram_init_data <= sram_init_data;
+                sram_finish <= !sram_finish;
+                base_op <= 1'b0;
+                if (!sram_finish) begin
+                    sram_now_addr <= sram_now_addr;
+                    sram_now_data <= sram_now_data;
+                    sram_count <= sram_count;
+                    sram_state <= sram_state;
+                    ext_op <= 1'b1;
+                end
+                else begin
+                    if (sram_count == 4'd9) begin
+                        sram_now_addr <= sram_init_addr;
+                        sram_now_data <= sram_init_data;
+                        sram_count <= 4'b0;
+                        sram_state <= 3'd5;
+                        ext_op <= 1'b0;
+                    end
+                    else begin
+                        sram_now_addr <= sram_now_addr + 1;
+                        sram_now_data <= sram_now_data + 1;
+                        sram_count <= sram_count + 1;
+                        sram_state <= sram_state;
+                        ext_op <= 1'b1;
+                    end
+                end
+            end
+            3'd5: begin // read ext ram
+                sram_init_addr <= sram_init_addr;
+                sram_init_data <= sram_init_data;
+                sram_now_data <= sram_now_data;
+                sram_finish <= !sram_finish;
+                base_op <= 1'b0;
+                ext_op <= 1'b0;
+                if (!sram_finish) begin
+                    sram_now_addr <= sram_now_addr;
+                    sram_count <= sram_count;
+                    sram_state <= sram_state;
+                end
+                else begin
+                    if (sram_count == 4'd9) begin
+                        sram_now_addr <= sram_init_addr;
+                        sram_count <= 4'b0;
+                        sram_state <= 3'd0;
+                    end
+                    else begin
+                        sram_now_addr <= sram_now_addr + 1;
+                        sram_count <= sram_count + 1;
+                        sram_state <= sram_state;
+                    end
+                end
+            end
+        endcase
+    end
+end
+
+sram_controller base_ram_controller(
+    .clk(clk_50M),
+    .op(base_op),
+    .addr(sram_now_addr),
+    .write_data(sram_now_data),
+    .read_data(base_ram_read_data),
+    .ram_data(base_ram_data),
+    .ram_addr(base_ram_addr),
+    .ram_ce(base_ram_ce_n),
+    .ram_oe(base_ram_oe_n),
+    .ram_we(base_ram_we_n),
+    .ram_be(base_ram_be_n)
+);
+
+sram_controller ext_ram_controller(
+    .clk(clk_50M),
+    .op(ext_op),
+    .addr(sram_now_addr),
+    .write_data(sram_now_data),
+    .read_data(ext_ram_read_data),
+    .ram_data(ext_ram_data),
+    .ram_addr(ext_ram_addr),
+    .ram_ce(ext_ram_ce_n),
+    .ram_oe(ext_ram_oe_n),
+    .ram_we(ext_ram_we_n),
+    .ram_be(ext_ram_be_n)
 );
 
 // always@(posedge clock_btn or posedge reset_btn) begin
