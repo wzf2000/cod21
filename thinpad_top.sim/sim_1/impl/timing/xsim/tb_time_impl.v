@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Sun Oct 17 20:15:31 2021
+// Date        : Sun Oct 17 21:03:02 2021
 // Host        : LAPTOP-BQA5S6MS running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               D:/rv/cod21-wzf19/thinpad_top.sim/sim_1/impl/timing/xsim/tb_time_impl.v
@@ -37,7 +37,7 @@ module IOBUF_UNIQ_BASE_
         .T(T));
 endmodule
 
-module IOBUF_HD466
+module IOBUF_HD590
    (IO,
     O,
     I,
@@ -61,7 +61,7 @@ module IOBUF_HD466
         .T(T));
 endmodule
 
-module IOBUF_HD467
+module IOBUF_HD591
    (IO,
     O,
     I,
@@ -85,7 +85,7 @@ module IOBUF_HD467
         .T(T));
 endmodule
 
-module IOBUF_HD468
+module IOBUF_HD592
    (IO,
     O,
     I,
@@ -109,7 +109,7 @@ module IOBUF_HD468
         .T(T));
 endmodule
 
-module IOBUF_HD469
+module IOBUF_HD593
    (IO,
     O,
     I,
@@ -133,7 +133,7 @@ module IOBUF_HD469
         .T(T));
 endmodule
 
-module IOBUF_HD470
+module IOBUF_HD594
    (IO,
     O,
     I,
@@ -157,7 +157,7 @@ module IOBUF_HD470
         .T(T));
 endmodule
 
-module IOBUF_HD471
+module IOBUF_HD595
    (IO,
     O,
     I,
@@ -181,7 +181,7 @@ module IOBUF_HD471
         .T(T));
 endmodule
 
-module IOBUF_HD472
+module IOBUF_HD596
    (IO,
     O,
     I,
@@ -205,7 +205,7 @@ module IOBUF_HD472
         .T(T));
 endmodule
 
-module IOBUF_HD473
+module IOBUF_HD597
    (IO,
     O,
     I,
@@ -229,7 +229,7 @@ module IOBUF_HD473
         .T(T));
 endmodule
 
-module IOBUF_HD474
+module IOBUF_HD598
    (IO,
     O,
     I,
@@ -253,7 +253,7 @@ module IOBUF_HD474
         .T(T));
 endmodule
 
-module IOBUF_HD475
+module IOBUF_HD599
    (IO,
     O,
     I,
@@ -277,7 +277,7 @@ module IOBUF_HD475
         .T(T));
 endmodule
 
-module IOBUF_HD476
+module IOBUF_HD600
    (IO,
     O,
     I,
@@ -301,7 +301,7 @@ module IOBUF_HD476
         .T(T));
 endmodule
 
-module IOBUF_HD477
+module IOBUF_HD601
    (IO,
     O,
     I,
@@ -325,7 +325,7 @@ module IOBUF_HD477
         .T(T));
 endmodule
 
-module IOBUF_HD478
+module IOBUF_HD602
    (IO,
     O,
     I,
@@ -349,7 +349,7 @@ module IOBUF_HD478
         .T(T));
 endmodule
 
-module IOBUF_HD479
+module IOBUF_HD603
    (IO,
     O,
     I,
@@ -373,7 +373,7 @@ module IOBUF_HD479
         .T(T));
 endmodule
 
-module IOBUF_HD480
+module IOBUF_HD604
    (IO,
     O,
     I,
@@ -397,7 +397,7 @@ module IOBUF_HD480
         .T(T));
 endmodule
 
-module IOBUF_HD481
+module IOBUF_HD605
    (IO,
     O,
     I,
@@ -421,7 +421,7 @@ module IOBUF_HD481
         .T(T));
 endmodule
 
-module IOBUF_HD482
+module IOBUF_HD606
    (IO,
     O,
     I,
@@ -445,7 +445,7 @@ module IOBUF_HD482
         .T(T));
 endmodule
 
-module IOBUF_HD483
+module IOBUF_HD607
    (IO,
     O,
     I,
@@ -469,7 +469,7 @@ module IOBUF_HD483
         .T(T));
 endmodule
 
-module IOBUF_HD484
+module IOBUF_HD608
    (IO,
     O,
     I,
@@ -493,7 +493,7 @@ module IOBUF_HD484
         .T(T));
 endmodule
 
-module IOBUF_HD485
+module IOBUF_HD609
    (IO,
     O,
     I,
@@ -517,7 +517,7 @@ module IOBUF_HD485
         .T(T));
 endmodule
 
-module IOBUF_HD486
+module IOBUF_HD610
    (IO,
     O,
     I,
@@ -541,7 +541,7 @@ module IOBUF_HD486
         .T(T));
 endmodule
 
-module IOBUF_HD487
+module IOBUF_HD611
    (IO,
     O,
     I,
@@ -565,7 +565,7 @@ module IOBUF_HD487
         .T(T));
 endmodule
 
-module IOBUF_HD488
+module IOBUF_HD612
    (IO,
     O,
     I,
@@ -589,7 +589,7 @@ module IOBUF_HD488
         .T(T));
 endmodule
 
-module IOBUF_HD489
+module IOBUF_HD613
    (IO,
     O,
     I,
@@ -613,7 +613,7 @@ module IOBUF_HD489
         .T(T));
 endmodule
 
-module IOBUF_HD490
+module IOBUF_HD614
    (IO,
     O,
     I,
@@ -637,7 +637,7 @@ module IOBUF_HD490
         .T(T));
 endmodule
 
-module IOBUF_HD491
+module IOBUF_HD615
    (IO,
     O,
     I,
@@ -661,7 +661,7 @@ module IOBUF_HD491
         .T(T));
 endmodule
 
-module IOBUF_HD492
+module IOBUF_HD616
    (IO,
     O,
     I,
@@ -685,7 +685,7 @@ module IOBUF_HD492
         .T(T));
 endmodule
 
-module IOBUF_HD493
+module IOBUF_HD617
    (IO,
     O,
     I,
@@ -709,7 +709,7 @@ module IOBUF_HD493
         .T(T));
 endmodule
 
-module IOBUF_HD494
+module IOBUF_HD618
    (IO,
     O,
     I,
@@ -733,7 +733,7 @@ module IOBUF_HD494
         .T(T));
 endmodule
 
-module IOBUF_HD495
+module IOBUF_HD619
    (IO,
     O,
     I,
@@ -757,7 +757,7 @@ module IOBUF_HD495
         .T(T));
 endmodule
 
-module IOBUF_HD496
+module IOBUF_HD620
    (IO,
     O,
     I,
@@ -2255,8 +2255,8 @@ module sram_controller
   input [15:0]\read_data_reg[15]_0 ;
 
   wire [15:0]D;
+  wire \FSM_onehot_sram_state_reg_n_0_[0] ;
   wire \FSM_onehot_sram_state_reg_n_0_[1] ;
-  wire \FSM_onehot_sram_state_reg_n_0_[2] ;
   wire [3:0]Q;
   wire base_op__0;
   wire \base_ram_data_TRI[0] ;
@@ -2265,15 +2265,13 @@ module sram_controller
   wire clk_50M;
   wire [31:0]\data_reg[31]_0 ;
   wire [31:0]\data_reg[31]_1 ;
-  wire data_z;
   wire data_z_i_1_n_0;
   wire [15:0]\led_bits_reg[15] ;
   wire r_or_w;
   wire r_or_w_0;
   wire [19:0]\ram_addr_reg[19]_0 ;
   wire [19:0]\ram_addr_reg[19]_1 ;
-  wire ram_oe__0;
-  wire \ram_oe_inferred__0/i__n_0 ;
+  wire ram_oe0;
   wire ram_we_i_1_n_0;
   wire [15:0]read_data;
   wire \read_data[15]_i_1_n_0 ;
@@ -2286,7 +2284,7 @@ module sram_controller
        (.C(clk_50M),
         .CE(1'b1),
         .D(r_or_w_0),
-        .Q(data_z),
+        .Q(\FSM_onehot_sram_state_reg_n_0_[0] ),
         .R(1'b0));
   (* FSM_ENCODED_STATES = "iSTATE:0001,iSTATE0:0010,iSTATE1:0100,iSTATE2:1000" *) 
   FDRE #(
@@ -2294,7 +2292,7 @@ module sram_controller
     \FSM_onehot_sram_state_reg[1] 
        (.C(clk_50M),
         .CE(1'b1),
-        .D(data_z),
+        .D(\FSM_onehot_sram_state_reg_n_0_[0] ),
         .Q(\FSM_onehot_sram_state_reg_n_0_[1] ),
         .R(1'b0));
   (* FSM_ENCODED_STATES = "iSTATE:0001,iSTATE0:0010,iSTATE1:0100,iSTATE2:1000" *) 
@@ -2304,7 +2302,7 @@ module sram_controller
        (.C(clk_50M),
         .CE(1'b1),
         .D(\FSM_onehot_sram_state_reg_n_0_[1] ),
-        .Q(\FSM_onehot_sram_state_reg_n_0_[2] ),
+        .Q(ram_oe0),
         .R(1'b0));
   (* FSM_ENCODED_STATES = "iSTATE:0001,iSTATE0:0010,iSTATE1:0100,iSTATE2:1000" *) 
   FDRE #(
@@ -2312,7 +2310,7 @@ module sram_controller
     \FSM_onehot_sram_state_reg[3] 
        (.C(clk_50M),
         .CE(1'b1),
-        .D(\FSM_onehot_sram_state_reg_n_0_[2] ),
+        .D(ram_oe0),
         .Q(r_or_w_0),
         .R(1'b0));
   FDRE #(
@@ -2571,13 +2569,15 @@ module sram_controller
         .D(\data_reg[31]_1 [9]),
         .Q(\data_reg[31]_0 [9]),
         .R(1'b0));
-  LUT4 #(
-    .INIT(16'hFF2E)) 
+  LUT6 #(
+    .INIT(64'hFFFFFDFFFFFFFDF0)) 
     data_z_i_1
-       (.I0(\base_ram_data_TRI[0] ),
-        .I1(data_z),
-        .I2(r_or_w),
-        .I3(r_or_w_0),
+       (.I0(r_or_w),
+        .I1(\FSM_onehot_sram_state_reg_n_0_[1] ),
+        .I2(ram_oe0),
+        .I3(\FSM_onehot_sram_state_reg_n_0_[0] ),
+        .I4(r_or_w_0),
+        .I5(\base_ram_data_TRI[0] ),
         .O(data_z_i_1_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2915,29 +2915,14 @@ module sram_controller
         .D(\ram_addr_reg[19]_1 [9]),
         .Q(\ram_addr_reg[19]_0 [9]),
         .R(1'b0));
-  LUT3 #(
-    .INIT(8'hFE)) 
-    ram_oe
-       (.I0(\FSM_onehot_sram_state_reg_n_0_[1] ),
-        .I1(data_z),
-        .I2(r_or_w_0),
-        .O(ram_oe__0));
-  LUT4 #(
-    .INIT(16'hFFEA)) 
-    \ram_oe_inferred__0/i_ 
-       (.I0(data_z),
-        .I1(\FSM_onehot_sram_state_reg_n_0_[1] ),
-        .I2(r_or_w),
-        .I3(r_or_w_0),
-        .O(\ram_oe_inferred__0/i__n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
+  FDSE #(
+    .INIT(1'b1)) 
     ram_oe_reg
        (.C(clk_50M),
-        .CE(ram_oe__0),
-        .D(\ram_oe_inferred__0/i__n_0 ),
+        .CE(\FSM_onehot_sram_state_reg_n_0_[0] ),
+        .D(r_or_w),
         .Q(base_ram_oe_n_OBUF),
-        .R(1'b0));
+        .S(ram_oe0));
   LUT1 #(
     .INIT(2'h1)) 
     ram_we_i_1
@@ -2947,14 +2932,14 @@ module sram_controller
     .INIT(1'b1)) 
     ram_we_reg
        (.C(clk_50M),
-        .CE(\FSM_onehot_sram_state_reg_n_0_[1] ),
+        .CE(\FSM_onehot_sram_state_reg_n_0_[0] ),
         .D(ram_we_i_1_n_0),
         .Q(base_ram_we_n_OBUF),
-        .S(data_z));
+        .S(ram_oe0));
   LUT2 #(
     .INIT(4'h2)) 
     \read_data[15]_i_1 
-       (.I0(\FSM_onehot_sram_state_reg_n_0_[2] ),
+       (.I0(ram_oe0),
         .I1(r_or_w),
         .O(\read_data[15]_i_1_n_0 ));
   FDRE #(
@@ -3113,13 +3098,12 @@ module sram_controller_0
   input [15:0]D;
 
   wire [15:0]D;
+  wire \FSM_onehot_sram_state_reg_n_0_[0] ;
   wire \FSM_onehot_sram_state_reg_n_0_[1] ;
-  wire \FSM_onehot_sram_state_reg_n_0_[2] ;
   wire [19:0]Q;
   wire clk_50M;
   wire [31:0]\data_reg[31]_0 ;
   wire [31:0]\data_reg[31]_1 ;
-  wire data_z;
   wire data_z_i_1__0_n_0;
   wire ext_op__0;
   wire \ext_ram_data_TRI[0] ;
@@ -3128,8 +3112,7 @@ module sram_controller_0
   wire r_or_w;
   wire r_or_w_reg_n_0;
   wire [19:0]\ram_addr_reg[19]_0 ;
-  wire ram_oe__0;
-  wire \ram_oe_inferred__0/i__n_0 ;
+  wire ram_oe0;
   wire ram_we_i_1__0_n_0;
   wire \read_data[15]_i_1__0_n_0 ;
   wire [15:0]\read_data_reg[15]_0 ;
@@ -3141,7 +3124,7 @@ module sram_controller_0
        (.C(clk_50M),
         .CE(1'b1),
         .D(r_or_w),
-        .Q(data_z),
+        .Q(\FSM_onehot_sram_state_reg_n_0_[0] ),
         .R(1'b0));
   (* FSM_ENCODED_STATES = "iSTATE:0001,iSTATE0:0010,iSTATE1:0100,iSTATE2:1000" *) 
   FDRE #(
@@ -3149,7 +3132,7 @@ module sram_controller_0
     \FSM_onehot_sram_state_reg[1] 
        (.C(clk_50M),
         .CE(1'b1),
-        .D(data_z),
+        .D(\FSM_onehot_sram_state_reg_n_0_[0] ),
         .Q(\FSM_onehot_sram_state_reg_n_0_[1] ),
         .R(1'b0));
   (* FSM_ENCODED_STATES = "iSTATE:0001,iSTATE0:0010,iSTATE1:0100,iSTATE2:1000" *) 
@@ -3159,7 +3142,7 @@ module sram_controller_0
        (.C(clk_50M),
         .CE(1'b1),
         .D(\FSM_onehot_sram_state_reg_n_0_[1] ),
-        .Q(\FSM_onehot_sram_state_reg_n_0_[2] ),
+        .Q(ram_oe0),
         .R(1'b0));
   (* FSM_ENCODED_STATES = "iSTATE:0001,iSTATE0:0010,iSTATE1:0100,iSTATE2:1000" *) 
   FDRE #(
@@ -3167,7 +3150,7 @@ module sram_controller_0
     \FSM_onehot_sram_state_reg[3] 
        (.C(clk_50M),
         .CE(1'b1),
-        .D(\FSM_onehot_sram_state_reg_n_0_[2] ),
+        .D(ram_oe0),
         .Q(r_or_w),
         .R(1'b0));
   FDRE #(
@@ -3426,13 +3409,15 @@ module sram_controller_0
         .D(\data_reg[31]_1 [9]),
         .Q(\data_reg[31]_0 [9]),
         .R(1'b0));
-  LUT4 #(
-    .INIT(16'hFF2E)) 
+  LUT6 #(
+    .INIT(64'hFFFFFDFFFFFFFDF0)) 
     data_z_i_1__0
-       (.I0(\ext_ram_data_TRI[0] ),
-        .I1(data_z),
-        .I2(r_or_w_reg_n_0),
-        .I3(r_or_w),
+       (.I0(r_or_w_reg_n_0),
+        .I1(\FSM_onehot_sram_state_reg_n_0_[1] ),
+        .I2(ram_oe0),
+        .I3(\FSM_onehot_sram_state_reg_n_0_[0] ),
+        .I4(r_or_w),
+        .I5(\ext_ram_data_TRI[0] ),
         .O(data_z_i_1__0_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -3610,29 +3595,14 @@ module sram_controller_0
         .D(\ram_addr_reg[19]_0 [9]),
         .Q(Q[9]),
         .R(1'b0));
-  LUT3 #(
-    .INIT(8'hFE)) 
-    ram_oe
-       (.I0(\FSM_onehot_sram_state_reg_n_0_[1] ),
-        .I1(data_z),
-        .I2(r_or_w),
-        .O(ram_oe__0));
-  LUT4 #(
-    .INIT(16'hFFEA)) 
-    \ram_oe_inferred__0/i_ 
-       (.I0(data_z),
-        .I1(\FSM_onehot_sram_state_reg_n_0_[1] ),
-        .I2(r_or_w_reg_n_0),
-        .I3(r_or_w),
-        .O(\ram_oe_inferred__0/i__n_0 ));
-  FDRE #(
-    .INIT(1'b0)) 
+  FDSE #(
+    .INIT(1'b1)) 
     ram_oe_reg
        (.C(clk_50M),
-        .CE(ram_oe__0),
-        .D(\ram_oe_inferred__0/i__n_0 ),
+        .CE(\FSM_onehot_sram_state_reg_n_0_[0] ),
+        .D(r_or_w_reg_n_0),
         .Q(ext_ram_oe_n_OBUF),
-        .R(1'b0));
+        .S(ram_oe0));
   LUT1 #(
     .INIT(2'h1)) 
     ram_we_i_1__0
@@ -3642,14 +3612,14 @@ module sram_controller_0
     .INIT(1'b1)) 
     ram_we_reg
        (.C(clk_50M),
-        .CE(\FSM_onehot_sram_state_reg_n_0_[1] ),
+        .CE(\FSM_onehot_sram_state_reg_n_0_[0] ),
         .D(ram_we_i_1__0_n_0),
         .Q(ext_ram_we_n_OBUF),
-        .S(data_z));
+        .S(ram_oe0));
   LUT2 #(
     .INIT(4'h2)) 
     \read_data[15]_i_1__0 
-       (.I0(\FSM_onehot_sram_state_reg_n_0_[2] ),
+       (.I0(ram_oe0),
         .I1(r_or_w_reg_n_0),
         .O(\read_data[15]_i_1__0_n_0 ));
   FDRE #(
@@ -3782,7 +3752,7 @@ module sram_controller_0
         .R(1'b0));
 endmodule
 
-(* ECO_CHECKSUM = "9b28b87e" *) 
+(* ECO_CHECKSUM = "dfaf39e5" *) 
 (* NotValidForBitStream *)
 module thinpad_top
    (clk_50M,
@@ -4470,91 +4440,91 @@ end
         .O(base_ram_data_IBUF[0]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD466 \base_ram_data_IOBUF[10]_inst 
+  IOBUF_HD590 \base_ram_data_IOBUF[10]_inst 
        (.I(base_ram_data_OBUF[10]),
         .IO(base_ram_data[10]),
         .O(base_ram_data_IBUF[10]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD467 \base_ram_data_IOBUF[11]_inst 
+  IOBUF_HD591 \base_ram_data_IOBUF[11]_inst 
        (.I(base_ram_data_OBUF[11]),
         .IO(base_ram_data[11]),
         .O(base_ram_data_IBUF[11]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD468 \base_ram_data_IOBUF[12]_inst 
+  IOBUF_HD592 \base_ram_data_IOBUF[12]_inst 
        (.I(base_ram_data_OBUF[12]),
         .IO(base_ram_data[12]),
         .O(base_ram_data_IBUF[12]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD469 \base_ram_data_IOBUF[13]_inst 
+  IOBUF_HD593 \base_ram_data_IOBUF[13]_inst 
        (.I(base_ram_data_OBUF[13]),
         .IO(base_ram_data[13]),
         .O(base_ram_data_IBUF[13]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD470 \base_ram_data_IOBUF[14]_inst 
+  IOBUF_HD594 \base_ram_data_IOBUF[14]_inst 
        (.I(base_ram_data_OBUF[14]),
         .IO(base_ram_data[14]),
         .O(base_ram_data_IBUF[14]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD471 \base_ram_data_IOBUF[15]_inst 
+  IOBUF_HD595 \base_ram_data_IOBUF[15]_inst 
        (.I(base_ram_data_OBUF[15]),
         .IO(base_ram_data[15]),
         .O(base_ram_data_IBUF[15]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD472 \base_ram_data_IOBUF[1]_inst 
+  IOBUF_HD596 \base_ram_data_IOBUF[1]_inst 
        (.I(base_ram_data_OBUF[1]),
         .IO(base_ram_data[1]),
         .O(base_ram_data_IBUF[1]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD473 \base_ram_data_IOBUF[2]_inst 
+  IOBUF_HD597 \base_ram_data_IOBUF[2]_inst 
        (.I(base_ram_data_OBUF[2]),
         .IO(base_ram_data[2]),
         .O(base_ram_data_IBUF[2]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD474 \base_ram_data_IOBUF[3]_inst 
+  IOBUF_HD598 \base_ram_data_IOBUF[3]_inst 
        (.I(base_ram_data_OBUF[3]),
         .IO(base_ram_data[3]),
         .O(base_ram_data_IBUF[3]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD475 \base_ram_data_IOBUF[4]_inst 
+  IOBUF_HD599 \base_ram_data_IOBUF[4]_inst 
        (.I(base_ram_data_OBUF[4]),
         .IO(base_ram_data[4]),
         .O(base_ram_data_IBUF[4]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD476 \base_ram_data_IOBUF[5]_inst 
+  IOBUF_HD600 \base_ram_data_IOBUF[5]_inst 
        (.I(base_ram_data_OBUF[5]),
         .IO(base_ram_data[5]),
         .O(base_ram_data_IBUF[5]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD477 \base_ram_data_IOBUF[6]_inst 
+  IOBUF_HD601 \base_ram_data_IOBUF[6]_inst 
        (.I(base_ram_data_OBUF[6]),
         .IO(base_ram_data[6]),
         .O(base_ram_data_IBUF[6]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD478 \base_ram_data_IOBUF[7]_inst 
+  IOBUF_HD602 \base_ram_data_IOBUF[7]_inst 
        (.I(base_ram_data_OBUF[7]),
         .IO(base_ram_data[7]),
         .O(base_ram_data_IBUF[7]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD479 \base_ram_data_IOBUF[8]_inst 
+  IOBUF_HD603 \base_ram_data_IOBUF[8]_inst 
        (.I(base_ram_data_OBUF[8]),
         .IO(base_ram_data[8]),
         .O(base_ram_data_IBUF[8]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD480 \base_ram_data_IOBUF[9]_inst 
+  IOBUF_HD604 \base_ram_data_IOBUF[9]_inst 
        (.I(base_ram_data_OBUF[9]),
         .IO(base_ram_data[9]),
         .O(base_ram_data_IBUF[9]),
@@ -4905,97 +4875,97 @@ end
         .\ram_addr_reg[19]_0 ({\sram_now_addr_reg_n_0_[19] ,\sram_now_addr_reg_n_0_[18] ,\sram_now_addr_reg_n_0_[17] ,\sram_now_addr_reg_n_0_[16] ,\sram_now_addr_reg_n_0_[15] ,\sram_now_addr_reg_n_0_[14] ,\sram_now_addr_reg_n_0_[13] ,\sram_now_addr_reg_n_0_[12] ,\sram_now_addr_reg_n_0_[11] ,\sram_now_addr_reg_n_0_[10] ,\sram_now_addr_reg_n_0_[9] ,\sram_now_addr_reg_n_0_[8] ,\sram_now_addr_reg_n_0_[7] ,\sram_now_addr_reg_n_0_[6] ,\sram_now_addr_reg_n_0_[5] ,\sram_now_addr_reg_n_0_[4] ,\sram_now_addr_reg_n_0_[3] ,\sram_now_addr_reg_n_0_[2] ,\sram_now_addr_reg_n_0_[1] ,\sram_now_addr_reg_n_0_[0] }),
         .\read_data_reg[15]_0 ({ext_ram_controller_n_55,ext_ram_controller_n_56,ext_ram_controller_n_57,ext_ram_controller_n_58,ext_ram_controller_n_59,ext_ram_controller_n_60,ext_ram_controller_n_61,ext_ram_controller_n_62,ext_ram_controller_n_63,ext_ram_controller_n_64,ext_ram_controller_n_65,ext_ram_controller_n_66,ext_ram_controller_n_67,ext_ram_controller_n_68,ext_ram_controller_n_69,ext_ram_controller_n_70}));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD481 \ext_ram_data_IOBUF[0]_inst 
+  IOBUF_HD605 \ext_ram_data_IOBUF[0]_inst 
        (.I(ext_ram_data_OBUF[0]),
         .IO(ext_ram_data[0]),
         .O(ext_ram_data_IBUF[0]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD482 \ext_ram_data_IOBUF[10]_inst 
+  IOBUF_HD606 \ext_ram_data_IOBUF[10]_inst 
        (.I(ext_ram_data_OBUF[10]),
         .IO(ext_ram_data[10]),
         .O(ext_ram_data_IBUF[10]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD483 \ext_ram_data_IOBUF[11]_inst 
+  IOBUF_HD607 \ext_ram_data_IOBUF[11]_inst 
        (.I(ext_ram_data_OBUF[11]),
         .IO(ext_ram_data[11]),
         .O(ext_ram_data_IBUF[11]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD484 \ext_ram_data_IOBUF[12]_inst 
+  IOBUF_HD608 \ext_ram_data_IOBUF[12]_inst 
        (.I(ext_ram_data_OBUF[12]),
         .IO(ext_ram_data[12]),
         .O(ext_ram_data_IBUF[12]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD485 \ext_ram_data_IOBUF[13]_inst 
+  IOBUF_HD609 \ext_ram_data_IOBUF[13]_inst 
        (.I(ext_ram_data_OBUF[13]),
         .IO(ext_ram_data[13]),
         .O(ext_ram_data_IBUF[13]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD486 \ext_ram_data_IOBUF[14]_inst 
+  IOBUF_HD610 \ext_ram_data_IOBUF[14]_inst 
        (.I(ext_ram_data_OBUF[14]),
         .IO(ext_ram_data[14]),
         .O(ext_ram_data_IBUF[14]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD487 \ext_ram_data_IOBUF[15]_inst 
+  IOBUF_HD611 \ext_ram_data_IOBUF[15]_inst 
        (.I(ext_ram_data_OBUF[15]),
         .IO(ext_ram_data[15]),
         .O(ext_ram_data_IBUF[15]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD488 \ext_ram_data_IOBUF[1]_inst 
+  IOBUF_HD612 \ext_ram_data_IOBUF[1]_inst 
        (.I(ext_ram_data_OBUF[1]),
         .IO(ext_ram_data[1]),
         .O(ext_ram_data_IBUF[1]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD489 \ext_ram_data_IOBUF[2]_inst 
+  IOBUF_HD613 \ext_ram_data_IOBUF[2]_inst 
        (.I(ext_ram_data_OBUF[2]),
         .IO(ext_ram_data[2]),
         .O(ext_ram_data_IBUF[2]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD490 \ext_ram_data_IOBUF[3]_inst 
+  IOBUF_HD614 \ext_ram_data_IOBUF[3]_inst 
        (.I(ext_ram_data_OBUF[3]),
         .IO(ext_ram_data[3]),
         .O(ext_ram_data_IBUF[3]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD491 \ext_ram_data_IOBUF[4]_inst 
+  IOBUF_HD615 \ext_ram_data_IOBUF[4]_inst 
        (.I(ext_ram_data_OBUF[4]),
         .IO(ext_ram_data[4]),
         .O(ext_ram_data_IBUF[4]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD492 \ext_ram_data_IOBUF[5]_inst 
+  IOBUF_HD616 \ext_ram_data_IOBUF[5]_inst 
        (.I(ext_ram_data_OBUF[5]),
         .IO(ext_ram_data[5]),
         .O(ext_ram_data_IBUF[5]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD493 \ext_ram_data_IOBUF[6]_inst 
+  IOBUF_HD617 \ext_ram_data_IOBUF[6]_inst 
        (.I(ext_ram_data_OBUF[6]),
         .IO(ext_ram_data[6]),
         .O(ext_ram_data_IBUF[6]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD494 \ext_ram_data_IOBUF[7]_inst 
+  IOBUF_HD618 \ext_ram_data_IOBUF[7]_inst 
        (.I(ext_ram_data_OBUF[7]),
         .IO(ext_ram_data[7]),
         .O(ext_ram_data_IBUF[7]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD495 \ext_ram_data_IOBUF[8]_inst 
+  IOBUF_HD619 \ext_ram_data_IOBUF[8]_inst 
        (.I(ext_ram_data_OBUF[8]),
         .IO(ext_ram_data[8]),
         .O(ext_ram_data_IBUF[8]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD496 \ext_ram_data_IOBUF[9]_inst 
+  IOBUF_HD620 \ext_ram_data_IOBUF[9]_inst 
        (.I(ext_ram_data_OBUF[9]),
         .IO(ext_ram_data[9]),
         .O(ext_ram_data_IBUF[9]),

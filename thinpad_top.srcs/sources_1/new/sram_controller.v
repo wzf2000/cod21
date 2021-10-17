@@ -30,12 +30,14 @@ always@(posedge clk) begin
             read_data <= read_data;
             if (r_or_w) begin
                 data_z <= 1'b0;
+                ram_oe <= 1'b1;
+                ram_we <= 1'b0;
             end
             else begin
                 data_z <= 1'b1;
+                ram_oe <= 1'b0;
+                ram_we <= 1'b1;
             end
-            ram_oe <= 1'b1;
-            ram_we <= 1'b1;
             data <= data;
             ram_addr <= ram_addr;
         end
@@ -44,14 +46,8 @@ always@(posedge clk) begin
             sram_state <= 2'd2;
             read_data <= read_data;
             data_z <= data_z;
-            if (r_or_w) begin
-                ram_oe <= 1'b1;
-                ram_we <= 1'b0;
-            end
-            else begin
-                ram_oe <= 1'b0;
-                ram_we <= 1'b1;
-            end
+            ram_oe <= ram_oe;
+            ram_we <= ram_we;
             data <= data;
             ram_addr <= ram_addr;
         end
@@ -65,8 +61,8 @@ always@(posedge clk) begin
                 read_data <= ram_data;
             end
             data_z <= data_z;
-            ram_oe <= ram_oe;
-            ram_we <= ram_we;
+            ram_oe <= 1'b1;
+            ram_we <= 1'b1;
             data <= data;
             ram_addr <= ram_addr;
         end
@@ -75,7 +71,7 @@ always@(posedge clk) begin
             sram_state <= 2'd0;
             read_data <= read_data;
             data_z <= 1'b1;
-            ram_oe <= 1'b1;
+            ram_oe <= ram_oe;
             ram_we <= ram_we;
             data <= write_data;
             ram_addr <= addr[19:0];
