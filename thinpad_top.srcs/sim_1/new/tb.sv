@@ -61,14 +61,12 @@ initial begin
     #100;
     reset_btn = 0;
     #100;
-    dip_sw = 32'h0;
-    #100;
     clock_btn = 1;
     #100;
     clock_btn = 0;
-    #100;
+    #50;
     dip_sw = 32'h8595678;
-    #100;
+    #50;
     clock_btn = 1;
     #100;
     clock_btn = 0;

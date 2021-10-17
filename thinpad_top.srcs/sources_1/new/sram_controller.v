@@ -74,7 +74,7 @@ always@(posedge clk) begin
             r_or_w <= op;
             sram_state <= 2'd0;
             read_data <= read_data;
-            data_z <= data_z;
+            data_z <= 1'b1;
             ram_oe <= 1'b1;
             ram_we <= ram_we;
             data <= write_data;
