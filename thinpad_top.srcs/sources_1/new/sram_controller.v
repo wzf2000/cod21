@@ -25,10 +25,10 @@ reg[1:0] sram_state;
 always@(posedge clk) begin
     case (sram_state)
         2'd0: begin
-            r_or_w <= op;
+            r_or_w <= r_or_w;
             sram_state <= 2'd1;
             read_data <= read_data;
-            if (op) begin
+            if (r_or_w) begin
                 data_z <= 1'b0;
             end
             else begin
@@ -71,7 +71,7 @@ always@(posedge clk) begin
             ram_addr <= ram_addr;
         end
         2'd3: begin
-            r_or_w <= r_or_w;
+            r_or_w <= op;
             sram_state <= 2'd0;
             read_data <= read_data;
             data_z <= data_z;

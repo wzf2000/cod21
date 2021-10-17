@@ -228,7 +228,7 @@ always@(*) begin
         3'd3, 3'd4: begin
             led_bits <= base_ram_read_data;
         end
-        3'd0, 3'd5: begin
+        3'd5, 3'd6: begin
             led_bits <= ext_ram_read_data;
         end
     endcase
