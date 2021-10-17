@@ -46,9 +46,9 @@ wire uart_tbre;          //发送数据标志
 wire uart_tsre;          //数据发送完毕标志
 
 //Windows需要注意路径分隔符的转义，例如"D:\\foo\\bar.bin"
-parameter BASE_RAM_INIT_FILE = "/tmp/main.bin"; //BaseRAM初始化文件，请修改为实际的绝对路径
-parameter EXT_RAM_INIT_FILE = "/tmp/eram.bin";    //ExtRAM初始化文件，请修改为实际的绝对路径
-parameter FLASH_INIT_FILE = "/tmp/kernel.elf";    //Flash初始化文件，请修改为实际的绝对路径
+parameter BASE_RAM_INIT_FILE = "D:\\rv\\cod21-wzf19\\sim_tmp\\main.bin"; //BaseRAM初始化文件，请修改为实际的绝对路径
+parameter EXT_RAM_INIT_FILE = "D:\\rv\\cod21-wzf19\\sim_tmp\\eram.bin";    //ExtRAM初始化文件，请修改为实际的绝对路径
+parameter FLASH_INIT_FILE = "D:\\rv\\cod21-wzf19\\sim_tmp\\kernel.elf";    //Flash初始化文件，请修改为实际的绝对路径
 
 assign rxd = 1'b1; //idle state
 
@@ -56,10 +56,23 @@ initial begin
     //在这里可以自定义测试输入序列，例如：
     dip_sw = 32'h2;
     touch_btn = 0;
+    #100
     reset_btn = 1;
     #100;
     reset_btn = 0;
-    for (integer i = 0; i < 20; i = i+1) begin
+    #100;
+    dip_sw = 32'h0;
+    #100;
+    clock_btn = 1;
+    #100;
+    clock_btn = 0;
+    #100;
+    dip_sw = 32'h8595678;
+    #100;
+    clock_btn = 1;
+    #100;
+    clock_btn = 0;
+    for (integer i = 0; i < 80; i = i+1) begin
         #100; //等待100ns
         clock_btn = 1; //按下手工时钟按钮
         #100; //等待100ns
