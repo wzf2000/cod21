@@ -61,26 +61,26 @@ initial begin
     #100;
     reset_btn = 0;
     #100;
-    clock_btn = 1;
-    #100;
-    clock_btn = 0;
-    #50;
-    dip_sw = 32'h8595678;
-    #50;
-    clock_btn = 1;
-    #100;
-    clock_btn = 0;
-    for (integer i = 0; i < 80; i = i+1) begin
-        #100; //等待100ns
-        clock_btn = 1; //按下手工时钟按钮
-        #100; //等待100ns
-        clock_btn = 0; //松开手工时钟按钮
-    end
     // 模拟PC通过串口发送字符
-    dip_sw = {base1.mem_array0[5], base1.mem_array1[5], base2.mem_array0[5], base2.mem_array1[5]};
     cpld.pc_send_byte(8'h32);
     #10000;
     cpld.pc_send_byte(8'h33);
+    #10000;
+    cpld.pc_send_byte(8'h34);
+    #10000;
+    cpld.pc_send_byte(8'h35);
+    #10000;
+    cpld.pc_send_byte(8'h36);
+    #10000;
+    cpld.pc_send_byte(8'h37);
+    #10000;
+    cpld.pc_send_byte(8'h38);
+    #10000;
+    cpld.pc_send_byte(8'h39);
+    #10000;
+    cpld.pc_send_byte(8'h40);
+    #10000;
+    cpld.pc_send_byte(8'h41);
 end
 
 // 待测试用户设计

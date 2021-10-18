@@ -4,21 +4,25 @@ module sram_controller(
     input wire[31:0] addr,
     input wire[31:0] write_data,
     output reg[31:0] read_data,
-    inout wire[31:0] ram_data,
+    input wire[3:0] byte_en,
+    input wire[31:0] ram_data,
     output reg[19:0] ram_addr,
     output wire ram_ce,
     output reg ram_oe,
     output reg ram_we,
-    output wire[3:0] ram_be
+    output wire[3:0] ram_be,
+    output wire en,
+    output wire[31:0] out
 );
 
 reg data_z;
 reg[1:0] r_or_w;
 reg[31:0] data;
 
-assign ram_be = 4'b0000;
-assign ram_ce = 1'b0;
-assign ram_data = data_z ? 32'bz : data;
+assign ram_be = byte_en;
+assign ram_ce = op[1];
+assign en = data_z;
+assign out = data;
 
 reg[1:0] sram_state;
 

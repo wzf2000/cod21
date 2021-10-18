@@ -200,201 +200,439 @@ ALU alu(
 wire[31:0] base_ram_read_data;
 wire[31:0] ext_ram_read_data;
 
-assign uart_rdn = 1'b1;
-assign uart_wrn = 1'b1;
-
-reg[2:0] sram_state;
-reg[3:0] sram_count;
-reg sram_finish;
+// reg[2:0] sram_state;
+// reg[3:0] sram_count;
+// reg sram_finish;
 
 reg[31:0] sram_init_addr;
-reg[31:0] sram_init_data;
+// reg[31:0] sram_init_data;
 reg[31:0] sram_now_addr;
 reg[31:0] sram_now_data;
 reg[1:0] base_op;
 reg[1:0] ext_op;
 
-initial begin
-    sram_state <= 3'b0;
-    sram_count <= 4'b0;
-    sram_finish <= 1'b0;
-end
+// initial begin
+//     sram_state <= 3'b0;
+//     sram_count <= 4'b0;
+//     sram_finish <= 1'b0;
+// end
 
-always@(*) begin
-    case (sram_state)
-        3'd1, 3'd2: begin
-            led_bits <= 16'b0;
-        end
-        3'd3, 3'd4: begin
-            led_bits <= base_ram_read_data;
-        end
-        3'd5, 3'd6: begin
-            led_bits <= ext_ram_read_data;
-        end
-    endcase
-end
+// always@(*) begin
+//     case (sram_state)
+//         3'd0, 3'd1, 3'd2, 3'd7: begin
+//             led_bits <= 16'b0;
+//         end
+//         3'd3, 3'd4: begin
+//             led_bits <= base_ram_read_data;
+//         end
+//         3'd5, 3'd6: begin
+//             led_bits <= ext_ram_read_data;
+//         end
+//     endcase
+// end
 
-always@(posedge clock_btn or posedge reset_btn) begin
+// always@(posedge clock_btn or posedge reset_btn) begin
+//     if (reset_btn) begin
+//         sram_state <= 3'b0;
+//         sram_count <= 4'b0;
+//         sram_finish <= 1'b0;
+//         sram_init_addr <= 32'b0;
+//         sram_init_data <= 32'b0;
+//         sram_now_addr <= 32'b0;
+//         sram_now_data <= 32'b0;
+//         base_op <= 2'b10;
+//         ext_op <= 2'b10;
+//     end
+//     else begin
+//         case (sram_state)
+//             3'd0: begin // init sram addr
+//                 sram_init_addr <= dip_sw;
+//                 sram_init_data <= sram_init_data;
+//                 sram_now_addr <= sram_now_addr;
+//                 sram_now_data <= sram_now_data;
+//                 sram_state <= 3'd1;
+//                 sram_count <= 4'b0;
+//                 sram_finish <= 1'b0;
+//                 base_op <= 2'b10;
+//                 ext_op <= 2'b10;
+//             end
+//             3'd1: begin // init sram data
+//                 sram_init_addr <= sram_init_addr;
+//                 sram_init_data <= dip_sw;
+//                 sram_now_addr <= 32'b0;
+//                 sram_now_data <= 32'b0;
+//                 sram_state <= 3'd2;
+//                 sram_count <= 4'b0;
+//                 sram_finish <= 1'b0;
+//                 base_op <= 2'b10;
+//                 ext_op <= 2'b10;
+//             end
+//             3'd2: begin // write base ram
+//                 sram_init_addr <= sram_init_addr;
+//                 sram_init_data <= sram_init_data;
+//                 sram_finish <= !sram_finish;
+//                 sram_now_addr <= sram_init_addr + sram_count;
+//                 sram_now_data <= sram_init_data + sram_count;
+//                 if (!sram_finish) begin
+//                     base_op <= 2'b10;
+//                     ext_op <= 2'b10;
+//                     sram_count <= sram_count;
+//                     sram_state <= sram_state;
+//                 end
+//                 else begin
+//                     base_op <= 2'b01;
+//                     ext_op <= 2'b10;
+//                     if (sram_count == 4'd9) begin
+//                         sram_count <= 4'b0;
+//                         sram_state <= 3'd3;
+//                     end
+//                     else begin
+//                         sram_count <= sram_count + 1;
+//                         sram_state <= sram_state;
+//                     end
+//                 end
+//             end
+//             3'd3: begin // read base ram
+//                 sram_init_addr <= sram_init_addr;
+//                 sram_init_data <= sram_init_data;
+//                 sram_finish <= !sram_finish;
+//                 sram_now_data <= sram_now_data;
+//                 sram_now_addr <= sram_init_addr + sram_count;
+//                 if (!sram_finish) begin
+//                     base_op <= 2'b10;
+//                     ext_op <= 2'b10;
+//                     sram_count <= sram_count;
+//                     sram_state <= sram_state;
+//                 end
+//                 else begin
+//                     base_op <= 2'b00;
+//                     ext_op <= 2'b10;
+//                     if (sram_count == 4'd9) begin
+//                         sram_count <= 4'b0;
+//                         sram_state <= 3'd4;
+//                     end
+//                     else begin
+//                         sram_count <= sram_count + 1;
+//                         sram_state <= sram_state;
+//                     end
+//                 end
+//             end
+//             3'd4: begin // write ext ram
+//                 sram_init_addr <= sram_init_addr;
+//                 sram_init_data <= sram_init_data;
+//                 sram_finish <= !sram_finish;
+//                 sram_now_addr <= sram_init_addr + sram_count;
+//                 sram_now_data <= sram_init_data + sram_count + 5;
+//                 if (!sram_finish) begin
+//                     base_op <= 2'b10;
+//                     ext_op <= 2'b10;
+//                     sram_count <= sram_count;
+//                     sram_state <= sram_state;
+//                 end
+//                 else begin
+//                     base_op <= 2'b10;
+//                     ext_op <= 2'b01;
+//                     if (sram_count == 4'd9) begin
+//                         sram_count <= 4'b0;
+//                         sram_state <= 3'd5;
+//                     end
+//                     else begin
+//                         sram_count <= sram_count + 1;
+//                         sram_state <= sram_state;
+//                     end
+//                 end
+//             end
+//             3'd5: begin // read ext ram
+//                 sram_init_addr <= sram_init_addr;
+//                 sram_init_data <= sram_init_data;
+//                 sram_finish <= !sram_finish;
+//                 sram_now_data <= sram_now_data;
+//                 sram_now_addr <= sram_init_addr + sram_count;
+//                 if (!sram_finish) begin
+//                     base_op <= 2'b10;
+//                     ext_op <= 2'b10;
+//                     sram_count <= sram_count;
+//                     sram_state <= sram_state;
+//                 end
+//                 else begin
+//                     base_op <= 2'b10;
+//                     ext_op <= 2'b00;
+//                     if (sram_count == 4'd9) begin
+//                         sram_count <= 4'b0;
+//                         sram_state <= 3'd6;
+//                     end
+//                     else begin
+//                         sram_count <= sram_count + 1;
+//                         sram_state <= sram_state;
+//                     end
+//                 end
+//             end
+//             3'd6: begin
+//                 sram_init_addr <= sram_init_addr;
+//                 sram_init_data <= sram_init_data;
+//                 sram_finish <= sram_finish;
+//                 sram_now_data <= sram_now_data;
+//                 sram_now_addr <= sram_now_addr;
+//                 base_op <= 2'b10;
+//                 ext_op <= 2'b10;
+//                 sram_count <= sram_count;
+//                 sram_state <= sram_state;
+//             end
+//             default: begin
+//                 sram_state <= 3'b0;
+//                 sram_count <= 4'b0;
+//                 sram_finish <= 1'b0;
+//                 sram_init_addr <= 32'b0;
+//                 sram_init_data <= 32'b0;
+//                 sram_now_addr <= 32'b0;
+//                 sram_now_data <= 32'b0;
+//                 base_op <= 2'b10;
+//                 ext_op <= 2'b10;
+//             end
+//         endcase
+//     end
+// end
+
+reg[2:0] total_state;
+reg[3:0] byte_count;
+reg[2:0] sram_count;
+reg[1:0] uart_op;
+reg[7:0] send_data;
+wire[7:0] recv_data;
+reg nop;
+wire uart_ready;
+
+reg[3:0] base_byte_en;
+reg[3:0] ext_byte_en;
+
+always @(posedge reset_btn or posedge clk_50M) begin
     if (reset_btn) begin
-        sram_state <= 3'b0;
-        sram_count <= 4'b0;
-        sram_finish <= 1'b0;
-        sram_init_addr <= 32'b0;
-        sram_init_data <= 32'b0;
-        sram_now_addr <= 32'b0;
+        sram_init_addr <= dip_sw;
+        sram_now_addr <= dip_sw;
         sram_now_data <= 32'b0;
+        total_state <= 3'd0;
+        byte_count <= 4'd0;
+        sram_count <= 3'b0;
         base_op <= 2'b10;
-        ext_op <= 2'b10;
+        uart_op <= 2'b10;
+        send_data <= send_data;
+        nop <= 1'b0;
     end
     else begin
-        case (sram_state)
-            3'd0: begin // init sram addr
-                sram_init_addr <= dip_sw;
-                sram_init_data <= sram_init_data;
+        case (total_state)
+            3'd0: begin // receive
+                sram_init_addr <= sram_init_addr;
                 sram_now_addr <= sram_now_addr;
-                sram_now_data <= sram_now_data;
-                sram_state <= 3'd1;
-                sram_count <= 4'b0;
-                sram_finish <= 1'b0;
-                base_op <= 2'b10;
-                ext_op <= 2'b10;
-            end
-            3'd1: begin // init sram data
-                sram_init_addr <= sram_init_addr;
-                sram_init_data <= dip_sw;
-                sram_now_addr <= 32'b0;
                 sram_now_data <= 32'b0;
-                sram_state <= 3'd2;
-                sram_count <= 4'b0;
-                sram_finish <= 1'b0;
-                base_op <= 2'b10;
-                ext_op <= 2'b10;
-            end
-            3'd2: begin // write base ram
-                sram_init_addr <= sram_init_addr;
-                sram_init_data <= sram_init_data;
-                sram_finish <= !sram_finish;
-                sram_now_addr <= sram_init_addr + sram_count;
-                sram_now_data <= sram_init_data + sram_count;
-                if (!sram_finish) begin
-                    base_op <= 2'b10;
-                    ext_op <= 2'b10;
-                    sram_count <= sram_count;
-                    sram_state <= sram_state;
+                if (nop) begin
+                    total_state <= 3'd1;
+                    nop <= 1'b0;
+                    uart_op <= 2'b10;
                 end
                 else begin
+                    total_state <= 3'd0;
+                    nop <= 1'b1;
+                    uart_op <= 2'b00;
+                end
+                base_op <= 2'b10;
+                byte_count <= byte_count;
+                sram_count <= 3'b0;
+                send_data <= send_data;
+            end
+            3'd1: begin // receive wait
+                sram_init_addr <= sram_init_addr;
+                uart_op <= 2'b10;
+                byte_count <= byte_count;
+                sram_count <= 3'b0;
+                if (uart_ready) begin
+                    total_state <= 3'd2;
                     base_op <= 2'b01;
-                    ext_op <= 2'b10;
-                    if (sram_count == 4'd9) begin
-                        sram_count <= 4'b0;
-                        sram_state <= 3'd3;
-                    end
-                    else begin
-                        sram_count <= sram_count + 1;
-                        sram_state <= sram_state;
-                    end
-                end
-            end
-            3'd3: begin // read base ram
-                sram_init_addr <= sram_init_addr;
-                sram_init_data <= sram_init_data;
-                sram_finish <= !sram_finish;
-                sram_now_data <= sram_now_data;
-                sram_now_addr <= sram_init_addr + sram_count;
-                if (!sram_finish) begin
-                    base_op <= 2'b10;
-                    ext_op <= 2'b10;
-                    sram_count <= sram_count;
-                    sram_state <= sram_state;
+                    sram_now_addr <= sram_init_addr + byte_count;
+                    sram_now_data <= recv_data;
                 end
                 else begin
-                    base_op <= 2'b00;
-                    ext_op <= 2'b10;
-                    if (sram_count == 4'd9) begin
-                        sram_count <= 4'b0;
-                        sram_state <= 3'd4;
+                    total_state <= 3'd1;
+                    base_op <= 2'b10;
+                    sram_now_addr <= sram_now_addr;
+                    sram_now_data <= 32'b0;
+                end
+                send_data <= send_data;
+                nop <= 1'b0;
+            end
+            3'd2: begin // save
+                sram_init_addr <= sram_init_addr;
+                sram_now_data <= sram_now_data;
+                if (sram_count == 3'd7) begin
+                    if (byte_count == 4'd9) begin
+                        sram_now_addr <= sram_init_addr;
+                        total_state <= 3'd3;
+                        base_op <= 2'b00;
+                        byte_count <= 4'd0;
+                        sram_count <= 3'd0;
                     end
                     else begin
-                        sram_count <= sram_count + 1;
-                        sram_state <= sram_state;
+                        sram_now_addr <= sram_now_addr;
+                        total_state <= 3'd0;
+                        base_op <= 2'b10;
+                        byte_count <= byte_count + 1;
+                        sram_count <= 3'd0;
                     end
-                end
-            end
-            3'd4: begin // write ext ram
-                sram_init_addr <= sram_init_addr;
-                sram_init_data <= sram_init_data;
-                sram_finish <= !sram_finish;
-                sram_now_addr <= sram_init_addr + sram_count;
-                sram_now_data <= sram_init_data + sram_count + 5;
-                if (!sram_finish) begin
-                    base_op <= 2'b10;
-                    ext_op <= 2'b10;
-                    sram_count <= sram_count;
-                    sram_state <= sram_state;
                 end
                 else begin
-                    base_op <= 2'b10;
-                    ext_op <= 2'b01;
-                    if (sram_count == 4'd9) begin
-                        sram_count <= 4'b0;
-                        sram_state <= 3'd5;
+                    sram_now_addr <= sram_now_addr;
+                    total_state <= 3'd2;
+                    byte_count <= byte_count;
+                    sram_count <= sram_count + 1;
+                    if (sram_count > 3'd3) begin
+                        base_op <= 2'b10;
                     end
                     else begin
-                        sram_count <= sram_count + 1;
-                        sram_state <= sram_state;
+                        base_op <= 2'b01;
                     end
                 end
+                uart_op <= 2'b10;
+                send_data <= send_data;
+                nop <= 1'b0;
             end
-            3'd5: begin // read ext ram
+            3'd3: begin // read
                 sram_init_addr <= sram_init_addr;
-                sram_init_data <= sram_init_data;
-                sram_finish <= !sram_finish;
-                sram_now_data <= sram_now_data;
-                sram_now_addr <= sram_init_addr + sram_count;
-                if (!sram_finish) begin
-                    base_op <= 2'b10;
-                    ext_op <= 2'b10;
-                    sram_count <= sram_count;
-                    sram_state <= sram_state;
-                end
-                else begin
-                    base_op <= 2'b10;
-                    ext_op <= 2'b00;
-                    if (sram_count == 4'd9) begin
-                        sram_count <= 4'b0;
-                        sram_state <= 3'd6;
-                    end
-                    else begin
-                        sram_count <= sram_count + 1;
-                        sram_state <= sram_state;
-                    end
-                end
-            end
-            3'd6: begin
-                sram_init_addr <= sram_init_addr;
-                sram_init_data <= sram_init_data;
-                sram_finish <= sram_finish;
-                sram_now_data <= sram_now_data;
                 sram_now_addr <= sram_now_addr;
-                base_op <= 2'b10;
-                ext_op <= 2'b10;
-                sram_count <= sram_count;
-                sram_state <= sram_state;
+                sram_now_data <= sram_now_data;
+                byte_count <= byte_count;
+                if (sram_count == 3'd7) begin
+                    total_state <= 3'd4;
+                    base_op <= 2'b10;
+                    sram_count <= 3'd0;
+                end
+                else begin
+                    total_state <= 3'd3;
+                    sram_count <= sram_count + 1;
+                    if (sram_count > 3'd3) begin
+                        base_op <= 2'b10;
+                    end
+                    else begin
+                        base_op <= 2'b00;
+                    end
+                end
+                uart_op <= 2'b10;
+                send_data <= send_data;
+                nop <= 1'b0;
             end
-            default: begin
-                sram_state <= 3'b0;
-                sram_count <= 4'b0;
-                sram_finish <= 1'b0;
-                sram_init_addr <= 32'b0;
-                sram_init_data <= 32'b0;
-                sram_now_addr <= 32'b0;
-                sram_now_data <= 32'b0;
+            3'd4: begin // send
+                sram_init_addr <= sram_init_addr;
+                sram_now_addr <= sram_now_addr;
+                sram_now_data <= sram_now_data;
+                if (nop) begin
+                    total_state <= 3'd5;
+                    nop <= 1'b0;
+                    uart_op <= 2'b10;
+                end
+                else begin
+                    total_state <= 3'd4;
+                    nop <= 1'b1;
+                    uart_op <= 2'b01;
+                end
                 base_op <= 2'b10;
-                ext_op <= 2'b10;
+                byte_count <= byte_count;
+                sram_count <= 3'b0;
+                send_data <= base_ram_read_data[7:0];
+            end
+            3'd5: begin // send wait
+                sram_init_addr <= sram_init_addr;
+                uart_op <= 2'b10;
+                sram_count <= 3'b0;
+                if (uart_ready) begin
+                    if (byte_count == 4'd9) begin
+                        total_state <= 3'd6;
+                        sram_now_addr <= sram_now_addr;
+                        sram_now_data <= sram_now_data;
+                        base_op <= 2'b10;
+                        byte_count <= 4'd0;
+                    end
+                    else begin
+                        total_state <= 3'd3;
+                        sram_now_addr <= sram_init_addr + byte_count + 1;
+                        sram_now_data <= sram_now_data;
+                        base_op <= 2'b00;
+                        byte_count <= byte_count + 1;
+                    end
+                end
+                else begin
+                    total_state <= 3'd5;
+                    base_op <= 2'b10;
+                    sram_now_addr <= sram_now_addr;
+                    sram_now_data <= sram_now_data;
+                end
+                send_data <= send_data;
+                nop <= 1'b0;
+            end
+            default: begin // end
+                sram_init_addr <= sram_init_addr;
+                sram_now_addr <= sram_now_addr;
+                sram_now_data <= sram_now_data;
+                total_state <= total_state;
+                byte_count <= byte_count;
+                sram_count <= sram_count;
+                base_op <= 2'b10;
+                uart_op <= 2'b10;
+                send_data <= send_data;
+                nop <= 1'b0;
             end
         endcase
     end
 end
+
+wire base_en;
+wire ext_en;
+wire uart_en;
+wire[31:0] base_data;
+wire[31:0] ext_data;
+wire[7:0] uart_data;
+wire[2:0] uart_state;
+
+assign base_ram_data = !base_en ? base_data : uart_en ? 32'bz : {24'b0, uart_data};
+assign ext_ram_data = ext_en ? 32'bz : ext_data;
+
+always@(*) begin
+    ext_op <= 2'b10;
+    base_byte_en <= 4'b1110;
+    ext_byte_en <= 4'b0000;
+    led_bits[2:0] <= uart_state;
+    led_bits[3] <= 1'b0;
+    led_bits[5:4] <= uart_op;
+    led_bits[7:6] <= 2'b0;
+    led_bits[10:8] <= total_state;
+    led_bits[11] <= 1'b0;
+    led_bits[15:12] <= 4'b0;
+    // case (total_state)
+    //     3'd2: begin
+    //         led_bits <= {8'b0, recv_data};
+    //     end
+    //     3'd4: begin
+    //         led_bits <= base_ram_read_data[15:0];
+    //     end
+    //     default: begin
+    //         led_bits <= 16'b0;
+    //     end
+    // endcase
+end
+
+uart_controller uart(
+    .clk(clk_50M),
+    .op(uart_op), // 0: read, 1: write 2, 3: none
+    .write_data(send_data),
+    .read_data(recv_data),
+    .ready(uart_ready),
+    .uart_data(base_ram_data[7:0]),
+    .uart_dataready(uart_dataready),
+    .uart_tbre(uart_tbre),
+    .uart_tsre(uart_tsre),
+    .uart_rdn(uart_rdn),
+    .uart_wrn(uart_wrn),
+    .en(uart_en),
+    .out(uart_data),
+    .state(uart_state)
+);
 
 sram_controller base_ram_controller(
     .clk(clk_50M),
@@ -402,12 +640,15 @@ sram_controller base_ram_controller(
     .addr(sram_now_addr),
     .write_data(sram_now_data),
     .read_data(base_ram_read_data),
+    .byte_en(base_byte_en),
     .ram_data(base_ram_data),
     .ram_addr(base_ram_addr),
     .ram_ce(base_ram_ce_n),
     .ram_oe(base_ram_oe_n),
     .ram_we(base_ram_we_n),
-    .ram_be(base_ram_be_n)
+    .ram_be(base_ram_be_n),
+    .en(base_en),
+    .out(base_data)
 );
 
 sram_controller ext_ram_controller(
@@ -416,12 +657,15 @@ sram_controller ext_ram_controller(
     .addr(sram_now_addr),
     .write_data(sram_now_data),
     .read_data(ext_ram_read_data),
+    .byte_en(ext_byte_en),
     .ram_data(ext_ram_data),
     .ram_addr(ext_ram_addr),
     .ram_ce(ext_ram_ce_n),
     .ram_oe(ext_ram_oe_n),
     .ram_we(ext_ram_we_n),
-    .ram_be(ext_ram_be_n)
+    .ram_be(ext_ram_be_n),
+    .en(ext_en),
+    .out(ext_data)
 );
 
 // always@(posedge clock_btn or posedge reset_btn) begin
