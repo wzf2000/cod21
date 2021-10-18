@@ -96,11 +96,11 @@ always@(posedge clk) begin
         3'b011: begin
             r_or_w <= r_or_w;
             if (r_or_w == 2'b00) begin
-                uart_state <= 3'b000;
-                read_data <= uart_data;
-                uart_rdn <= 1'b1;
-                uart_wrn <= 1'b1;
-                data_z <= 1'b1;
+                uart_state <= 3'b100;
+                read_data <= read_data;
+                uart_rdn <= uart_rdn;
+                uart_wrn <= uart_wrn;
+                data_z <= data_z;
                 data <= data;
                 ready <= 1'b1;
             end
@@ -121,19 +121,30 @@ always@(posedge clk) begin
         end
         3'b100: begin
             r_or_w <= r_or_w;
-            if (uart_tsre) begin
+            if (r_or_w == 2'b00) begin
                 uart_state <= 3'b000;
+                read_data <= uart_data;
+                uart_rdn <= 1'b1;
+                uart_wrn <= 1'b1;
+                data_z <= 1'b1;
+                data <= data;
                 ready <= 1'b1;
             end
-            else begin
-                uart_state <= 3'b100;
-                ready <= 1'b0;
+            else if (r_or_w == 2'b01) begin
+                if (uart_tsre) begin
+                    uart_state <= 3'b000;
+                    ready <= 1'b1;
+                end
+                else begin
+                    uart_state <= 3'b100;
+                    ready <= 1'b0;
+                end
+                read_data <= read_data;
+                uart_rdn <= 1'b1;
+                uart_wrn <= 1'b1;
+                data_z <= 1'b0;
+                data <= data;
             end
-            read_data <= read_data;
-            uart_rdn <= 1'b1;
-            uart_wrn <= 1'b1;
-            data_z <= 1'b0;
-            data <= data;
         end
     endcase
 end
