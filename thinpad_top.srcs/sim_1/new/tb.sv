@@ -52,9 +52,11 @@ parameter FLASH_INIT_FILE = "D:\\rv\\cod21-wzf19\\sim_tmp\\kernel.elf";    //Fla
 
 assign rxd = 1'b1; //idle state
 
+reg[7:0] tmp;
+
 initial begin 
     //在这里可以自定义测试输入序列，例如：
-    dip_sw = 32'h05;
+    dip_sw = 32'h55;
     touch_btn = 0;
     #100
     reset_btn = 1;
@@ -62,26 +64,13 @@ initial begin
     reset_btn = 0;
     #100;
     // 模拟PC通过串口发送字符
-    cpld.pc_send_byte(8'h32);
-    #10000;
-    $display("In memory %d: %h %h %h %h", 5, base1.mem_array0[5], base1.mem_array1[5], base2.mem_array0[5], base2.mem_array1[5]);
-    cpld.pc_send_byte(8'h33);
-    #10000;
-    cpld.pc_send_byte(8'h34);
-    #10000;
-    cpld.pc_send_byte(8'h35);
-    #10000;
-    cpld.pc_send_byte(8'h36);
-    #10000;
-    cpld.pc_send_byte(8'h37);
-    #10000;
-    cpld.pc_send_byte(8'h38);
-    #10000;
-    cpld.pc_send_byte(8'h39);
-    #10000;
-    cpld.pc_send_byte(8'h40);
-    #10000;
-    cpld.pc_send_byte(8'h41);
+    for (integer i = 0; i < 10; ++i) begin
+        tmp = {$random} % 256;
+        cpld.pc_send_byte(tmp);
+        $display("Random number: %d", tmp);
+        #10000;
+        $display("In memory %d: %d", i + 85, base1.mem_array0[i + 85]);
+    end
 end
 
 // 待测试用户设计

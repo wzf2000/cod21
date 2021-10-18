@@ -602,10 +602,10 @@ always@(*) begin
     led_bits[6:4] <= total_state;
     led_bits[7] <= 1'b0;
     case (total_state)
-        3'd2: begin
+        3'd0, 3'd1, 3'd2: begin
             led_bits[15:8] <= recv_data;
         end
-        3'd4: begin
+        3'd3, 3'd4, 3'd5: begin
             led_bits[15:8] <= base_ram_read_data[7:0];
         end
         default: begin
