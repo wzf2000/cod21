@@ -102,7 +102,7 @@ always@(posedge clk) begin
                 uart_wrn <= uart_wrn;
                 data_z <= data_z;
                 data <= data;
-                ready <= 1'b1;
+                ready <= 1'b0;
             end
             else if (r_or_w == 2'b01) begin
                 if (uart_tbre) begin
