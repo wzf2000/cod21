@@ -448,7 +448,7 @@ always @(posedge reset_btn or posedge clk_50M) begin
                     total_state <= 3'd2;
                     base_op <= 2'b01;
                     sram_now_addr <= sram_init_addr + byte_count;
-                    sram_now_data <= recv_data;
+                    sram_now_data <= {24'b0, recv_data};
                 end
                 else begin
                     total_state <= 3'd1;
@@ -595,26 +595,23 @@ assign ext_ram_data = ext_en ? 32'bz : ext_data;
 
 always@(*) begin
     ext_op <= 2'b10;
-    base_byte_en <= 4'b1110;
+    base_byte_en <= 4'b0000;
     ext_byte_en <= 4'b0000;
     led_bits[2:0] <= uart_state;
     led_bits[3] <= 1'b0;
-    led_bits[5:4] <= uart_op;
-    led_bits[7:6] <= 2'b0;
-    led_bits[10:8] <= total_state;
-    led_bits[11] <= 1'b0;
-    led_bits[15:12] <= 4'b0;
-    // case (total_state)
-    //     3'd2: begin
-    //         led_bits <= {8'b0, recv_data};
-    //     end
-    //     3'd4: begin
-    //         led_bits <= base_ram_read_data[15:0];
-    //     end
-    //     default: begin
-    //         led_bits <= 16'b0;
-    //     end
-    // endcase
+    led_bits[6:4] <= total_state;
+    led_bits[7] <= 1'b0;
+    case (total_state)
+        3'd2: begin
+            led_bits[15:8] <= recv_data;
+        end
+        3'd4: begin
+            led_bits[15:8] <= base_ram_read_data[7:0];
+        end
+        default: begin
+            led_bits[15:8] <= 8'b0;
+        end
+    endcase
 end
 
 uart_controller uart(
