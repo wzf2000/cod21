@@ -64,6 +64,7 @@ initial begin
     // 模拟PC通过串口发送字符
     cpld.pc_send_byte(8'h32);
     #10000;
+    $display("In memory %d: %h %h %h %h", 5, base1.mem_array0[5], base1.mem_array1[5], base2.mem_array0[5], base2.mem_array1[5]);
     cpld.pc_send_byte(8'h33);
     #10000;
     cpld.pc_send_byte(8'h34);
