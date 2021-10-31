@@ -1,3 +1,6 @@
+`default_nettype none
+`timescale 1ns / 1ps
+
 module uart_controller(
     input wire clk,
     input wire[1:0] op, // 0: read, 1: write 2, 3: none

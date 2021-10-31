@@ -46,7 +46,7 @@ wire uart_tbre;          //发送数据标志
 wire uart_tsre;          //数据发送完毕标志
 
 //Windows需要注意路径分隔符的转义，例如"D:\\foo\\bar.bin"
-parameter BASE_RAM_INIT_FILE = "D:\\rv\\cod21-wzf19\\sim_tmp\\main.bin"; //BaseRAM初始化文件，请修改为实际的绝对路径
+parameter BASE_RAM_INIT_FILE = "D:\\rv\\cod21-wzf19\\sim_tmp\\test.bin"; //BaseRAM初始化文件，请修改为实际的绝对路径
 parameter EXT_RAM_INIT_FILE = "D:\\rv\\cod21-wzf19\\sim_tmp\\eram.bin";    //ExtRAM初始化文件，请修改为实际的绝对路径
 parameter FLASH_INIT_FILE = "D:\\rv\\cod21-wzf19\\sim_tmp\\kernel.elf";    //Flash初始化文件，请修改为实际的绝对路径
 
@@ -56,21 +56,10 @@ reg[7:0] tmp;
 
 initial begin 
     //在这里可以自定义测试输入序列，例如：
-    dip_sw = 32'h55;
-    touch_btn = 0;
-    #100
     reset_btn = 1;
     #100;
     reset_btn = 0;
     #100;
-    // 模拟PC通过串口发送字符
-    for (integer i = 0; i < 10; ++i) begin
-        tmp = {$random} % 256;
-        cpld.pc_send_byte(tmp);
-        $display("Random number: %d", tmp);
-        #10000;
-        $display("In memory %d: %d", i + 85, base1.mem_array0[i + 85]);
-    end
 end
 
 // 待测试用户设计

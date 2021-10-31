@@ -2,7 +2,7 @@
 2019.2
 Nov  6 2019
 21:57:16
-D:/rv/cod21-wzf19/thinpad_top.sim/sim_1/impl/func/xsim/tb_func_impl.v,1634544524,verilog,,D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/28F640P30.v,,BaudTickGen;BaudTickGen__parameterized0;async_receiver;async_transmitter;glbl;sram_controller;sram_controller_0;thinpad_top;uart_controller;vga,,,../../../../../thinpad_top.srcs/sim_1/new/include,,,,,
+D:/rv/cod21-wzf19/thinpad_top.sim/sim_1/impl/func/xsim/tb_func_impl.v,1635651152,verilog,,D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/28F640P30.v,,ALU;BaudTickGen;BaudTickGen__parameterized0;Regfile;SRAM;async_receiver;async_transmitter;glbl;sram_controller;sram_controller_0;thinpad_top;vga,,,../../../../../thinpad_top.srcs/sim_1/new/include;../../../../../thinpad_top.srcs/sources_1/new,,,,,
 D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/28F640P30.v,1632926968,verilog,,D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/clock.v,D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/include/def.h;D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/include/CUIcommandData.h;D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/include/data.h;D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/include/UserData.h;D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/include/BankLib.h;D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/include/TimingData.h,BlankCheckModule;BlockLockModule;BuffEnhancedFactProgramModule;BurstModule;CFIqueryModule;CUIdecoder1;CUIdecoder2;CUIdecoder_Busy1;ConfigRegModule;DataErrorModule;DebugModule;EraseModule;KernelModule;MemoryModule;OutputBufferModule;ProgramBufferModule;ProgramModule;ProtectRegModule;ReadModule;SignatureModule;StatusRegModule;TimingLibModule;x28fxxxp30,,,../../../../../thinpad_top.srcs/sim_1/new/include,,,,,
 D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/clock.v,1632926968,verilog,,D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/cpld_model.v,,clock,,,../../../../../thinpad_top.srcs/sim_1/new/include,,,,,
 D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/cpld_model.v,1632926968,verilog,,D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/flag_sync_cpld.v,,cpld_model,,,../../../../../thinpad_top.srcs/sim_1/new/include,,,,,
@@ -14,4 +14,4 @@ D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/include/UserData.h,1632926968,veril
 D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/include/data.h,1632926968,verilog,,,D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/include/UserData.h,,,,,,,,,
 D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/include/def.h,1632926968,verilog,,,,,,,,,,,,
 D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/sram_model.v,1632926968,verilog,,,,sram_model,,,../../../../../thinpad_top.srcs/sim_1/new/include,,,,,
-D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/tb.sv,1634535272,systemVerilog,,,,tb,,,../../../../../thinpad_top.srcs/sim_1/new/include,,,,,
+D:/rv/cod21-wzf19/thinpad_top.srcs/sim_1/new/tb.sv,1635651053,systemVerilog,,,,tb,,,../../../../../thinpad_top.srcs/sim_1/new/include;../../../../../thinpad_top.srcs/sources_1/new,,,,,
