@@ -5,3 +5,4 @@
 `define OP_ADD 3'h4
 `define OP_BEQ 3'h5
 `define OP_SLL 3'h6
+`define OP_SB 3'h7

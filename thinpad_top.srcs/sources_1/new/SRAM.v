@@ -7,7 +7,7 @@ module SRAM(
     
     input wire oe,
     input wire we,
-    input wire be,
+    input wire[3:0] be,
     
     input wire[31:0] address,
     input wire[31:0] data_in,
@@ -71,8 +71,8 @@ assign state = {uart_en, uart_state, uart_op, which};
 
 always@(*) begin
     mem_addr = address[21:2];
-    base_byte_en = {4{be}};
-    ext_byte_en = {4{be}};
+    base_byte_en = be;
+    ext_byte_en = be;
     if (oe)
         op = 2'b00;
     else if (we)

@@ -19,14 +19,14 @@ loop:
 out:
     sw t2, 0(t4)
     ori t6, zero, 100
-    sw t6, 0(t5)
+    sb t6, 0(t5)
     ori t6, zero, 111
-    sw t6, 0(t5)
+    sb t6, 0(t5)
     ori t6, zero, 110
-    sw t6, 0(t5)
+    sb t6, 0(t5)
     ori t6, zero, 101
-    sw t6, 0(t5)
+    sb t6, 0(t5)
     ori t6, zero, 33
-    sw t6, 0(t5)
+    sb t6, 0(t5)
 end:
     beq zero, zero, end

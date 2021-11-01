@@ -139,12 +139,11 @@ end
 
 //interface to memory
 reg mem_oe, mem_we;
-wire mem_be;
+reg[3:0] mem_be = 4'b0000;
 reg[31:0] mem_address;
 reg[31:0] mem_data_in;
 wire[31:0] mem_data_out;
 wire mem_done;
-assign mem_be = 1'b0;
 
 wire[7:0] SRAM_state;
 
@@ -232,7 +231,7 @@ wire[31:0]  exe_result;
 wire[3:0]   exe_flags;
 always @(*) begin
     case (exe_op)
-        `OP_LW, `OP_SW, `OP_ADD, `OP_BEQ : begin
+        `OP_LW, `OP_SW, `OP_SB, `OP_ADD, `OP_BEQ : begin
             alu_op <= `ADD;
         end
         `OP_OR : begin
@@ -273,6 +272,7 @@ always @(posedge clk_50M or posedge reset_btn) begin
         reg_we <= 1'b0;
         mem_we <= 0;
         mem_oe <= 0;
+        mem_be <= 4'b0000;
         mem_write <= 1'b0;
     end
     else begin
@@ -282,10 +282,12 @@ always @(posedge clk_50M or posedge reset_btn) begin
                     cpu_stage <= STAGE_ID;
                     reg_instruction <= mem_data_out;
                     mem_oe <= 1'b0;
+                    mem_be <= 4'b0000;
                 end
                 else begin
                     mem_address <= pc;
                     mem_oe <= 1'b1;
+                    mem_be <= 4'b0000;
                 end
             end
             STAGE_ID: begin
@@ -303,12 +305,17 @@ always @(posedge clk_50M or posedge reset_btn) begin
                         cpu_stage <= STAGE_MEM;
                         mem_write <= 1'b0;
                         mem_oe <= 1'b1;
+                        mem_be <= 4'b0000;
                         mem_address <= exe_result;
                     end
-                    `OP_SW : begin
+                    `OP_SW, `OP_SB : begin
                         cpu_stage <= STAGE_MEM;
                         mem_write <= 1'b1;
                         mem_we <= 1'b1;
+                        if (exe_op == `OP_SW)
+                            mem_be <= 4'b0000;
+                        else
+                            mem_be <= 4'b1110;
                         mem_address <= exe_result;
                         mem_data_in <= exe_reg_t_val;
                     end
@@ -334,6 +341,7 @@ always @(posedge clk_50M or posedge reset_btn) begin
                 if (mem_done) begin
                     mem_oe <= 1'b0;
                     mem_we <= 1'b0;
+                    mem_be <= 4'b0000;
                     cpu_stage <= STAGE_WB;
                     if (~mem_write) begin //for memory read
                         reg_waddr <= reg_d;
@@ -345,6 +353,7 @@ always @(posedge clk_50M or posedge reset_btn) begin
                     end
                 end
                 else begin
+                    mem_be <= mem_be;
                     if (mem_write) begin
                         mem_address <= exe_result;
                         mem_we <= 1'b1;

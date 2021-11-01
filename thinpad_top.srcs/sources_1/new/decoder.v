@@ -39,6 +39,7 @@ always @(*) begin
             imm_select = 1'b1;
             case (inst[14:12])
                 3'b010: op = `OP_SW;
+                3'b000: op = `OP_SB;
             endcase
         end
         
