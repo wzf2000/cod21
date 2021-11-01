@@ -92,7 +92,7 @@ always@(*) begin
                 which = 2'b11;
         end
         10'h040: begin // uart
-            if (address == 32'b10000000) begin
+            if (address == 32'h10000000) begin
                 if (oe || we)
                     which = 2'b10;
                 else
