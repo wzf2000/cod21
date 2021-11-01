@@ -55,6 +55,7 @@ wire[31:0] ext_out;
 wire[7:0] uart_out;
 wire[1:0] base_state;
 wire[1:0] ext_state;
+wire[2:0] uart_state;
 
 reg[1:0] op;
 reg[1:0] base_op;
@@ -66,7 +67,7 @@ wire ext_done;
 wire uart_ready;
 
 reg[1:0] which;
-assign state = {ext_state, base_state, done, count[0], which};
+assign state = {uart_en, uart_state, uart_op, which};
 
 always@(*) begin
     mem_addr = address[21:2];
@@ -112,8 +113,11 @@ reg[1:0] count = 1'b0;
 
 always@(posedge clk or posedge rst) begin
     if (rst) begin
-        count <= 2'b0;
         done <= 1'b0;
+        count <= 2'b0;
+        base_op <= 2'b10;
+        ext_op <= 2'b10;
+        uart_op <= 2'b10;
         data_out <= 32'b0;
     end
     else begin
@@ -225,6 +229,7 @@ end
 
 uart_controller uart(
     .clk(clk),
+    .rst(rst),
 
     .op(uart_op), // 0: read, 1: write 2, 3: none
     .write_data(data_in[7:0]),
@@ -239,11 +244,13 @@ uart_controller uart(
     .uart_wrn(uart_wrn),
 
     .en(uart_en),
-    .out(uart_out)
+    .out(uart_out),
+    .state(uart_state)
 );
 
 sram_controller base_ram_controller(
     .clk(clk),
+    .rst(rst),
 
     .op(base_op), // 0: read, 1: write 2, 3: none
     .addr(mem_addr),
@@ -266,6 +273,7 @@ sram_controller base_ram_controller(
 
 sram_controller ext_ram_controller(
     .clk(clk),
+    .rst(rst),
 
     .op(ext_op), // 0: read, 1: write 2, 3: none
     .addr(mem_addr),
