@@ -109,7 +109,7 @@ always@(*) begin
     endcase
 end
 
-reg[1:0] count = 1'b0;
+reg[1:0] count = 2'b0;
 
 always@(posedge clk or posedge rst) begin
     if (rst) begin

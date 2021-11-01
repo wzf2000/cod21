@@ -129,7 +129,7 @@ always@(posedge clk or posedge rst) begin
                     read_data <= read_data;
                     uart_rdn <= 1'b1;
                     uart_wrn <= 1'b1;
-                    data_z <= 1'b0;
+                    data_z <= 1'b1;
                     data <= data;
                     ready <= 1'b0;
                 end
@@ -157,7 +157,7 @@ always@(posedge clk or posedge rst) begin
                     read_data <= read_data;
                     uart_rdn <= 1'b1;
                     uart_wrn <= 1'b1;
-                    data_z <= 1'b0;
+                    data_z <= 1'b1;
                     data <= data;
                 end
             end

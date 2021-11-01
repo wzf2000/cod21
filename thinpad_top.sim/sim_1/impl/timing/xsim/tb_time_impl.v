@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Mon Nov  1 14:27:31 2021
+// Date        : Mon Nov  1 14:46:52 2021
 // Host        : LAPTOP-BQA5S6MS running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               D:/rv/cod21-wzf19/thinpad_top.sim/sim_1/impl/timing/xsim/tb_time_impl.v
@@ -37,7 +37,7 @@ module IOBUF_UNIQ_BASE_
         .T(T));
 endmodule
 
-module IOBUF_HD253
+module IOBUF_HD379
    (IO,
     O,
     I,
@@ -61,7 +61,7 @@ module IOBUF_HD253
         .T(T));
 endmodule
 
-module IOBUF_HD254
+module IOBUF_HD380
    (IO,
     O,
     I,
@@ -85,7 +85,7 @@ module IOBUF_HD254
         .T(T));
 endmodule
 
-module IOBUF_HD255
+module IOBUF_HD381
    (IO,
     O,
     I,
@@ -109,7 +109,7 @@ module IOBUF_HD255
         .T(T));
 endmodule
 
-module IOBUF_HD256
+module IOBUF_HD382
    (IO,
     O,
     I,
@@ -133,7 +133,7 @@ module IOBUF_HD256
         .T(T));
 endmodule
 
-module IOBUF_HD257
+module IOBUF_HD383
    (IO,
     O,
     I,
@@ -157,7 +157,7 @@ module IOBUF_HD257
         .T(T));
 endmodule
 
-module IOBUF_HD258
+module IOBUF_HD384
    (IO,
     O,
     I,
@@ -181,7 +181,7 @@ module IOBUF_HD258
         .T(T));
 endmodule
 
-module IOBUF_HD259
+module IOBUF_HD385
    (IO,
     O,
     I,
@@ -205,7 +205,7 @@ module IOBUF_HD259
         .T(T));
 endmodule
 
-module IOBUF_HD260
+module IOBUF_HD386
    (IO,
     O,
     I,
@@ -229,7 +229,7 @@ module IOBUF_HD260
         .T(T));
 endmodule
 
-module IOBUF_HD261
+module IOBUF_HD387
    (IO,
     O,
     I,
@@ -253,7 +253,7 @@ module IOBUF_HD261
         .T(T));
 endmodule
 
-module IOBUF_HD262
+module IOBUF_HD388
    (IO,
     O,
     I,
@@ -277,7 +277,7 @@ module IOBUF_HD262
         .T(T));
 endmodule
 
-module IOBUF_HD263
+module IOBUF_HD389
    (IO,
     O,
     I,
@@ -301,7 +301,7 @@ module IOBUF_HD263
         .T(T));
 endmodule
 
-module IOBUF_HD264
+module IOBUF_HD390
    (IO,
     O,
     I,
@@ -325,7 +325,7 @@ module IOBUF_HD264
         .T(T));
 endmodule
 
-module IOBUF_HD265
+module IOBUF_HD391
    (IO,
     O,
     I,
@@ -349,7 +349,7 @@ module IOBUF_HD265
         .T(T));
 endmodule
 
-module IOBUF_HD266
+module IOBUF_HD392
    (IO,
     O,
     I,
@@ -373,7 +373,7 @@ module IOBUF_HD266
         .T(T));
 endmodule
 
-module IOBUF_HD267
+module IOBUF_HD393
    (IO,
     O,
     I,
@@ -397,7 +397,7 @@ module IOBUF_HD267
         .T(T));
 endmodule
 
-module IOBUF_HD268
+module IOBUF_HD394
    (IO,
     O,
     I,
@@ -421,7 +421,7 @@ module IOBUF_HD268
         .T(T));
 endmodule
 
-module IOBUF_HD269
+module IOBUF_HD395
    (IO,
     O,
     I,
@@ -445,7 +445,7 @@ module IOBUF_HD269
         .T(T));
 endmodule
 
-module IOBUF_HD270
+module IOBUF_HD396
    (IO,
     O,
     I,
@@ -469,7 +469,7 @@ module IOBUF_HD270
         .T(T));
 endmodule
 
-module IOBUF_HD271
+module IOBUF_HD397
    (IO,
     O,
     I,
@@ -493,7 +493,7 @@ module IOBUF_HD271
         .T(T));
 endmodule
 
-module IOBUF_HD272
+module IOBUF_HD398
    (IO,
     O,
     I,
@@ -517,7 +517,7 @@ module IOBUF_HD272
         .T(T));
 endmodule
 
-module IOBUF_HD273
+module IOBUF_HD399
    (IO,
     O,
     I,
@@ -541,7 +541,7 @@ module IOBUF_HD273
         .T(T));
 endmodule
 
-module IOBUF_HD274
+module IOBUF_HD400
    (IO,
     O,
     I,
@@ -565,7 +565,7 @@ module IOBUF_HD274
         .T(T));
 endmodule
 
-module IOBUF_HD275
+module IOBUF_HD401
    (IO,
     O,
     I,
@@ -589,7 +589,7 @@ module IOBUF_HD275
         .T(T));
 endmodule
 
-module IOBUF_HD276
+module IOBUF_HD402
    (IO,
     O,
     I,
@@ -613,7 +613,7 @@ module IOBUF_HD276
         .T(T));
 endmodule
 
-module IOBUF_HD277
+module IOBUF_HD403
    (IO,
     O,
     I,
@@ -637,7 +637,7 @@ module IOBUF_HD277
         .T(T));
 endmodule
 
-module IOBUF_HD278
+module IOBUF_HD404
    (IO,
     O,
     I,
@@ -661,7 +661,7 @@ module IOBUF_HD278
         .T(T));
 endmodule
 
-module IOBUF_HD279
+module IOBUF_HD405
    (IO,
     O,
     I,
@@ -685,7 +685,7 @@ module IOBUF_HD279
         .T(T));
 endmodule
 
-module IOBUF_HD280
+module IOBUF_HD406
    (IO,
     O,
     I,
@@ -709,7 +709,7 @@ module IOBUF_HD280
         .T(T));
 endmodule
 
-module IOBUF_HD281
+module IOBUF_HD407
    (IO,
     O,
     I,
@@ -733,7 +733,7 @@ module IOBUF_HD281
         .T(T));
 endmodule
 
-module IOBUF_HD282
+module IOBUF_HD408
    (IO,
     O,
     I,
@@ -757,7 +757,7 @@ module IOBUF_HD282
         .T(T));
 endmodule
 
-module IOBUF_HD283
+module IOBUF_HD409
    (IO,
     O,
     I,
@@ -781,7 +781,7 @@ module IOBUF_HD283
         .T(T));
 endmodule
 
-module IOBUF_HD284
+module IOBUF_HD410
    (IO,
     O,
     I,
@@ -805,7 +805,7 @@ module IOBUF_HD284
         .T(T));
 endmodule
 
-module IOBUF_HD285
+module IOBUF_HD411
    (IO,
     O,
     I,
@@ -829,7 +829,7 @@ module IOBUF_HD285
         .T(T));
 endmodule
 
-module IOBUF_HD286
+module IOBUF_HD412
    (IO,
     O,
     I,
@@ -853,7 +853,7 @@ module IOBUF_HD286
         .T(T));
 endmodule
 
-module IOBUF_HD287
+module IOBUF_HD413
    (IO,
     O,
     I,
@@ -877,7 +877,7 @@ module IOBUF_HD287
         .T(T));
 endmodule
 
-module IOBUF_HD288
+module IOBUF_HD414
    (IO,
     O,
     I,
@@ -901,7 +901,7 @@ module IOBUF_HD288
         .T(T));
 endmodule
 
-module IOBUF_HD289
+module IOBUF_HD415
    (IO,
     O,
     I,
@@ -925,7 +925,7 @@ module IOBUF_HD289
         .T(T));
 endmodule
 
-module IOBUF_HD290
+module IOBUF_HD416
    (IO,
     O,
     I,
@@ -949,7 +949,7 @@ module IOBUF_HD290
         .T(T));
 endmodule
 
-module IOBUF_HD291
+module IOBUF_HD417
    (IO,
     O,
     I,
@@ -973,7 +973,7 @@ module IOBUF_HD291
         .T(T));
 endmodule
 
-module IOBUF_HD292
+module IOBUF_HD418
    (IO,
     O,
     I,
@@ -997,7 +997,7 @@ module IOBUF_HD292
         .T(T));
 endmodule
 
-module IOBUF_HD293
+module IOBUF_HD419
    (IO,
     O,
     I,
@@ -1021,7 +1021,7 @@ module IOBUF_HD293
         .T(T));
 endmodule
 
-module IOBUF_HD294
+module IOBUF_HD420
    (IO,
     O,
     I,
@@ -1045,7 +1045,7 @@ module IOBUF_HD294
         .T(T));
 endmodule
 
-module IOBUF_HD295
+module IOBUF_HD421
    (IO,
     O,
     I,
@@ -1069,7 +1069,7 @@ module IOBUF_HD295
         .T(T));
 endmodule
 
-module IOBUF_HD296
+module IOBUF_HD422
    (IO,
     O,
     I,
@@ -1093,7 +1093,7 @@ module IOBUF_HD296
         .T(T));
 endmodule
 
-module IOBUF_HD297
+module IOBUF_HD423
    (IO,
     O,
     I,
@@ -1117,7 +1117,7 @@ module IOBUF_HD297
         .T(T));
 endmodule
 
-module IOBUF_HD298
+module IOBUF_HD424
    (IO,
     O,
     I,
@@ -1141,7 +1141,7 @@ module IOBUF_HD298
         .T(T));
 endmodule
 
-module IOBUF_HD299
+module IOBUF_HD425
    (IO,
     O,
     I,
@@ -1165,7 +1165,7 @@ module IOBUF_HD299
         .T(T));
 endmodule
 
-module IOBUF_HD300
+module IOBUF_HD426
    (IO,
     O,
     I,
@@ -1189,7 +1189,7 @@ module IOBUF_HD300
         .T(T));
 endmodule
 
-module IOBUF_HD301
+module IOBUF_HD427
    (IO,
     O,
     I,
@@ -1213,7 +1213,7 @@ module IOBUF_HD301
         .T(T));
 endmodule
 
-module IOBUF_HD302
+module IOBUF_HD428
    (IO,
     O,
     I,
@@ -1237,7 +1237,7 @@ module IOBUF_HD302
         .T(T));
 endmodule
 
-module IOBUF_HD303
+module IOBUF_HD429
    (IO,
     O,
     I,
@@ -1261,7 +1261,7 @@ module IOBUF_HD303
         .T(T));
 endmodule
 
-module IOBUF_HD304
+module IOBUF_HD430
    (IO,
     O,
     I,
@@ -1285,7 +1285,7 @@ module IOBUF_HD304
         .T(T));
 endmodule
 
-module IOBUF_HD305
+module IOBUF_HD431
    (IO,
     O,
     I,
@@ -1309,7 +1309,7 @@ module IOBUF_HD305
         .T(T));
 endmodule
 
-module IOBUF_HD306
+module IOBUF_HD432
    (IO,
     O,
     I,
@@ -1333,7 +1333,7 @@ module IOBUF_HD306
         .T(T));
 endmodule
 
-module IOBUF_HD307
+module IOBUF_HD433
    (IO,
     O,
     I,
@@ -1357,7 +1357,7 @@ module IOBUF_HD307
         .T(T));
 endmodule
 
-module IOBUF_HD308
+module IOBUF_HD434
    (IO,
     O,
     I,
@@ -1381,7 +1381,7 @@ module IOBUF_HD308
         .T(T));
 endmodule
 
-module IOBUF_HD309
+module IOBUF_HD435
    (IO,
     O,
     I,
@@ -1405,7 +1405,7 @@ module IOBUF_HD309
         .T(T));
 endmodule
 
-module IOBUF_HD310
+module IOBUF_HD436
    (IO,
     O,
     I,
@@ -1429,7 +1429,7 @@ module IOBUF_HD310
         .T(T));
 endmodule
 
-module IOBUF_HD311
+module IOBUF_HD437
    (IO,
     O,
     I,
@@ -1453,7 +1453,7 @@ module IOBUF_HD311
         .T(T));
 endmodule
 
-module IOBUF_HD312
+module IOBUF_HD438
    (IO,
     O,
     I,
@@ -1477,7 +1477,7 @@ module IOBUF_HD312
         .T(T));
 endmodule
 
-module IOBUF_HD313
+module IOBUF_HD439
    (IO,
     O,
     I,
@@ -1501,7 +1501,7 @@ module IOBUF_HD313
         .T(T));
 endmodule
 
-module IOBUF_HD314
+module IOBUF_HD440
    (IO,
     O,
     I,
@@ -1525,7 +1525,7 @@ module IOBUF_HD314
         .T(T));
 endmodule
 
-module IOBUF_HD315
+module IOBUF_HD441
    (IO,
     O,
     I,
@@ -23433,7 +23433,7 @@ module SRAM
         .I1(data_z),
         .O(base_ram_data_OBUF[9]));
   (* OPT_MODIFIED = "RETARGET" *) 
-  (* SOFT_HLUTNM = "soft_lutpair139" *) 
+  (* SOFT_HLUTNM = "soft_lutpair140" *) 
   LUT5 #(
     .INIT(32'h77700007)) 
     \count[0]_i_1 
@@ -23444,7 +23444,7 @@ module SRAM
         .I4(\count_reg_n_0_[0] ),
         .O(\count[0]_i_1_n_0 ));
   (* OPT_MODIFIED = "RETARGET" *) 
-  (* SOFT_HLUTNM = "soft_lutpair139" *) 
+  (* SOFT_HLUTNM = "soft_lutpair140" *) 
   LUT5 #(
     .INIT(32'h77007770)) 
     \count[1]_i_1 
@@ -26967,7 +26967,7 @@ module sram_controller_0
         .Q(\read_data_reg[31]_0 [2]));
 endmodule
 
-(* ECO_CHECKSUM = "60491613" *) (* STAGE_EXE = "3'b010" *) (* STAGE_ID = "3'b001" *) 
+(* ECO_CHECKSUM = "1047d42f" *) (* STAGE_EXE = "3'b010" *) (* STAGE_ID = "3'b001" *) 
 (* STAGE_IF = "3'b000" *) (* STAGE_MEM = "3'b011" *) (* STAGE_WB = "3'b100" *) 
 (* NotValidForBitStream *)
 module thinpad_top
@@ -27854,187 +27854,187 @@ end
         .O(base_ram_data_IBUF[0]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD253 \base_ram_data_IOBUF[10]_inst 
+  IOBUF_HD379 \base_ram_data_IOBUF[10]_inst 
        (.I(base_ram_data_OBUF[10]),
         .IO(base_ram_data[10]),
         .O(base_ram_data_IBUF[10]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD254 \base_ram_data_IOBUF[11]_inst 
+  IOBUF_HD380 \base_ram_data_IOBUF[11]_inst 
        (.I(base_ram_data_OBUF[11]),
         .IO(base_ram_data[11]),
         .O(base_ram_data_IBUF[11]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD255 \base_ram_data_IOBUF[12]_inst 
+  IOBUF_HD381 \base_ram_data_IOBUF[12]_inst 
        (.I(base_ram_data_OBUF[12]),
         .IO(base_ram_data[12]),
         .O(base_ram_data_IBUF[12]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD256 \base_ram_data_IOBUF[13]_inst 
+  IOBUF_HD382 \base_ram_data_IOBUF[13]_inst 
        (.I(base_ram_data_OBUF[13]),
         .IO(base_ram_data[13]),
         .O(base_ram_data_IBUF[13]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD257 \base_ram_data_IOBUF[14]_inst 
+  IOBUF_HD383 \base_ram_data_IOBUF[14]_inst 
        (.I(base_ram_data_OBUF[14]),
         .IO(base_ram_data[14]),
         .O(base_ram_data_IBUF[14]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD258 \base_ram_data_IOBUF[15]_inst 
+  IOBUF_HD384 \base_ram_data_IOBUF[15]_inst 
        (.I(base_ram_data_OBUF[15]),
         .IO(base_ram_data[15]),
         .O(base_ram_data_IBUF[15]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD259 \base_ram_data_IOBUF[16]_inst 
+  IOBUF_HD385 \base_ram_data_IOBUF[16]_inst 
        (.I(base_ram_data_OBUF[16]),
         .IO(base_ram_data[16]),
         .O(base_ram_data_IBUF[16]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD260 \base_ram_data_IOBUF[17]_inst 
+  IOBUF_HD386 \base_ram_data_IOBUF[17]_inst 
        (.I(base_ram_data_OBUF[17]),
         .IO(base_ram_data[17]),
         .O(base_ram_data_IBUF[17]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD261 \base_ram_data_IOBUF[18]_inst 
+  IOBUF_HD387 \base_ram_data_IOBUF[18]_inst 
        (.I(base_ram_data_OBUF[18]),
         .IO(base_ram_data[18]),
         .O(base_ram_data_IBUF[18]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD262 \base_ram_data_IOBUF[19]_inst 
+  IOBUF_HD388 \base_ram_data_IOBUF[19]_inst 
        (.I(base_ram_data_OBUF[19]),
         .IO(base_ram_data[19]),
         .O(base_ram_data_IBUF[19]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD263 \base_ram_data_IOBUF[1]_inst 
+  IOBUF_HD389 \base_ram_data_IOBUF[1]_inst 
        (.I(base_ram_data_OBUF[1]),
         .IO(base_ram_data[1]),
         .O(base_ram_data_IBUF[1]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD264 \base_ram_data_IOBUF[20]_inst 
+  IOBUF_HD390 \base_ram_data_IOBUF[20]_inst 
        (.I(base_ram_data_OBUF[20]),
         .IO(base_ram_data[20]),
         .O(base_ram_data_IBUF[20]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD265 \base_ram_data_IOBUF[21]_inst 
+  IOBUF_HD391 \base_ram_data_IOBUF[21]_inst 
        (.I(base_ram_data_OBUF[21]),
         .IO(base_ram_data[21]),
         .O(base_ram_data_IBUF[21]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD266 \base_ram_data_IOBUF[22]_inst 
+  IOBUF_HD392 \base_ram_data_IOBUF[22]_inst 
        (.I(base_ram_data_OBUF[22]),
         .IO(base_ram_data[22]),
         .O(base_ram_data_IBUF[22]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD267 \base_ram_data_IOBUF[23]_inst 
+  IOBUF_HD393 \base_ram_data_IOBUF[23]_inst 
        (.I(base_ram_data_OBUF[23]),
         .IO(base_ram_data[23]),
         .O(base_ram_data_IBUF[23]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD268 \base_ram_data_IOBUF[24]_inst 
+  IOBUF_HD394 \base_ram_data_IOBUF[24]_inst 
        (.I(base_ram_data_OBUF[24]),
         .IO(base_ram_data[24]),
         .O(base_ram_data_IBUF[24]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD269 \base_ram_data_IOBUF[25]_inst 
+  IOBUF_HD395 \base_ram_data_IOBUF[25]_inst 
        (.I(base_ram_data_OBUF[25]),
         .IO(base_ram_data[25]),
         .O(base_ram_data_IBUF[25]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD270 \base_ram_data_IOBUF[26]_inst 
+  IOBUF_HD396 \base_ram_data_IOBUF[26]_inst 
        (.I(base_ram_data_OBUF[26]),
         .IO(base_ram_data[26]),
         .O(base_ram_data_IBUF[26]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD271 \base_ram_data_IOBUF[27]_inst 
+  IOBUF_HD397 \base_ram_data_IOBUF[27]_inst 
        (.I(base_ram_data_OBUF[27]),
         .IO(base_ram_data[27]),
         .O(base_ram_data_IBUF[27]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD272 \base_ram_data_IOBUF[28]_inst 
+  IOBUF_HD398 \base_ram_data_IOBUF[28]_inst 
        (.I(base_ram_data_OBUF[28]),
         .IO(base_ram_data[28]),
         .O(base_ram_data_IBUF[28]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD273 \base_ram_data_IOBUF[29]_inst 
+  IOBUF_HD399 \base_ram_data_IOBUF[29]_inst 
        (.I(base_ram_data_OBUF[29]),
         .IO(base_ram_data[29]),
         .O(base_ram_data_IBUF[29]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD274 \base_ram_data_IOBUF[2]_inst 
+  IOBUF_HD400 \base_ram_data_IOBUF[2]_inst 
        (.I(base_ram_data_OBUF[2]),
         .IO(base_ram_data[2]),
         .O(base_ram_data_IBUF[2]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD275 \base_ram_data_IOBUF[30]_inst 
+  IOBUF_HD401 \base_ram_data_IOBUF[30]_inst 
        (.I(base_ram_data_OBUF[30]),
         .IO(base_ram_data[30]),
         .O(base_ram_data_IBUF[30]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD276 \base_ram_data_IOBUF[31]_inst 
+  IOBUF_HD402 \base_ram_data_IOBUF[31]_inst 
        (.I(base_ram_data_OBUF[31]),
         .IO(base_ram_data[31]),
         .O(base_ram_data_IBUF[31]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD277 \base_ram_data_IOBUF[3]_inst 
+  IOBUF_HD403 \base_ram_data_IOBUF[3]_inst 
        (.I(base_ram_data_OBUF[3]),
         .IO(base_ram_data[3]),
         .O(base_ram_data_IBUF[3]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD278 \base_ram_data_IOBUF[4]_inst 
+  IOBUF_HD404 \base_ram_data_IOBUF[4]_inst 
        (.I(base_ram_data_OBUF[4]),
         .IO(base_ram_data[4]),
         .O(base_ram_data_IBUF[4]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD279 \base_ram_data_IOBUF[5]_inst 
+  IOBUF_HD405 \base_ram_data_IOBUF[5]_inst 
        (.I(base_ram_data_OBUF[5]),
         .IO(base_ram_data[5]),
         .O(base_ram_data_IBUF[5]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD280 \base_ram_data_IOBUF[6]_inst 
+  IOBUF_HD406 \base_ram_data_IOBUF[6]_inst 
        (.I(base_ram_data_OBUF[6]),
         .IO(base_ram_data[6]),
         .O(base_ram_data_IBUF[6]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD281 \base_ram_data_IOBUF[7]_inst 
+  IOBUF_HD407 \base_ram_data_IOBUF[7]_inst 
        (.I(base_ram_data_OBUF[7]),
         .IO(base_ram_data[7]),
         .O(base_ram_data_IBUF[7]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD282 \base_ram_data_IOBUF[8]_inst 
+  IOBUF_HD408 \base_ram_data_IOBUF[8]_inst 
        (.I(base_ram_data_OBUF[8]),
         .IO(base_ram_data[8]),
         .O(base_ram_data_IBUF[8]),
         .T(\base_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD283 \base_ram_data_IOBUF[9]_inst 
+  IOBUF_HD409 \base_ram_data_IOBUF[9]_inst 
        (.I(base_ram_data_OBUF[9]),
         .IO(base_ram_data[9]),
         .O(base_ram_data_IBUF[9]),
@@ -28065,7 +28065,7 @@ end
         .I4(leds_OBUF[14]),
         .I5(leds_OBUF[12]),
         .O(\cpu_stage[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair163" *) 
+  (* SOFT_HLUTNM = "soft_lutpair164" *) 
   LUT5 #(
     .INIT(32'h00FF9500)) 
     \cpu_stage[1]_i_1 
@@ -28075,7 +28075,7 @@ end
         .I3(leds_OBUF[13]),
         .I4(leds_OBUF[12]),
         .O(\cpu_stage[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair163" *) 
+  (* SOFT_HLUTNM = "soft_lutpair164" *) 
   LUT5 #(
     .INIT(32'hAAAA0A80)) 
     \cpu_stage[2]_i_1 
@@ -29066,193 +29066,193 @@ end
        (.I(ext_ram_ce_n_OBUF),
         .O(ext_ram_ce_n));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD284 \ext_ram_data_IOBUF[0]_inst 
+  IOBUF_HD410 \ext_ram_data_IOBUF[0]_inst 
        (.I(ext_ram_data_OBUF[0]),
         .IO(ext_ram_data[0]),
         .O(ext_ram_data_IBUF[0]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD285 \ext_ram_data_IOBUF[10]_inst 
+  IOBUF_HD411 \ext_ram_data_IOBUF[10]_inst 
        (.I(ext_ram_data_OBUF[10]),
         .IO(ext_ram_data[10]),
         .O(ext_ram_data_IBUF[10]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD286 \ext_ram_data_IOBUF[11]_inst 
+  IOBUF_HD412 \ext_ram_data_IOBUF[11]_inst 
        (.I(ext_ram_data_OBUF[11]),
         .IO(ext_ram_data[11]),
         .O(ext_ram_data_IBUF[11]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD287 \ext_ram_data_IOBUF[12]_inst 
+  IOBUF_HD413 \ext_ram_data_IOBUF[12]_inst 
        (.I(ext_ram_data_OBUF[12]),
         .IO(ext_ram_data[12]),
         .O(ext_ram_data_IBUF[12]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD288 \ext_ram_data_IOBUF[13]_inst 
+  IOBUF_HD414 \ext_ram_data_IOBUF[13]_inst 
        (.I(ext_ram_data_OBUF[13]),
         .IO(ext_ram_data[13]),
         .O(ext_ram_data_IBUF[13]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD289 \ext_ram_data_IOBUF[14]_inst 
+  IOBUF_HD415 \ext_ram_data_IOBUF[14]_inst 
        (.I(ext_ram_data_OBUF[14]),
         .IO(ext_ram_data[14]),
         .O(ext_ram_data_IBUF[14]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD290 \ext_ram_data_IOBUF[15]_inst 
+  IOBUF_HD416 \ext_ram_data_IOBUF[15]_inst 
        (.I(ext_ram_data_OBUF[15]),
         .IO(ext_ram_data[15]),
         .O(ext_ram_data_IBUF[15]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD291 \ext_ram_data_IOBUF[16]_inst 
+  IOBUF_HD417 \ext_ram_data_IOBUF[16]_inst 
        (.I(ext_ram_data_OBUF[16]),
         .IO(ext_ram_data[16]),
         .O(ext_ram_data_IBUF[16]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD292 \ext_ram_data_IOBUF[17]_inst 
+  IOBUF_HD418 \ext_ram_data_IOBUF[17]_inst 
        (.I(ext_ram_data_OBUF[17]),
         .IO(ext_ram_data[17]),
         .O(ext_ram_data_IBUF[17]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD293 \ext_ram_data_IOBUF[18]_inst 
+  IOBUF_HD419 \ext_ram_data_IOBUF[18]_inst 
        (.I(ext_ram_data_OBUF[18]),
         .IO(ext_ram_data[18]),
         .O(ext_ram_data_IBUF[18]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD294 \ext_ram_data_IOBUF[19]_inst 
+  IOBUF_HD420 \ext_ram_data_IOBUF[19]_inst 
        (.I(ext_ram_data_OBUF[19]),
         .IO(ext_ram_data[19]),
         .O(ext_ram_data_IBUF[19]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD295 \ext_ram_data_IOBUF[1]_inst 
+  IOBUF_HD421 \ext_ram_data_IOBUF[1]_inst 
        (.I(ext_ram_data_OBUF[1]),
         .IO(ext_ram_data[1]),
         .O(ext_ram_data_IBUF[1]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD296 \ext_ram_data_IOBUF[20]_inst 
+  IOBUF_HD422 \ext_ram_data_IOBUF[20]_inst 
        (.I(ext_ram_data_OBUF[20]),
         .IO(ext_ram_data[20]),
         .O(ext_ram_data_IBUF[20]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD297 \ext_ram_data_IOBUF[21]_inst 
+  IOBUF_HD423 \ext_ram_data_IOBUF[21]_inst 
        (.I(ext_ram_data_OBUF[21]),
         .IO(ext_ram_data[21]),
         .O(ext_ram_data_IBUF[21]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD298 \ext_ram_data_IOBUF[22]_inst 
+  IOBUF_HD424 \ext_ram_data_IOBUF[22]_inst 
        (.I(ext_ram_data_OBUF[22]),
         .IO(ext_ram_data[22]),
         .O(ext_ram_data_IBUF[22]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD299 \ext_ram_data_IOBUF[23]_inst 
+  IOBUF_HD425 \ext_ram_data_IOBUF[23]_inst 
        (.I(ext_ram_data_OBUF[23]),
         .IO(ext_ram_data[23]),
         .O(ext_ram_data_IBUF[23]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD300 \ext_ram_data_IOBUF[24]_inst 
+  IOBUF_HD426 \ext_ram_data_IOBUF[24]_inst 
        (.I(ext_ram_data_OBUF[24]),
         .IO(ext_ram_data[24]),
         .O(ext_ram_data_IBUF[24]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD301 \ext_ram_data_IOBUF[25]_inst 
+  IOBUF_HD427 \ext_ram_data_IOBUF[25]_inst 
        (.I(ext_ram_data_OBUF[25]),
         .IO(ext_ram_data[25]),
         .O(ext_ram_data_IBUF[25]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD302 \ext_ram_data_IOBUF[26]_inst 
+  IOBUF_HD428 \ext_ram_data_IOBUF[26]_inst 
        (.I(ext_ram_data_OBUF[26]),
         .IO(ext_ram_data[26]),
         .O(ext_ram_data_IBUF[26]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD303 \ext_ram_data_IOBUF[27]_inst 
+  IOBUF_HD429 \ext_ram_data_IOBUF[27]_inst 
        (.I(ext_ram_data_OBUF[27]),
         .IO(ext_ram_data[27]),
         .O(ext_ram_data_IBUF[27]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD304 \ext_ram_data_IOBUF[28]_inst 
+  IOBUF_HD430 \ext_ram_data_IOBUF[28]_inst 
        (.I(ext_ram_data_OBUF[28]),
         .IO(ext_ram_data[28]),
         .O(ext_ram_data_IBUF[28]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD305 \ext_ram_data_IOBUF[29]_inst 
+  IOBUF_HD431 \ext_ram_data_IOBUF[29]_inst 
        (.I(ext_ram_data_OBUF[29]),
         .IO(ext_ram_data[29]),
         .O(ext_ram_data_IBUF[29]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD306 \ext_ram_data_IOBUF[2]_inst 
+  IOBUF_HD432 \ext_ram_data_IOBUF[2]_inst 
        (.I(ext_ram_data_OBUF[2]),
         .IO(ext_ram_data[2]),
         .O(ext_ram_data_IBUF[2]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD307 \ext_ram_data_IOBUF[30]_inst 
+  IOBUF_HD433 \ext_ram_data_IOBUF[30]_inst 
        (.I(ext_ram_data_OBUF[30]),
         .IO(ext_ram_data[30]),
         .O(ext_ram_data_IBUF[30]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD308 \ext_ram_data_IOBUF[31]_inst 
+  IOBUF_HD434 \ext_ram_data_IOBUF[31]_inst 
        (.I(ext_ram_data_OBUF[31]),
         .IO(ext_ram_data[31]),
         .O(ext_ram_data_IBUF[31]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD309 \ext_ram_data_IOBUF[3]_inst 
+  IOBUF_HD435 \ext_ram_data_IOBUF[3]_inst 
        (.I(ext_ram_data_OBUF[3]),
         .IO(ext_ram_data[3]),
         .O(ext_ram_data_IBUF[3]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD310 \ext_ram_data_IOBUF[4]_inst 
+  IOBUF_HD436 \ext_ram_data_IOBUF[4]_inst 
        (.I(ext_ram_data_OBUF[4]),
         .IO(ext_ram_data[4]),
         .O(ext_ram_data_IBUF[4]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD311 \ext_ram_data_IOBUF[5]_inst 
+  IOBUF_HD437 \ext_ram_data_IOBUF[5]_inst 
        (.I(ext_ram_data_OBUF[5]),
         .IO(ext_ram_data[5]),
         .O(ext_ram_data_IBUF[5]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD312 \ext_ram_data_IOBUF[6]_inst 
+  IOBUF_HD438 \ext_ram_data_IOBUF[6]_inst 
        (.I(ext_ram_data_OBUF[6]),
         .IO(ext_ram_data[6]),
         .O(ext_ram_data_IBUF[6]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD313 \ext_ram_data_IOBUF[7]_inst 
+  IOBUF_HD439 \ext_ram_data_IOBUF[7]_inst 
        (.I(ext_ram_data_OBUF[7]),
         .IO(ext_ram_data[7]),
         .O(ext_ram_data_IBUF[7]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD314 \ext_ram_data_IOBUF[8]_inst 
+  IOBUF_HD440 \ext_ram_data_IOBUF[8]_inst 
        (.I(ext_ram_data_OBUF[8]),
         .IO(ext_ram_data[8]),
         .O(ext_ram_data_IBUF[8]),
         .T(\ext_ram_data_TRI[0] ));
   (* IS_CCIO = "FALSE" *) 
-  IOBUF_HD315 \ext_ram_data_IOBUF[9]_inst 
+  IOBUF_HD441 \ext_ram_data_IOBUF[9]_inst 
        (.I(ext_ram_data_OBUF[9]),
         .IO(ext_ram_data[9]),
         .O(ext_ram_data_IBUF[9]),
@@ -33031,7 +33031,6 @@ module uart_controller
   wire [7:0]\data_reg[7]_1 ;
   wire data_z;
   wire data_z_i_1__1_n_0;
-  wire data_z_i_2_n_0;
   wire [3:0]leds_OBUF;
   wire r_or_w;
   wire \r_or_w[0]_i_1_n_0 ;
@@ -33089,13 +33088,13 @@ module uart_controller
         .I5(\FSM_onehot_uart_state_reg_n_0_[3] ),
         .O(\FSM_onehot_uart_state[3]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hCCCCCCCCFFFFFFFE)) 
+    .INIT(64'hFF00FF00FFFFFFFE)) 
     \FSM_onehot_uart_state[4]_i_1 
-       (.I0(\FSM_onehot_uart_state_reg_n_0_[3] ),
-        .I1(r_or_w),
-        .I2(\FSM_onehot_uart_state_reg_n_0_[2] ),
-        .I3(\FSM_onehot_uart_state_reg_n_0_[1] ),
-        .I4(leds_OBUF[2]),
+       (.I0(leds_OBUF[2]),
+        .I1(\FSM_onehot_uart_state_reg_n_0_[1] ),
+        .I2(\FSM_onehot_uart_state_reg_n_0_[3] ),
+        .I3(r_or_w),
+        .I4(\FSM_onehot_uart_state_reg_n_0_[2] ),
         .I5(\r_or_w_reg_n_0_[1] ),
         .O(\FSM_onehot_uart_state[4]_i_1_n_0 ));
   LUT6 #(
@@ -33231,23 +33230,13 @@ module uart_controller
         .CLR(reset_btn_IBUF),
         .D(\data_reg[7]_1 [7]),
         .Q(\data_reg[7]_0 [7]));
-  LUT6 #(
-    .INIT(64'hFFFFF5F7F0F0F5F0)) 
-    data_z_i_1__1
-       (.I0(\r_or_w_reg_n_0_[0] ),
-        .I1(\FSM_onehot_uart_state_reg_n_0_[3] ),
-        .I2(r_or_w),
-        .I3(data_z_i_2_n_0),
-        .I4(\r_or_w_reg_n_0_[1] ),
-        .I5(leds_OBUF[3]),
-        .O(data_z_i_1__1_n_0));
   LUT3 #(
-    .INIT(8'hFE)) 
-    data_z_i_2
-       (.I0(leds_OBUF[2]),
-        .I1(\FSM_onehot_uart_state_reg_n_0_[1] ),
-        .I2(\FSM_onehot_uart_state_reg_n_0_[2] ),
-        .O(data_z_i_2_n_0));
+    .INIT(8'hB8)) 
+    data_z_i_1__1
+       (.I0(uart_wrn_i_1_n_0),
+        .I1(uart_rdn_i_1_n_0),
+        .I2(leds_OBUF[3]),
+        .O(data_z_i_1__1_n_0));
   FDPE #(
     .INIT(1'b1)) 
     data_z_reg
@@ -33410,13 +33399,15 @@ module uart_controller
         .CLR(reset_btn_IBUF),
         .D(ready_i_1_n_0),
         .Q(uart_ready));
-  LUT4 #(
-    .INIT(16'hFF08)) 
+  LUT6 #(
+    .INIT(64'hAAFFAAFEAAFEAAFE)) 
     uart_rdn_i_1
-       (.I0(\r_or_w_reg_n_0_[0] ),
-        .I1(\FSM_onehot_uart_state_reg_n_0_[3] ),
-        .I2(\r_or_w_reg_n_0_[1] ),
-        .I3(uart_rdn_i_3_n_0),
+       (.I0(uart_rdn_i_3_n_0),
+        .I1(leds_OBUF[2]),
+        .I2(\FSM_onehot_uart_state_reg_n_0_[1] ),
+        .I3(\r_or_w_reg_n_0_[1] ),
+        .I4(\r_or_w_reg_n_0_[0] ),
+        .I5(\FSM_onehot_uart_state_reg_n_0_[3] ),
         .O(uart_rdn_i_1_n_0));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFAAA2)) 
@@ -33428,14 +33419,12 @@ module uart_controller
         .I4(uart_rdn_i_4_n_0),
         .I5(r_or_w),
         .O(uart_rdn_i_2_n_0));
-  LUT5 #(
-    .INIT(32'hFFFF5554)) 
+  LUT3 #(
+    .INIT(8'hF4)) 
     uart_rdn_i_3
        (.I0(\r_or_w_reg_n_0_[1] ),
-        .I1(leds_OBUF[2]),
-        .I2(\FSM_onehot_uart_state_reg_n_0_[1] ),
-        .I3(\FSM_onehot_uart_state_reg_n_0_[2] ),
-        .I4(r_or_w),
+        .I1(\FSM_onehot_uart_state_reg_n_0_[2] ),
+        .I2(r_or_w),
         .O(uart_rdn_i_3_n_0));
   LUT3 #(
     .INIT(8'hFE)) 
